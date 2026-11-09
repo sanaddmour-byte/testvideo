@@ -239,6 +239,13 @@
    ],
    "notes": [],
    "extracted": true,
+   "method_statements": [
+    {
+     "file": "user-supplied/DonProof_PU-P150_MS.pdf",
+     "ref": "DCP00/08-0206-C-2026",
+     "doc_date": "NOT STATED"
+    }
+   ],
    "standards_claimed": [
     {
      "printed": "PD CEN/TS",
@@ -715,6 +722,13 @@
    ],
    "notes": [],
    "extracted": true,
+   "method_statements": [
+    {
+     "file": "DonProof PU-P60_MS.pdf",
+     "ref": "DCP03/08-0176-A-2025",
+     "doc_date": "NOT STATED"
+    }
+   ],
    "not_applicable_fields": [
     "pot_life"
    ],
@@ -931,6 +945,18 @@
    ],
    "notes": [],
    "extracted": true,
+   "method_statements": [
+    {
+     "file": "DonProof PU-H50_MS.pdf",
+     "ref": "DCP00/08-0163-B-2022",
+     "doc_date": "NOT STATED"
+    },
+    {
+     "file": "user-supplied/DonProof_PU-H50_MS.pdf",
+     "ref": "DCP00/08-0163-A-2025",
+     "doc_date": "NOT STATED"
+    }
+   ],
    "not_applicable_fields": [
     "pot_life"
    ],
@@ -1126,6 +1152,13 @@
    ],
    "notes": [],
    "extracted": true,
+   "method_statements": [
+    {
+     "file": "user-supplied/DonProof_PU-C100_MS.pdf",
+     "ref": "DCP03/08-0207-B-2026",
+     "doc_date": "NOT STATED"
+    }
+   ],
    "not_applicable_fields": [],
    "scope_decision": "APPROVED by user (reply after Phase 1)"
   },
@@ -1286,6 +1319,13 @@
    ],
    "notes": [],
    "extracted": true,
+   "method_statements": [
+    {
+     "file": "user-supplied/DonProof_HS_MS.pdf",
+     "ref": "DCP00/08-0201-B-2026",
+     "doc_date": "NOT STATED"
+    }
+   ],
    "standards_claimed": [
     {
      "printed": "DonProof HS complies with DIN EN 13967, Type T",
@@ -1487,6 +1527,13 @@
     "Elongation is not reported in this TDS (FB-S reports it)."
    ],
    "extracted": true,
+   "method_statements": [
+    {
+     "file": "user-supplied/DonProof_FBFB-S_MS.pdf",
+     "ref": "DCP00/08-0199/0200-A-2025",
+     "doc_date": "NOT STATED"
+    }
+   ],
    "standards_claimed": [
     {
      "printed": "DIN EN 13967 Type A and",
@@ -1639,6 +1686,13 @@
    ],
    "notes": [],
    "extracted": true,
+   "method_statements": [
+    {
+     "file": "user-supplied/DonProof_FBFB-S_MS.pdf",
+     "ref": "DCP00/08-0199/0200-A-2025",
+     "doc_date": "NOT STATED"
+    }
+   ],
    "standards_claimed": [
     {
      "printed": "DIN EN 13967 Type A and",
@@ -1767,6 +1821,13 @@
     "DonProof L is a SHEET (loose-laid PVC) membrane — the brief lists it under liquid-applied. See qa/scope_sheet.md."
    ],
    "extracted": true,
+   "method_statements": [
+    {
+     "file": "user-supplied/DonProof_L_MS.pdf",
+     "ref": "DCP00/08-0198-A-2025",
+     "doc_date": "NOT STATED"
+    }
+   ],
    "standards_claimed": [
     {
      "printed": "DonProof L complies with EN 13967 and EN 13491",
@@ -1902,6 +1963,13 @@
     "DonProof R is a SHEET (FPO/TPO) roofing membrane — the brief lists it under liquid-applied."
    ],
    "extracted": true,
+   "method_statements": [
+    {
+     "file": "user-supplied/DonProof_R_MS.pdf",
+     "ref": "DCP00/08-0197-A-2025",
+     "doc_date": "NOT STATED"
+    }
+   ],
    "standards_claimed": [
     {
      "printed": "EN 13956 as per the technical properties table",
@@ -2113,6 +2181,13 @@
     "EPW-P and EPW-S share one TDS; they differ in colour and chemical-resistance table only."
    ],
    "extracted": true,
+   "method_statements": [
+    {
+     "file": "user-supplied/Strongcoat_EPW_MS.pdf",
+     "ref": "NOT STATED",
+     "doc_date": "NOT STATED"
+    }
+   ],
    "standards_claimed": [
     {
      "printed": "EN1504-2",
@@ -2182,7 +2257,9 @@
       "source_file": "Strongcoat EN100_TDS_4.pdf",
       "page": 1,
       "doc_code": "06-0008-C-2025",
-      "doc_date": "NOT STATED"
+      "doc_date": "NOT STATED",
+      "held_conflict": "C-09",
+      "on_screen_allowed": false
      }
     ],
     "recoat": [
@@ -2288,6 +2365,13 @@
     "TDS: 'suitable for use on concrete and steel surfaces'. Elongation, crack bridging and service temperature are not reported."
    ],
    "extracted": true,
+   "method_statements": [
+    {
+     "file": "user-supplied-2/Strongcoat_EN100.pdf",
+     "ref": "NOT STATED",
+     "doc_date": "NOT STATED"
+    }
+   ],
    "not_applicable_fields": [],
    "scope_decision": "APPROVED by user (reply after Phase 1)"
   },
@@ -2932,6 +3016,13 @@
    ],
    "notes": [],
    "extracted": true,
+   "method_statements": [
+    {
+     "file": "user-supplied-2/Repcoat_FF.pdf",
+     "ref": "NOT STATED",
+     "doc_date": "NOT STATED"
+    }
+   ],
    "not_applicable_fields": [
     "cure_full",
     "pot_life"
@@ -3354,6 +3445,18 @@
       "doc_date": "NOT STATED"
      }
     ],
+    "coverage": [
+     {
+      "value": "Total consumption: 1.1 - 1.3 kg/m² to provide 500 microns dry film thickness (two coats)",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/Aquathane_E400_MS.pdf",
+      "page": 7,
+      "doc_code": "DCP00/08-0106-B-2024",
+      "doc_date": "NOT STATED",
+      "source_type": "METHOD STATEMENT"
+     }
+    ],
     "recoat": [
      {
       "value": "[DATA REQUIRED — R&D]",
@@ -3407,6 +3510,13 @@
      "source_file": "Aquathane E400_1.pdf",
      "page": 1,
      "doc_code": "08-0106-QA-A-2025",
+     "doc_date": "NOT STATED"
+    }
+   ],
+   "method_statements": [
+    {
+     "file": "user-supplied/Aquathane_E400_MS.pdf",
+     "ref": "DCP00/08-0106-B-2024",
      "doc_date": "NOT STATED"
     }
    ],
@@ -3487,6 +3597,13 @@
    ],
    "notes": [],
    "extracted": true,
+   "method_statements": [
+    {
+     "file": "user-supplied/Hydrostop_Range_MS.pdf",
+     "ref": "DCP00/05-0115-A-2024",
+     "doc_date": "NOT STATED"
+    }
+   ],
    "standards_claimed": [
     {
      "printed": "BS 2782",
@@ -3558,6 +3675,13 @@
     "TDS: 'should not be used in expansion joints, or any concrete section of less than 150 mm width.'"
    ],
    "extracted": true,
+   "method_statements": [
+    {
+     "file": "user-supplied-2/Hyperseal_DP-2010H.pdf",
+     "ref": "NOT STATED",
+     "doc_date": "NOT STATED"
+    }
+   ],
    "standards_claimed": [
     {
      "printed": "KS M 6518",
@@ -3787,6 +3911,440 @@
     "crack_bridging",
     "elongation",
     "service_temp"
+   ],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
+  },
+  {
+   "id": "PRIMER-EP",
+   "name": "DonProof Primer EP",
+   "family": "DonProof primers",
+   "classification": "Accessory (primer)",
+   "source_file": "user-supplied/DonProof_Primer_PE.pdf",
+   "doc_code": "08-0213-A-2026",
+   "doc_date": "NOT STATED",
+   "values": {
+    "coverage": [
+     {
+      "value": "3.5 - 3.7 m²/kg to achieve a dry film thickness of approximately 200 micron per coat",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_Primer_PE.pdf",
+      "page": 1,
+      "doc_code": "08-0213-A-2026",
+      "doc_date": "NOT STATED",
+      "held_conflict": "C-08",
+      "on_screen_allowed": false
+     }
+    ],
+    "pot_life": [
+     {
+      "value": "30 - 60",
+      "unit": "min",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_Primer_PE.pdf",
+      "page": 1,
+      "doc_code": "08-0213-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "recoat": [
+     {
+      "value": "12 - 24",
+      "unit": "hr",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_Primer_PE.pdf",
+      "page": 1,
+      "doc_code": "08-0213-A-2026",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Overcoating time"
+     }
+    ],
+    "bond_concrete": [
+     {
+      "value": "≥ 3",
+      "unit": "MPa (concrete failure)",
+      "test_standard": "ASTM D4541-85",
+      "source_file": "user-supplied/DonProof_Primer_PE.pdf",
+      "page": 1,
+      "doc_code": "08-0213-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "voc": [
+     {
+      "value": "< 20",
+      "unit": "g/ltr",
+      "test_standard": "ASTM D2369",
+      "source_file": "user-supplied/DonProof_Primer_PE.pdf",
+      "page": 1,
+      "doc_code": "08-0213-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "12",
+      "unit": "months",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_Primer_PE.pdf",
+      "page": 1,
+      "doc_code": "08-0213-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [],
+   "notes": [
+    "Epoxy primer for polyurea systems. PU-P150 TDS names it for concrete; PU-P60/P100/H50 TDS still name 'Strongcoat Primer Range' (PRIMER_NAMING)."
+   ],
+   "extracted": true,
+   "not_applicable_fields": [],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
+  },
+  {
+   "id": "PRIMER-PU",
+   "name": "DonProof Primer PU",
+   "family": "DonProof primers",
+   "classification": "Accessory (primer)",
+   "source_file": "user-supplied/DonProof_Primer_PU.pdf",
+   "doc_code": "08-0212-A-2026",
+   "doc_date": "NOT STATED",
+   "values": {
+    "coverage": [
+     {
+      "value": "5 - 10 m²/ltr depending on the substrate porosity to achieve a dry film thickness of 40 - 80 microns per layer",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_Primer_PU.pdf",
+      "page": 1,
+      "doc_code": "08-0212-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "recoat": [
+     {
+      "value": "min 24 hr @ 25oC; max 48 hr @ 25oC",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_Primer_PU.pdf",
+      "page": 1,
+      "doc_code": "08-0212-A-2026",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Minimum / maximum overcoating time"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "9",
+      "unit": "months",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_Primer_PU.pdf",
+      "page": 1,
+      "doc_code": "08-0212-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [],
+   "notes": [
+    "TDS Applications line reads 'enhance the bond between Aquathane Range of products' while title/advantages say DonProof range — wording inconsistency, see qa/conflicts.md C-07. Not recommended over substrate RH > 80%."
+   ],
+   "extracted": true,
+   "not_applicable_fields": [
+    "voc"
+   ],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
+  },
+  {
+   "id": "PRIMER-PU1000",
+   "name": "DonProof Primer PU1000",
+   "family": "DonProof primers",
+   "classification": "Accessory (primer)",
+   "source_file": "user-supplied/Donproof_Primer_PU1000.pdf",
+   "doc_code": "08-0204-KSA-B-2026",
+   "doc_date": "NOT STATED",
+   "values": {
+    "coverage": [
+     {
+      "value": "0.10 - 0.15 kg/m² in thin coats",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/Donproof_Primer_PU1000.pdf",
+      "page": 1,
+      "doc_code": "08-0204-KSA-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "recoat": [
+     {
+      "value": "3 to 48",
+      "unit": "hr @ 25oC",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/Donproof_Primer_PU1000.pdf",
+      "page": 1,
+      "doc_code": "08-0204-KSA-B-2026",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Overcoating time"
+     }
+    ],
+    "bond_concrete": [
+     {
+      "value": "≥ 2",
+      "unit": "MPa",
+      "test_standard": "EN 1542",
+      "source_file": "user-supplied/Donproof_Primer_PU1000.pdf",
+      "page": 1,
+      "doc_code": "08-0204-KSA-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "12",
+      "unit": "months",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/Donproof_Primer_PU1000.pdf",
+      "page": 2,
+      "doc_code": "08-0204-KSA-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [],
+   "notes": [
+    "Adhesion promoter on OLD DonProof PU membranes / repairs / overlaps. Not used in the film's build-ups."
+   ],
+   "extracted": true,
+   "not_applicable_fields": [],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
+  },
+  {
+   "id": "AL",
+   "name": "DonProof AL",
+   "family": "DonProof topcoat",
+   "classification": "Protective (aliphatic PU topcoat for polyurea)",
+   "source_file": "user-supplied/DonProof_AL.pdf",
+   "doc_code": "06-0074-B-2026",
+   "doc_date": "NOT STATED",
+   "values": {
+    "coverage": [
+     {
+      "value": "Approximately 2.5 - 3.5 m²/kg per coat",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_AL.pdf",
+      "page": 2,
+      "doc_code": "06-0074-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "tensile": [
+     {
+      "value": "> 4",
+      "unit": "MPa @ 7 days",
+      "test_standard": "ASTM D412",
+      "source_file": "user-supplied/DonProof_AL.pdf",
+      "page": 1,
+      "doc_code": "06-0074-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "elongation": [
+     {
+      "value": "> 400",
+      "unit": "% @ 7 days",
+      "test_standard": "ASTM D412",
+      "source_file": "user-supplied/DonProof_AL.pdf",
+      "page": 1,
+      "doc_code": "06-0074-B-2026",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Elongation at break"
+     }
+    ],
+    "tear": [
+     {
+      "value": "> 18",
+      "unit": "N/mm",
+      "test_standard": "ASTM D624, Die C",
+      "source_file": "user-supplied/DonProof_AL.pdf",
+      "page": 1,
+      "doc_code": "06-0074-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "bond_polyurea": [
+     {
+      "value": "> 1.5 MPa (1 coat @ 200 microns)",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_AL.pdf",
+      "page": 1,
+      "doc_code": "06-0074-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "tack_free": [
+     {
+      "value": "4 - 6",
+      "unit": "hr @ RH 55 ± 5%",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_AL.pdf",
+      "page": 1,
+      "doc_code": "06-0074-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "recoat": [
+     {
+      "value": "minimum overcoating time 7 - 8 hours",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_AL.pdf",
+      "page": 2,
+      "doc_code": "06-0074-B-2026",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Minimum overcoating time"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "12",
+      "unit": "months",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_AL.pdf",
+      "page": 2,
+      "doc_code": "06-0074-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "B",
+     "quote": "Exposed roofs, flat and sloped.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "B",
+     "quote": "Balconies, terraces and podium decks.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "C",
+     "quote": "Balconies, terraces and podium decks.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    }
+   ],
+   "notes": [
+    "This is the 'aliphatic PU topcoat' of the brief. VOC not reported."
+   ],
+   "extracted": true,
+   "not_applicable_fields": [
+    "bond_concrete"
+   ],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
+  },
+  {
+   "id": "REPCOAT-FF-PLUS",
+   "name": "Repcoat FF Plus",
+   "family": "Repcoat anti-carbonation",
+   "classification": "Protective",
+   "source_file": "user-supplied/Repcoat_FF_Plus.pdf",
+   "doc_code": "06-0023-B-2013",
+   "doc_date": "NOT STATED",
+   "values": {
+    "coverage": [
+     {
+      "value": "0.18 - 0.22 litre/m²/coat to give between 70 - 90 micron DFT",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/Repcoat_FF_Plus.pdf",
+      "page": 1,
+      "doc_code": "06-0023-B-2013",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "recoat": [
+     {
+      "value": "2:00 hr @ 25°C; 1:30 hr @ 35°C",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/Repcoat_FF_Plus.pdf",
+      "page": 1,
+      "doc_code": "06-0023-B-2013",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Over coating time"
+     }
+    ],
+    "voc": [
+     {
+      "value": "< 50",
+      "unit": "g/ltr",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/Repcoat_FF_Plus.pdf",
+      "page": 1,
+      "doc_code": "06-0023-B-2013",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "12",
+      "unit": "months",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/Repcoat_FF_Plus.pdf",
+      "page": 1,
+      "doc_code": "06-0023-B-2013",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "carbonation_resistance": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/Repcoat_FF_Plus.pdf",
+      "page": null,
+      "doc_code": "06-0023-B-2013",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "F",
+     "quote": "Retaining walls.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "F",
+     "quote": "Bridge abutments.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "F",
+     "quote": "Pre-cast elements and concrete cladding.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    }
+   ],
+   "notes": [
+    "TDS reports no carbonation-resistance value or standard."
+   ],
+   "extracted": true,
+   "not_applicable_fields": [
+    "bond_concrete",
+    "crack_bridging",
+    "cure_full",
+    "elongation",
+    "pot_life",
+    "service_temp",
+    "tensile"
    ],
    "scope_decision": "APPROVED by user (reply after Phase 1)"
   }

@@ -43,11 +43,24 @@ def foot(keys):
     return " · ".join(seen)
 
 
-def quote_ok(pid, q):
+def probe(rel, q):
+    for i, (lay, raw) in enumerate(bp.pages(rel), 1):
+        for txt in (lay, raw):
+            if bp.norm(q) in bp.norm(txt):
+                return i
+    return None
+
+
+def quote_ok(pid, q, ms=False):
     pid = "EPW" if pid in ("EPW-P", "EPW-S") else pid
-    rel = PR[pid]["source_file"]
-    page = bp.find_page(rel, q)
-    return page
+    if ms:
+        for m in PR[pid].get("method_statements", []):
+            pg = probe(m["file"], q)
+            if pg:
+                return pg, m
+        ERR.append(f"MS quote not found for {pid}: {q}")
+        return 0, None
+    return bp.find_page(PR[pid]["source_file"], q), None
 
 
 def keys_for(products, props):
@@ -111,10 +124,15 @@ def zone(ch, z, problem, problem_vo, cands, stack, callouts, panel, choose, vo_i
     for k in keys: val(k)
     B(ch, f"{n}.4", 6, "LayerStack builds bottom-up: " + " → ".join(lbl for lbl, _ in stack), " | ".join(lbl for lbl, _ in stack), keys, vo_stack)
     ck = []
-    for pid, q in callouts:
-        pg = quote_ok(pid, q); ck.append((pid, q, pg))
-    B(ch, f"{n}.5", 4.5, "DetailCallout pins on the section; text taken from TDS 'Method of use': " + " / ".join(f"“{q}” ({NAMES[p]} p{pg})" for p, q, pg in ck),
+    srcs = []
+    for c in callouts:
+        pid, q = c[0], c[1]
+        pg, m = quote_ok(pid, q, ms=len(c) > 2)
+        ck.append((pid, q, pg))
+        srcs.append(f"{NAMES[pid]} " + (f"Method Statement, {m['ref']}, {m['doc_date']}" if m else f"TDS, {PR['EPW' if pid in ('EPW-P','EPW-S') else pid]['doc_code']}, NOT STATED"))
+    B(ch, f"{n}.5", 4.5, "DetailCallout pins on the section; wording from the method statement / TDS 'Method of use': " + " / ".join(f"“{q}” ({NAMES[p]} p{pg})" for p, q, pg in ck),
       " / ".join(q for _, q, _ in ck), [], vo_callout)
+    beats[-1]["foot"] = "Source: " + " · ".join(dict.fromkeys(srcs))
     kind, prods, props = panel
     panel_check(kind, prods, props)
     pk = keys_for(prods, props)
@@ -123,7 +141,7 @@ def zone(ch, z, problem, problem_vo, cands, stack, callouts, panel, choose, vo_i
     B(ch, f"{n}.6", 5.5, vis, ("Comparison" if kind == "bars" else "Comparison — different test methods"), pk, vo_panel)
     cc = []
     for pid, q in choose:
-        pg = quote_ok(pid, q); cc.append((pid, q, pg))
+        pg, _ = quote_ok(pid, q); cc.append((pid, q, pg))
     B(ch, f"{n}.7", 2.5 * (1 if len(choose) <= 2 else 1.4), "Two-column 'Choose X when… / Choose Y when…' using TDS wording: " + " ; ".join(f"{NAMES[p]}: “{q}” (p{pg})" for p, q, pg in cc),
       " / ".join(f"Choose {NAMES[p]} when: {q}" for p, q, _ in cc), [], vo_choose)
 
@@ -132,38 +150,38 @@ zone("Ch2", "A", "groundwater and soil moisture pressing on a basement wall and 
      "Below ground, water presses on walls and slabs.",
      ["FB", "FB-S", "HS"],
      [("Blinding concrete or compacted sand", None), ("Geotextile cushion layer", "FB.cushion_layer"), ("DonProof FB membrane", "FB.thickness"), ("Structural concrete cast against membrane", None)],
-     [("FB", "A 20 mm fillet should be formed at the base"), ("FB", "overlapped by a minimum of 50 mm"), ("FB", "All overlaps are to be sealed using heat-welding equipment")],
+     [("FB", "A 20 mm fillet should be formed at the base", "ms"), ("FB", "should be a minimum of 50 mm", "ms"), ("FB", "staggered by a minimum of 300 mm", "ms")],
      ("bars", ["FB", "FB-S"], ["tensile", "tear", "water_tightness", "crack_bridging"]),
      [("FB-S", "Can be used both pre- and post-applied."), ("HS", "Easy and quick application, no priming or fillets required.")],
      "Zone A: below-grade.",
      "Membrane on blinding, over a geotextile cushion; concrete is cast against it.",
-     "Details: base fillet, minimum overlap, heat-welded seams.",
+     "Base fillet, minimum overlap, staggered roll ends.",
      "FB and FB-S report the same tests, so they compare directly.",
      "FB-S: pre- or post-applied. HS: no priming or fillets.")
 
 zone("Ch3", "B", "rain and sun on a flat roof; ponding at an upstand; a crack opening under a membrane.",
      "On roofs, the surface sees rain, sun and foot traffic.",
      ["PU-P150", "PU-P100", "PU-P60"],
-     [("Concrete deck", None), ("Primer — Strongcoat Primer Range (PRIMER_NAMING: legacy)", None), ("DonProof PU-P150 membrane", "PU-P150.coverage"), ("Minimum suggested thickness", "PU-P150.thickness_min"), ("Polyurethane UV protection coat", None)],
-     [("PU-P60", "perpendicularly to the substrate"), ("PU-P60", "texture"), ("PU-P150", "Under XPS insulation as part of an inverted or")],
+     [("Concrete deck", None), ("Primer — DonProof Primer EP (named for concrete in the PU-P150 TDS)", None), ("DonProof PU-P150 membrane", "PU-P150.coverage"), ("Minimum suggested thickness", "PU-P150.thickness_min"), ("DonProof AL aliphatic polyurethane topcoat", "AL.coverage")],
+     [("PU-P60", "perpendicularly to the substrate"), ("PU-P60", "texture"), ("PU-P150", "All 90-degree internal corners shall be strip coated", "ms")],
      ("bars", ["PU-P150", "PU-P100", "PU-P60"], ["tensile", "elongation", "tear"]),
      [("PU-P150", "Under XPS insulation as part of an inverted or"), ("PU-P60", "Cold Resistance: down to minus 40")],
      "Zone B: roofs and podium decks.",
-     "Primed deck, hot-sprayed polyurea, then a polyurethane protection coat.",
-     "Spray perpendicular to the substrate; stipple coat on horizontal surfaces.",
+     "Primed deck, hot-sprayed polyurea, then an aliphatic polyurethane topcoat.",
+     "Spray perpendicular to the substrate; strip-coat internal corners.",
      "All three report tensile, elongation and tear to the same ASTM methods.",
      "P150: inverted roofs under XPS. P60: cold resistance to minus forty.")
 
 zone("Ch4", "C", "water splashing a tiled bathroom floor and a balcony edge; moisture tracking under tiles.",
      "In wet areas, water sits on the surface.",
      ["PU-C100", "AQUATHANE-R100", "AQUATHANE-E400"],
-     [("Concrete or screed", None), ("Primer — DonProof Primer PU (no TDS supplied)", None), ("DonProof PU-C100 membrane", "PU-C100.coverage"), ("Under-tile finish", None)],
-     [("AQUATHANE-E400", "Apply at least two coats."), ("AQUATHANE-E400", "Wet areas, kitchens and bathrooms (under tiles)."), ("PU-C100", "If needed, a second coat should be applied at a right angle")],
+     [("Concrete or screed", None), ("Primer — DonProof Primer PU", "PRIMER-PU.coverage"), ("DonProof PU-C100 membrane", "PU-C100.coverage"), ("Under-tile finish", None)],
+     [("AQUATHANE-E400", "minimum 1 cm x 1 cm fillet", "ms"), ("AQUATHANE-E400", "30 cm strip to be placed over the first coat while still wet", "ms"), ("AQUATHANE-E400", "Do not leave more than 24 hours between two coats", "ms")],
      ("bars", ["PU-C100", "AQUATHANE-R100", "AQUATHANE-E400"], ["bond_concrete"]),
      [("PU-C100", "Cold applied with a roller, brush, trowel, squeegee or"), ("AQUATHANE-E400", "Wet areas, kitchens and bathrooms (under tiles).")],
      "Zone C: wet areas and balconies.",
      "Primer, membrane in one or two coats, then the tile finish.",
-     "The second coat goes on at a right angle.",
+     "Corner fillet, reinforcing strip at changes of plane, recoat within 24 hours.",
      "Bond to concrete is reported to the same ASTM method.",
      "C100: cold applied by roller, brush, trowel or squeegee. E400: under tiles.")
 
@@ -171,12 +189,12 @@ zone("Ch5", "D", "water pressing from inside a tank wall; seep at the wall-floor
      "Tanks hold water against the lining.",
      ["EPW-P", "EPW-S", "SETSEAL-300C"],
      [("Concrete wall", None), ("Strongcoat EPW — two coats", "EPW.coverage")],
-     [("EPW", "Application should not be carried out, when there is"), ("EPW", "Add the entire contents of the hardener to the base and"), ("SETSEAL-300C", "pre-soaked with clean water prior to")],
+     [("EPW", "Apply the second coat of Strongcoat EPW within 24 hours", "ms"), ("EPW", "relative humidity will exceed 90%", "ms"), ("EPW", "Application should not be carried out, when there is")],
      ("table", ["EPW-P", "EPW-S"], ["colour", "chem_citric_acid_10_7d", "chem_nitric_acid_25_spot"]),
      [("EPW-P", "Strongcoat EPW-P is suitable for use with potable water"), ("EPW-S", "Strongcoat EPW-S is suitable for use in reservoirs")],
      "Zone D: tanks and water-retaining structures.",
      "Two coats of Strongcoat EPW on the concrete wall.",
-     "Never apply over standing or running water.",
+     "Second coat within 24 hours at 25 degrees; never over standing water.",
      "One TDS, two grades: colour and chemical resistance differ.",
      "EPW-P: potable water. EPW-S: sewage, chemicals, oils and fuel.")
 
@@ -184,21 +202,21 @@ zone("Ch6", "E", "a movement joint and a pipe passing through a wall; water trac
      "Joints and penetrations are where water finds a path.",
      ["HYDROSTOP-HW", "HYPERSEAL-DP2010H"],
      [("Concrete on both sides of the joint", None), ("Hydrostop HW cast across the joint", "HYDROSTOP-HW.tensile")],
-     [("HYDROSTOP-HW", "tied by wire to the reinforcement through the eyelets"), ("HYDROSTOP-HW", "Full range of factory made junction pieces"), ("HYPERSEAL-DP2010H", "at approximately")],
+     [("HYDROSTOP-HW", "tied by wire to the reinforcement through the eyelets"), ("HYDROSTOP-HW", "Full range of factory made junction pieces"), ("HYPERSEAL-DP2010H", "Allow 24 hours for curing before pouring concrete", "ms")],
      ("table", ["HYDROSTOP-HW", "HYPERSEAL-DP2010H"], [("tensile", {"HYDROSTOP-HW": "tensile"}), ("elongation", {"HYDROSTOP-HW": "elongation"}), ("expansion", {"HYPERSEAL-DP2010H": "expansion"}), ("service_temp", {"HYPERSEAL-DP2010H": "service_temp"})]),
      [("HYDROSTOP-HW", "Hollow center bulb for expansion joints to accommodate"), ("HYPERSEAL-DP2010H", "Slow expansion rate to prevent damage to freshly")],
      "Zone E: joints and penetrations.",
      "A PVC waterstop is cast across the joint.",
-     "Tie to reinforcement; use factory junction pieces.",
+     "Tie waterstops to reinforcement; allow 24 hours after bonding before pouring.",
      "Different tests, so each product is shown as reported.",
      "HW: hollow bulb for expansion joints. DP-2010H: not for expansion joints.")
 
 zone("Ch7", "F", "CO₂ and rain on a façade; carbonation front inside the cover.",
      "Exposed concrete faces carbon dioxide, rain and sun.",
-     ["REPCOAT", "REPCOAT-FF", "REPCOAT-S"],
+     ["REPCOAT", "REPCOAT-FF", "REPCOAT-FF-PLUS", "REPCOAT-S"],
      [("Concrete surface", None), ("Repcoat Primer", "REPCOAT.primer_coverage"), ("Repcoat — per coat", "REPCOAT.coverage")],
      [("REPCOAT", "Two coats should always be used on dark, absorbent"), ("REPCOAT", "wait for a minimum of 12"), ("REPCOAT-FF", "The first coat can be diluted by up to 15% with clean water")],
-     ("table", ["REPCOAT", "REPCOAT-FF", "REPCOAT-S"], ["coverage", "recoat", ("carbonation", {"REPCOAT": "carbonation_depth", "REPCOAT-FF": "carbonation_resistance", "REPCOAT-S": "co2_permeability"}), "voc"]),
+     ("table", ["REPCOAT", "REPCOAT-FF", "REPCOAT-FF-PLUS"], ["coverage", "recoat", ("carbonation", {"REPCOAT": "carbonation_depth", "REPCOAT-FF": "carbonation_resistance", "REPCOAT-FF-PLUS": "carbonation_resistance"}), "voc"]),
      [("REPCOAT", "High build elastomeric, microporous coating."), ("REPCOAT-FF", "Matt finish helping to hide irregularities.")],
      "Zone F: façades and exposed concrete.",
      "Primer first, then Repcoat at the stated rate per coat.",
@@ -210,12 +228,12 @@ zone("Ch8", "G", "chemical splash on a steel tank and a concrete bund; corrosion
      "Industrial exposure adds chemicals.",
      ["EN100", "EPW-S", "REPCOAT-P"],
      [("Concrete or steel (grit-blasted)", None), ("Strongcoat EN100 base coat + topcoat", "EN100.coverage")],
-     [("EN100", "The base coat should be applied at a minimum film"), ("EN100", "Strongcoat EN100 is designed to be used without a primer."), ("EPW", "Precaution is recommended if the application is taking")],
+     [("EN100", "Apply first coat of Strongcoat EN100 at a rate of 0.33 kg/m2", "ms"), ("EN100", "Strongcoat EN100 is designed to be used without a primer."), ("EPW", "Precaution is recommended if the application is taking")],
      ("bars", ["EN100", "EPW-S", "REPCOAT-P"], ["bond_concrete"]),
      [("EN100", "Excellent chemical resistance."), ("REPCOAT-P", "Excellent UV resistance.")],
      "Zone G: steel and industrial exposure.",
      "EN100: base coat and topcoat on prepared concrete or steel.",
-     "Minimum base-coat film; no primer unless porous.",
+     "Base coat at the stated rate; no primer unless porous.",
      "Bond strength uses the same method for all three.",
      "EN100: chemical resistance. Repcoat P: UV resistance.")
 
@@ -223,7 +241,7 @@ zone("Ch8", "G", "chemical splash on a steel tank and a concrete bund; corrosion
 ZCOLS = list("ABCDEFG")
 sel = []
 for p in D["products"]:
-    if p["scope_decision"].startswith("DROPPED"):
+    if p["scope_decision"].startswith("DROPPED") or p["classification"].startswith("Accessory (primer)"):
         continue
     zs = sorted({u["zone"] for u in p["uses"] if u["zone"]})
     other = [u["quote"] for u in p["uses"] if not u["zone"]]
@@ -283,6 +301,8 @@ for b in beats:
             vals.append(f"{k} = {shown}" + (f" [{e['test_standard']}]" if e["test_standard"] != "NOT STATED" and e["value"] != bp.MISSING else ""))
         S.append("- **Values shown (as printed):** " + "; ".join(vals) + "\n")
         S.append("- **Footnote:** " + foot(b["keys"]) + "\n")
+    if b.get("foot"):
+        S.append("- **Footnote:** " + b["foot"] + "\n")
     S.append(f"- **VO:** {b['vo']}\n")
     t += b["dur"]
 S.append("\n## Appendix — selector matrix (generated from TDS uses)\n\n| Product | " + " | ".join(ZCOLS) + " | Other TDS-listed uses |\n|---|" + "---|" * (len(ZCOLS) + 1) + "\n")

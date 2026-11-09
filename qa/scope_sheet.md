@@ -29,6 +29,11 @@ Source: PDFs downloaded from dcp-int.com (Qatar download pages; Lebanon page for
 | Hyperseal DP-2010H | Not listed (approved) | Accessory (joints) | 08-0018-QA-A-2025 | **E** (p1) | Zone E (text table) | APPROVED | — |
 | Repcoat S | Not listed (approved) | Protective | 06-0002-A-2010 | **F** (p1, p1, p1) | Anti-carbonation (table) | APPROVED | voc, shelf_life |
 | Repcoat P | Not listed (approved; aliphatic not stated) | Protective | 06-0005-B-2026 | **G** (p1, p1, p1) | none | APPROVED | voc, shelf_life |
+| DonProof Primer EP | Named in brief (DonProof Primer PU/PE) — supplied | Accessory (primer) | 08-0213-A-2026 | none | Primers (not compared) | APPROVED | — |
+| DonProof Primer PU | Named in brief — supplied | Accessory (primer) | 08-0212-A-2026 | none | Primers (not compared) | APPROVED | — |
+| DonProof Primer PU1000 | Not in brief — supplied | Accessory (primer) | 08-0204-KSA-B-2026 | none | not used in film | APPROVED | — |
+| DonProof AL | Brief: 'aliphatic PU topcoats' — supplied | Protective (aliphatic PU topcoat for polyurea) | 06-0074-B-2026 | **B** (p1, p1); **C** (p1) | topcoat for PU-P150 build-up | APPROVED | — |
+| Repcoat FF Plus | Named in brief — supplied | Protective | 06-0023-B-2013 | **F** (p1, p1, p1) | Anti-carbonation (table) | APPROVED | carbonation_resistance |
 
 `*` = zone mapping is my interpretation (marked ASSUMED in products.json), e.g. swimming pools → zone D. Quotes for every use are in `data/products.json → uses[]`.
 
@@ -73,10 +78,10 @@ Source: PDFs downloaded from dcp-int.com (Qatar download pages; Lebanon page for
 
 ## 3. Named in the brief but NO document found
 
-- **DonProof Primer PU** — No TDS found on dcp-int.com; referenced inside PU-P150 / PU-C100 TDS text
-- **DonProof Primer EP** — No TDS found on dcp-int.com; referenced inside PU-P150 TDS text
-- **Repcoat FF Plus** — No TDS found on any dcp-int.com regional download page searched (qa, sa, lb, uk, in, iq, jo, ci)
-- **Aliphatic PU topcoats** — the brief names this group but no product. No TDS found says “aliphatic polyurethane”: the PU-P60/PU-H50/PU-P100/PU-P150 TDS only tell the reader to ask DCP Technical for “an aliphatic topcoat”; the method statements name *Repcoat P Ultra* (no TDS found). Repcoat P (PU, steel tanks) does not say “aliphatic”. Repcoat S is “aliphatic acrylate”. → open item.
+- **Repcoat P Ultra** — Named as the UV protection coat in the PU-H50 / PU-P60 method statements (web versions); no TDS supplied
+- **DonProof DPM / Strongcoat DPM** — Named as damp-proof primer in PU-C100 / PU-H50 / PU-P60 method statements; no TDS supplied
+- **Method statements still missing** — PU-P100, PU-P60 (current revision), Setseal 300C, Setseal R, Repcoat, Aquathane R100, Repcoat S/P, Primers
+- **Aliphatic PU topcoat** — supplied by you: **DonProof AL** (“aliphatic polyurethane UV protective topcoat for polyurea membranes”). **Repcoat P Ultra** (named in the web method statements for PU-H50 / PU-P60) is still not supplied.
 - **Strongcoat EPW-P / EPW-S** share one TDS (`Strongcoat EPW_TDS_4.pdf`); the data is stored once as `EPW`.
 
 ## 4. Zone coverage from TDS-listed uses (what the selector matrix could tick today)
@@ -84,11 +89,11 @@ Source: PDFs downloaded from dcp-int.com (Qatar download pages; Lebanon page for
 | Zone | Products with a TDS-listed use |
 |---|---|
 | A Below-grade | DonProof PU-P150, DonProof PU-P100, DonProof PU-P60, DonProof PU-H50, DonProof HS, DonProof FB, DonProof FB-S, DonProof L, Setseal 300C, Setseal R, Aquathane R100, Aquathane E400, Hydrostop HW |
-| B Roofs & podium decks | DonProof PU-P150, DonProof PU-P100, DonProof PU-P60, DonProof PU-H50, DonProof PU-C100, DonProof L, DonProof R, Aquathane R100, Aquathane E400 |
-| C Wet areas & balconies | DonProof PU-C100, Setseal 300C, Aquathane R100, Aquathane E400 |
+| B Roofs & podium decks | DonProof PU-P150, DonProof PU-P100, DonProof PU-P60, DonProof PU-H50, DonProof PU-C100, DonProof L, DonProof R, Aquathane R100, Aquathane E400, DonProof AL |
+| C Wet areas & balconies | DonProof PU-C100, Setseal 300C, Aquathane R100, Aquathane E400, DonProof AL |
 | D Water tanks / water-retaining | DonProof PU-P150, DonProof PU-P100, DonProof PU-P60, DonProof PU-H50, Strongcoat EPW (EPW-P / EPW-S, one TDS), Setseal 300C, Setseal R, Hydrostop HW |
 | E Joints & penetrations | Hydrostop HW, Hyperseal DP-2010H |
-| F Façades & exposed concrete | Setseal 300C, Repcoat, Repcoat FF, Repcoat S |
+| F Façades & exposed concrete | Setseal 300C, Repcoat, Repcoat FF, Repcoat S, Repcoat FF Plus |
 | G Steel & industrial | Strongcoat EPW (EPW-P / EPW-S, one TDS), Strongcoat EN100, Repcoat P |
 
 Zone **E (joints & penetrations)** has no supporting TDS among the products you listed: the two “joint sealants” are cementitious coatings. Candidates are Hydrostop HW / AW-C531 (PVC waterstops), Hyperseal DP-2010H / DPS-200 (hydrophilic), DonFlash, tapes — all in table 2 awaiting your decision. Zone **G** is supported by Strongcoat EPW and EN100 (“concrete and steel”) and Repcoat P (steel tanks); **not** by Strongcoat HB (concrete floors only).

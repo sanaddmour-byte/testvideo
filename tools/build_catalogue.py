@@ -55,9 +55,9 @@ for pid, name, rel, cls, title, quote, zone, note in rows:
                     use_quote=quote or None, use_page=qpage, zone_hint=zone, note=note or None,
                     values_extracted=False))
 missing_docs = [
- dict(name="DonProof Primer PU", reason="No TDS found on dcp-int.com; referenced inside PU-P150 / PU-C100 TDS text"),
- dict(name="DonProof Primer EP", reason="No TDS found on dcp-int.com; referenced inside PU-P150 TDS text"),
- dict(name="Repcoat FF Plus", reason="No TDS found on any dcp-int.com regional download page searched (qa, sa, lb, uk, in, iq, jo, ci)"),
+ dict(name="Repcoat P Ultra", reason="Named as the UV protection coat in the PU-H50 / PU-P60 method statements (web versions); no TDS supplied"),
+ dict(name="DonProof DPM / Strongcoat DPM", reason="Named as damp-proof primer in PU-C100 / PU-H50 / PU-P60 method statements; no TDS supplied"),
+ dict(name="Method statements still missing", reason="PU-P100, PU-P60 (current revision), Setseal 300C, Setseal R, Repcoat, Aquathane R100, Repcoat S/P, Primers"),
 ]
 json.dump(dict(catalogue=out, documents_not_found=missing_docs),
           open(os.path.join(bp.ROOT, "data", "catalogue.json"), "w"), ensure_ascii=False, indent=1)

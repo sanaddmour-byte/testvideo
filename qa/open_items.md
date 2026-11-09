@@ -26,6 +26,7 @@
 | Aquathane E400 | 08-0106-QA-A-2025 | recoat, voc |
 | Repcoat S | 06-0002-A-2010 | voc, shelf_life |
 | Repcoat P | 06-0005-B-2026 | voc, shelf_life |
+| Repcoat FF Plus | 06-0023-B-2013 | carbonation_resistance |
 
 Field sets are per family (spray / sheet / liquid / cementitious) and reflect what a comparison panel would want; fields marked not-applicable are listed in `not_applicable_fields` per product.
 
@@ -36,15 +37,17 @@ Field sets are per family (spray / sheet / liquid / cementitious) and reflect wh
 - KEEP: swimming-pool lines (mapped to zone D) and car-park lines. Car parks have no film zone, so they appear in the selector matrix's “Other TDS-listed uses” column, not as a zone tick. *(My reading of “should stay” — tell me if you want them shown differently.)*
 - STILL ASSUMED: coverage shown as printed (kg/m², litre/m²), not converted; Qatar-site documents are the baseline; PRIMER_NAMING = legacy.
 
-## C2. Needed from you (documents not available on dcp-int.com)
+## C2. Received from you after Phase 2
 
-1. **DonProof Primer PU** and **DonProof Primer EP** TDS (named inside the PU-P150 / PU-C100 TDS).
-2. **Repcoat FF Plus** TDS.
-3. **Aliphatic PU topcoat** — which product(s)? Also the **Repcoat P Ultra** TDS named by the PU-H50 / PU-P60 method statements.
-4. **Method statements** for HS, FB, FB-S, L, R, PU-P150, PU-P100, PU-C100, Strongcoat EPW, EN100, Setseal 300C/R, Repcoat, Repcoat FF, Aquathane E400, Hydrostop HW, Hyperseal DP-2010H. Only PU-H50 and PU-P60 method statements were available, so the detail callouts for other products currently use the TDS “Method of use” wording (quoted in the storyboard).
-5. **Document dates** (no PDF prints one) and the current revision where regional sites differ.
-6. **DCP logo and brand colours** → `assets/brand` (placeholder palette until then).
-7. Missing values: VOC for PU-P150 / PU-P100 / PU-H50 / Setseal 300C and others listed in table B are shown as grey “Data pending”.
+DonProof Primer EP, Primer PU, Primer PU1000, DonProof AL (aliphatic topcoat), Repcoat FF Plus (TDS); method statements for FB/FB-S, HS, L, R, Aquathane E400, PU-P150, PU-C100, PU-H50 (rev A-2025), Hydrostop range, DonProof LE (stored, LE not in film), Strongcoat EPW, EN100, Hyperseal DP-2010H, Hyperseal DP (generic), Repcoat FF. The user-supplied Setseal 300C copy used for the data is byte-identical to the second upload.
+## C3. Still needed from you
+
+1. **Repcoat P Ultra** TDS; **DonProof DPM / Strongcoat DPM** TDS (named in the method statements).
+2. **Method statements** still missing: PU-P100, Setseal 300C, Setseal R, Repcoat, Aquathane R100, Repcoat S, Repcoat P, Repcoat FF Plus, the primers. (Callouts for those use TDS wording.)
+3. Rulings on the new conflicts C-07 … C-11 (`qa/conflicts.md`) and C-03 (PU-H50 humidity, now two method-statement revisions say 80%).
+4. **Document dates**, and which revision is current: PU-H50 MS is on the web as DCP00/08-0163-B-2022 and in your upload as DCP00/08-0163-A-2025.
+5. **DCP logo and brand colours** → `assets/brand`.
+6. Missing values: see table B; they show as grey “Data pending”.
 
 ## D. Data-quality notes (checked, not blocking)
 

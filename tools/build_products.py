@@ -16,7 +16,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TDS = os.path.join(ROOT, "source-tds")
 MISSING = "[DATA REQUIRED — R&D]"
 NS = "NOT STATED"
-CODE_RE = re.compile(r"\b\d{2}-\d{4}-(?:[A-Z]{2}-)?[A-Z]-\d{4}\b")
+CODE_RE = re.compile(r"\b\d{2}-\d{4}-(?:[A-Z]{2,3}-)?[A-Z]-\d{4}\b")
 
 _cache = {}
 FAILS = []
@@ -70,11 +70,14 @@ class Product:
                       values={}, uses=[], notes=[], extracted=True)
         self.rel, self.core, self.na = rel, core, set(na)
 
-    def v(self, key, value, unit="", std=NS, printed=None, cond=None, label=None, held=None):
+    def v(self, key, value, unit="", std=NS, printed=None, cond=None, label=None, held=None, src=None):
         frags = printed if printed is not None else (f"{value} {unit}".strip() if unit and not unit.startswith("(") else value)
-        page = find_page(self.rel, frags)
-        e = dict(value=value, unit=unit, test_standard=std, source_file=self.rel, page=page,
-                 doc_code=self.d["doc_code"], doc_date=NS)
+        rel, code = (src if src else (self.rel, self.d["doc_code"]))
+        page = find_page(rel, frags)
+        e = dict(value=value, unit=unit, test_standard=std, source_file=rel, page=page,
+                 doc_code=code, doc_date=NS)
+        if src:
+            e["source_type"] = "METHOD STATEMENT"
         if cond:
             e["condition"] = cond
         if label:
@@ -98,6 +101,12 @@ class Product:
         page = find_page(self.rel, text)
         self.d.setdefault("standards_claimed", []).append(
             dict(printed=text, source_file=self.rel, page=page, doc_code=self.d["doc_code"], doc_date=NS))
+        return self
+
+    def ms(self, rel, ref=None):
+        find_page(rel, ("Ref. #: " + ref) if ref else "Method Statement")
+        ref = ref or NS
+        self.d.setdefault("method_statements", []).append(dict(file=rel, ref=ref, doc_date=NS))
         return self
 
     def note(self, t):
@@ -127,6 +136,7 @@ P = []
 # ---------------------------------------------------------------- spray polyurea
 p = Product("PU-P150", "DonProof PU-P150", "user-supplied/DonProof_PU-P150.pdf", "DonProof spray polyurea",
             "Waterproofing", SPRAY, na=["pot_life"])
+p.ms("user-supplied/DonProof_PU-P150_MS.pdf", "DCP00/08-0206-C-2026")
 p.v("thickness_min", "1.4", "mm", printed="1.4 mm", cond="minimum suggested application thickness, cross-hatch spray (p2 text)")
 p.v("coverage", "1.6 kg/m² to provide 1.5 mm dry film thickness", "", printed=["1.6 kg/", "1.5 mm dry film thickness"])
 p.v("tensile", "≥ 15", "MPa", "ASTM D412", printed="≥ 15 MPa")
@@ -178,6 +188,7 @@ P.append(p)
 
 p = Product("PU-P60", "DonProof PU-P60", "DonProof PU-P60_4.pdf", "DonProof spray polyurea",
             "Waterproofing", SPRAY, na=["pot_life"])
+p.ms("DonProof PU-P60_MS.pdf", "DCP03/08-0176-A-2025")
 p.v("thickness_min", "1000", "microns", printed="1000 microns", label="Minimum application thickness")
 p.v("coverage", "1 kg/m² to provide 1 mm dry film thickness", "", printed=["1 kg/m²", "1 mm dry film thickness"])
 p.v("tensile", "≥ 20 ± 2", "MPa", "ASTM D412", printed="≥ 20 ± 2 MPa")
@@ -204,6 +215,8 @@ P.append(p)
 
 p = Product("PU-H50", "DonProof PU-H50", "DonProof PU-H50_1.pdf", "DonProof spray polyurea",
             "Waterproofing", SPRAY, na=["pot_life"])
+p.ms("DonProof PU-H50_MS.pdf", "DCP00/08-0163-B-2022")
+p.ms("user-supplied/DonProof_PU-H50_MS.pdf", "DCP00/08-0163-A-2025")
 p.v("thickness_min", "1.5", "mm", printed="1.5 mm", cond="typical minimum suggested application thickness, cross-hatch spray (p2 text)")
 p.v("coverage", "1.7 kg/m² to provide 1.5 mm dry film thickness", "", printed=["1.7 kg/", "1.5 mm dry film thickness"])
 p.v("tensile", "≥ 18", "MPa", "ASTM D412", printed="≥ 18 MPa")
@@ -226,6 +239,7 @@ P.append(p)
 
 p = Product("PU-C100", "DonProof PU-C100", "user-supplied/DonProof_PU-C100.pdf", "DonProof liquid polyurea (cold applied)",
             "Waterproofing", LIQ)
+p.ms("user-supplied/DonProof_PU-C100_MS.pdf", "DCP03/08-0207-B-2026")
 p.v("coverage", "minimum total consumption 1.8 - 2.0 kg/m² to provide 1.5 mm total dry film thickness", "", printed=["1.8 - 2.0 kg/m²", "1.5 mm total dry film thickness"])
 p.v("tensile", "≥ 3.5", "MPa", "ASTM D412", printed="≥ 3.5 MPa")
 p.v("elongation", "≥ 450", "%", "ASTM D412", printed="≥ 450%")
@@ -249,6 +263,7 @@ P.append(p)
 # ---------------------------------------------------------------- sheet membranes
 p = Product("HS", "DonProof HS", "DonProof HS.pdf", "DonProof sheet membranes", "Waterproofing", SHEET + ["crack_bridging"],
             na=["crack_bridging"])
+p.ms("user-supplied/DonProof_HS_MS.pdf", "DCP00/08-0201-B-2026")
 p.v("thickness", "1.2, 1.5 or 2.0", "mm", printed="1.2, 1.5 or 2.0 mm")
 p.v("tensile", "≥ 22", "MPa", "ASTM D 412, modified", printed="≥ 22 MPa", cond="MD")
 p.v("elongation", "≥ 500", "%", "ASTM D 412, modified", printed="≥ 500%")
@@ -265,6 +280,7 @@ p.use("A", "Tunneling (MRT, subways, metro).", "TDS-LISTED", "tunnels: no film z
 P.append(p)
 
 p = Product("FB", "DonProof FB", "DonProof FB.pdf", "DonProof sheet membranes", "Waterproofing", SHEET + ["crack_bridging"])
+p.ms("user-supplied/DonProof_FBFB-S_MS.pdf", "DCP00/08-0199/0200-A-2025")
 p.v("thickness", "1.9", "mm", "EN 1849-2", printed="1.9 mm")
 p.v("tensile", "≥ 500", "N/50 mm", "EN ISO 12311-2 (A)", printed="≥ 500 N/50 mm", cond="MD/CMD")
 p.v("water_tightness", "≥ 690", "kPa", "ASTM D 5385", printed="≥ 690 kPa")
@@ -286,6 +302,7 @@ p.note("Elongation is not reported in this TDS (FB-S reports it).")
 P.append(p)
 
 p = Product("FB-S", "DonProof FB-S", "DonProof FB-S.pdf", "DonProof sheet membranes", "Waterproofing", SHEET + ["crack_bridging"])
+p.ms("user-supplied/DonProof_FBFB-S_MS.pdf", "DCP00/08-0199/0200-A-2025")
 p.v("thickness", "1.6 mm ± 10%", "", "EN 1849-2", printed="1.6 mm ± 10%")
 p.v("tensile", "≥ 980", "N/50 mm", "EN ISO 12311-2 (A)", printed="≥ 980 N/50 mm", cond="MD/CMD")
 p.v("elongation", "≥ 240", "%", "EN ISO 12311-2 (A)", printed="≥ 240%", cond="MD/CMD")
@@ -303,6 +320,7 @@ P.append(p)
 
 p = Product("L", "DonProof L", "DonProof L_4.pdf", "DonProof sheet membranes", "Waterproofing", SHEET + ["crack_bridging"],
             na=["crack_bridging"])
+p.ms("user-supplied/DonProof_L_MS.pdf", "DCP00/08-0198-A-2025")
 p.v("thickness", "1.5 / 2.0 / 2.5 / 3.0", "mm", "EN 1849-2", printed="1.5 ± 5% mm", cond="nominal grades L1.5 / L2.0 / L2.5 / L3.0")
 p.v("tensile", "15 / 14 (L1.5); 17 / 16 (L2.0); 16 / 16 (L2.5); 16 / 16 (L3.0)", "N/mm²", "EN 12311-2 Method B dumbbell", printed="15 / 14 N/mm²", cond="L/T")
 p.v("elongation", "250 / 250 (L1.5); 300 / 300 (L2.0, L2.5, L3.0)", "%", "EN 12311-2 Method B dumbbell", printed="250 / 250%", cond="L/T")
@@ -320,6 +338,7 @@ P.append(p)
 
 p = Product("R", "DonProof R", "DonProof R_6.pdf", "DonProof sheet membranes", "Waterproofing", SHEET + ["crack_bridging"],
             na=["crack_bridging"])
+p.ms("user-supplied/DonProof_R_MS.pdf", "DCP00/08-0197-A-2025")
 p.v("thickness", "1.2 / 1.5 / 1.8 / 2.0", "mm", "EN 1849-2", printed="1.2 mm", cond="grades R1.2 / R1.5 / R1.8 / R2.0 (MDV)")
 p.v("tensile", "≥ 1050", "N/50 mm", "EN 12311-2 (A)", printed="≥ 1050 N/50 mm", cond="L/T (MLV)")
 p.v("elongation", "≥ 15", "%", "EN 12311-2 (A)", printed="≥ 15%", cond="L/T (MLV)")
@@ -338,6 +357,7 @@ P.append(p)
 # ---------------------------------------------------------------- epoxy / protective
 p = Product("EPW", "Strongcoat EPW (EPW-P / EPW-S, one TDS)", "Strongcoat EPW_TDS_4.pdf", "Strongcoat epoxy waterproofing",
             "Waterproofing", LIQ)
+p.ms("user-supplied/Strongcoat_EPW_MS.pdf")
 p.v("coverage", "0.75 kg/m² per 500 microns DFT per 2 coats", "", printed="0.75 kg/m² per 500 microns DFT per 2 coats")
 p.v("tensile", "7.5", "MPa", "ASTM D412", printed="7.5 MPa")
 p.v("elongation", "> 20", "% @ 7 days", "ASTM D412", printed="> 20% @ 7 days")
@@ -362,10 +382,11 @@ p.note("EPW-P and EPW-S share one TDS; they differ in colour and chemical-resist
 P.append(p)
 
 p = Product("EN100", "Strongcoat EN100", "Strongcoat EN100_TDS_4.pdf", "Strongcoat epoxy novolac", "Protective", LIQ)
+p.ms("user-supplied-2/Strongcoat_EN100.pdf")
 p.v("coverage", "Standard: base coat 0.33 kg/m²; topcoat 0.33 kg/m²; approximate system thickness 1.5 mm", "", printed="Approximate system thickness: 1.5 mm")
 p.v("tensile", "≥ 20", "MPa", "ASTM D638", printed="≥ 20 MPa")
 p.v("bond_concrete", "≥ 2", "MPa (concrete failure)", "ASTM D4541", printed="≥ 2 MPa")
-p.v("pot_life", "40 min @ 25°C", "", printed="40 min @ 25")
+p.v("pot_life", "40 min @ 25°C", "", printed="40 min @ 25", held="C-09")
 p.v("recoat", "≤ 18 hr @ 23°C; ≤ 12 hr @ 35°C", "", printed="≤ 18 hr @ 23", label="Over-coating time")
 p.v("cure_full", "7 days @ 25°C", "", printed="7 days @ 25")
 p.v("voc", "≤ 10", "g/ltr", "ASTM D2369", printed="≤ 10 g/ltr")
@@ -426,6 +447,7 @@ p.use("F", "External concrete surfaces of storage tank and")
 P.append(p)
 
 p = Product("REPCOAT-FF", "Repcoat FF", "Repcoat FF_TDS_4.pdf", "Repcoat anti-carbonation", "Protective", LIQ, na=["pot_life", "cure_full"])
+p.ms("user-supplied-2/Repcoat_FF.pdf")
 p.v("coverage", "0.23 - 0.29 litre/m²/coat to give between 80 - 100 micron DFT", "", printed="0.23 - 0.29 litre/m²/coat")
 p.v("recoat", "2:00 hr @ 25°C; 1:30 hr @ 35°C", "", printed="2:00 hr @ 25", label="Over coating time")
 p.v("carbonation_resistance", "≥ 85% reduction in carbonation depth against control", "", "EN13295, 14 days (exposure to 10% CO2)", printed="≥ 85% reduction in")
@@ -478,7 +500,9 @@ p.v("crack_bridging", "3", "mm @ 23oC", "ASTM C1305", printed="3 mm @ 23oC")
 p.v("service_temp", "-5 to +70", "°C", printed="-5 to +70")
 p.v("cure_full", "7 days @ 23oC", "", printed="7 days @ 23oC", label="Full cure")
 p.v("shelf_life", "12", "months", printed="12 months")
+p.v("coverage", "Total consumption: 1.1 - 1.3 kg/m² to provide 500 microns dry film thickness (two coats)", "", printed="1.1 - 1.3 kg/m² to provide 500 microns", src=("user-supplied/Aquathane_E400_MS.pdf", "DCP00/08-0106-B-2024"))
 p.std("LEED EQ Credit 4.2")
+p.ms("user-supplied/Aquathane_E400_MS.pdf", "DCP00/08-0106-B-2024")
 p.use("B", "Exposed roofs, balconies and decks.")
 p.use("C", "Wet areas, kitchens and bathrooms (under tiles).")
 p.use("A", "Basements and retaining walls.")
@@ -487,6 +511,7 @@ P.append(p)
 
 p = Product("HYDROSTOP-HW", "Hydrostop HW", "Hydrostop HW_TDS_11.pdf", "Waterstop (accessory)", "Accessory (joints)",
             ["tensile", "elongation", "service_temp", "shelf_life"], na=["service_temp", "shelf_life"])
+p.ms("user-supplied/Hydrostop_Range_MS.pdf", "DCP00/05-0115-A-2024")
 p.v("tensile", "≥ 13.0", "MPa", "ASTM D638, Type I", printed="≥ 13.0 MPa")
 p.v("elongation", "> 300", "%", "ASTM D638, Type I", printed="> 300 %")
 p.v("hardness", "80 - 90 (Initial)", "Shore A", "ASTM D2240", printed="80 - 90 (Initial)")
@@ -499,6 +524,7 @@ P.append(p)
 
 p = Product("HYPERSEAL-DP2010H", "Hyperseal DP-2010H", "Hyperseal DP-2010H_TDS_2.pdf", "Hydrophilic waterstop (accessory)", "Accessory (joints)",
             ["service_temp", "shelf_life", "expansion"], na=["shelf_life"])
+p.ms("user-supplied-2/Hyperseal_DP-2010H.pdf")
 p.v("service_temp", "-30 to 70", "°C", printed="-30 to 70")
 p.v("expansion", "Fresh water 200%; Saline water 80 - 100%", "", printed="200%", label="Expansion volume")
 p.v("hydrostatic_pressure", "> 50 m (5 bars)", "", printed="> 50 m (5 bars)")
@@ -527,6 +553,63 @@ p.v("cure_full", "7", "days", printed="7 days", label="Full curing")
 p.use("G", "Steel tanks.")
 p.use("G", "Chemical processing areas.")
 p.use("G", "Concrete walls and floors.")
+P.append(p)
+
+# ---------------------------------------------------------------- supplied by user after Phase 2 (primers, topcoat, FF Plus)
+p = Product("PRIMER-EP", "DonProof Primer EP", "user-supplied/DonProof_Primer_PE.pdf", "DonProof primers", "Accessory (primer)",
+            ["coverage", "pot_life", "recoat", "bond_concrete", "voc", "shelf_life"])
+p.v("coverage", "3.5 - 3.7 m²/kg to achieve a dry film thickness of approximately 200 micron per coat", "", printed=["3.5 -", "3.7 m²/kg", "200 micron per coat"], held="C-08")
+p.v("pot_life", "30 - 60", "min", printed="30 - 60 min")
+p.v("recoat", "12 - 24", "hr", printed="12 - 24 hr", label="Overcoating time")
+p.v("bond_concrete", "≥ 3", "MPa (concrete failure)", "ASTM D4541-85", printed="≥ 3 MPa")
+p.v("voc", "< 20", "g/ltr", "ASTM D2369", printed="< 20 g/ltr")
+p.v("shelf_life", "12", "months", printed="12 months")
+p.note("Epoxy primer for polyurea systems. PU-P150 TDS names it for concrete; PU-P60/P100/H50 TDS still name 'Strongcoat Primer Range' (PRIMER_NAMING).")
+P.append(p)
+
+p = Product("PRIMER-PU", "DonProof Primer PU", "user-supplied/DonProof_Primer_PU.pdf", "DonProof primers", "Accessory (primer)",
+            ["coverage", "recoat", "voc", "shelf_life"], na=["voc"])
+p.v("coverage", "5 - 10 m²/ltr depending on the substrate porosity to achieve a dry film thickness of 40 - 80 microns per layer", "", printed=["5 - 10 m²/ltr", "40 - 80"])
+p.v("recoat", "min 24 hr @ 25oC; max 48 hr @ 25oC", "", printed="48 hr @ 25", label="Minimum / maximum overcoating time")
+p.v("shelf_life", "9", "months", printed="9 months")
+p.note("TDS Applications line reads 'enhance the bond between Aquathane Range of products' while title/advantages say DonProof range — wording inconsistency, see qa/conflicts.md C-07. Not recommended over substrate RH > 80%.")
+P.append(p)
+
+p = Product("PRIMER-PU1000", "DonProof Primer PU1000", "user-supplied/Donproof_Primer_PU1000.pdf", "DonProof primers", "Accessory (primer)",
+            ["coverage", "recoat", "bond_concrete", "shelf_life"])
+p.v("coverage", "0.10 - 0.15 kg/m² in thin coats", "", printed="0.10 - 0.15 kg/m²")
+p.v("recoat", "3 to 48", "hr @ 25oC", printed="3 to 48 hr @ 25", label="Overcoating time")
+p.v("bond_concrete", "≥ 2", "MPa", "EN 1542", printed="≥ 2 MPa")
+p.v("shelf_life", "12", "months", printed="12 months")
+p.note("Adhesion promoter on OLD DonProof PU membranes / repairs / overlaps. Not used in the film's build-ups.")
+P.append(p)
+
+p = Product("AL", "DonProof AL", "user-supplied/DonProof_AL.pdf", "DonProof topcoat", "Protective (aliphatic PU topcoat for polyurea)",
+            ["coverage", "tensile", "elongation", "bond_concrete", "recoat", "shelf_life"], na=["bond_concrete"])
+p.v("coverage", "Approximately 2.5 - 3.5 m²/kg per coat", "", printed="Approximately 2.5 - 3.5 m²/kg per coat")
+p.v("tensile", "> 4", "MPa @ 7 days", "ASTM D412", printed="> 4 MPa @ 7 days")
+p.v("elongation", "> 400", "% @ 7 days", "ASTM D412", printed="> 400% @ 7 days", label="Elongation at break")
+p.v("tear", "> 18", "N/mm", "ASTM D624, Die C", printed="> 18 N/mm")
+p.v("bond_polyurea", "> 1.5 MPa (1 coat @ 200 microns)", "", printed="> 1.5 MPa")
+p.v("tack_free", "4 - 6", "hr @ RH 55 ± 5%", printed="4 - 6 hr @ RH 55 ± 5%")
+p.v("recoat", "minimum overcoating time 7 - 8 hours", "", printed="7 - 8 hours", label="Minimum overcoating time")
+p.v("shelf_life", "12", "months", printed="12 months")
+p.use("B", "Exposed roofs, flat and sloped.")
+p.use("B", "Balconies, terraces and podium decks.")
+p.use("C", "Balconies, terraces and podium decks.")
+p.note("This is the 'aliphatic PU topcoat' of the brief. VOC not reported.")
+P.append(p)
+
+p = Product("REPCOAT-FF-PLUS", "Repcoat FF Plus", "user-supplied/Repcoat_FF_Plus.pdf", "Repcoat anti-carbonation", "Protective", LIQ + ["carbonation_resistance"],
+            na=["pot_life", "cure_full", "tensile", "elongation", "bond_concrete", "crack_bridging", "service_temp"])
+p.v("coverage", "0.18 - 0.22 litre/m²/coat to give between 70 - 90 micron DFT", "", printed="0.18 - 0.22 litre/m²/coat")
+p.v("recoat", "2:00 hr @ 25°C; 1:30 hr @ 35°C", "", printed="2:00 hr @ 25", label="Over coating time")
+p.v("voc", "< 50", "g/ltr", printed="< 50 g/ltr")
+p.v("shelf_life", "12", "months", printed="12 months")
+p.use("F", "Retaining walls.")
+p.use("F", "Bridge abutments.")
+p.use("F", "Pre-cast elements and concrete cladding.")
+p.note("TDS reports no carbonation-resistance value or standard.")
 P.append(p)
 
 out = [x.done() for x in P]

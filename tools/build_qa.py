@@ -32,6 +32,11 @@ BRIEF = {  # brief section 4/6 membership + comparison set + my recommendation
  "HYPERSEAL-DP2010H": ("Not listed (approved)", "Zone E (text table)", "APPROVED"),
  "REPCOAT-S": ("Not listed (approved)", "Anti-carbonation (table)", "APPROVED"),
  "REPCOAT-P": ("Not listed (approved; aliphatic not stated)", "none", "APPROVED"),
+ "PRIMER-EP": ("Named in brief (DonProof Primer PU/PE) — supplied", "Primers (not compared)", "APPROVED"),
+ "PRIMER-PU": ("Named in brief — supplied", "Primers (not compared)", "APPROVED"),
+ "PRIMER-PU1000": ("Not in brief — supplied", "not used in film", "APPROVED"),
+ "AL": ("Brief: 'aliphatic PU topcoats' — supplied", "topcoat for PU-P150 build-up", "APPROVED"),
+ "REPCOAT-FF-PLUS": ("Named in brief — supplied", "Anti-carbonation (table)", "APPROVED"),
  "STRONGCOAT-HB": ("Listed — but TDS is a concrete FLOOR coating", "HB vs HB400 pair DROPPED", "DROPPED"),
 }
 
@@ -69,7 +74,7 @@ for c in C["catalogue"]:
 L.append(sec("3. Named in the brief but NO document found"))
 for d in C["documents_not_found"]:
     L.append(f'- **{d["name"]}** — {d["reason"]}\n')
-L.append("- **Aliphatic PU topcoats** — the brief names this group but no product. No TDS found says “aliphatic polyurethane”: the PU-P60/PU-H50/PU-P100/PU-P150 TDS only tell the reader to ask DCP Technical for “an aliphatic topcoat”; the method statements name *Repcoat P Ultra* (no TDS found). Repcoat P (PU, steel tanks) does not say “aliphatic”. Repcoat S is “aliphatic acrylate”. → open item.\n")
+L.append("- **Aliphatic PU topcoat** — supplied by you: **DonProof AL** (“aliphatic polyurethane UV protective topcoat for polyurea membranes”). **Repcoat P Ultra** (named in the web method statements for PU-H50 / PU-P60) is still not supplied.\n")
 L.append("- **Strongcoat EPW-P / EPW-S** share one TDS (`Strongcoat EPW_TDS_4.pdf`); the data is stored once as `EPW`.\n")
 
 L.append(sec("4. Zone coverage from TDS-listed uses (what the selector matrix could tick today)"))
@@ -113,14 +118,15 @@ O.append("""- APPROVED: PU-P100, PU-H50, PU-C100, Aquathane R100 / E400, Hydrost
 - KEEP: swimming-pool lines (mapped to zone D) and car-park lines. Car parks have no film zone, so they appear in the selector matrix's “Other TDS-listed uses” column, not as a zone tick. *(My reading of “should stay” — tell me if you want them shown differently.)*
 - STILL ASSUMED: coverage shown as printed (kg/m², litre/m²), not converted; Qatar-site documents are the baseline; PRIMER_NAMING = legacy.
 """)
-O.append(sec("C2. Needed from you (documents not available on dcp-int.com)"))
-O.append("""1. **DonProof Primer PU** and **DonProof Primer EP** TDS (named inside the PU-P150 / PU-C100 TDS).
-2. **Repcoat FF Plus** TDS.
-3. **Aliphatic PU topcoat** — which product(s)? Also the **Repcoat P Ultra** TDS named by the PU-H50 / PU-P60 method statements.
-4. **Method statements** for HS, FB, FB-S, L, R, PU-P150, PU-P100, PU-C100, Strongcoat EPW, EN100, Setseal 300C/R, Repcoat, Repcoat FF, Aquathane E400, Hydrostop HW, Hyperseal DP-2010H. Only PU-H50 and PU-P60 method statements were available, so the detail callouts for other products currently use the TDS “Method of use” wording (quoted in the storyboard).
-5. **Document dates** (no PDF prints one) and the current revision where regional sites differ.
-6. **DCP logo and brand colours** → `assets/brand` (placeholder palette until then).
-7. Missing values: VOC for PU-P150 / PU-P100 / PU-H50 / Setseal 300C and others listed in table B are shown as grey “Data pending”.
+O.append(sec("C2. Received from you after Phase 2"))
+O.append("""DonProof Primer EP, Primer PU, Primer PU1000, DonProof AL (aliphatic topcoat), Repcoat FF Plus (TDS); method statements for FB/FB-S, HS, L, R, Aquathane E400, PU-P150, PU-C100, PU-H50 (rev A-2025), Hydrostop range, DonProof LE (stored, LE not in film), Strongcoat EPW, EN100, Hyperseal DP-2010H, Hyperseal DP (generic), Repcoat FF. The user-supplied Setseal 300C copy used for the data is byte-identical to the second upload.""")
+O.append(sec("C3. Still needed from you"))
+O.append("""1. **Repcoat P Ultra** TDS; **DonProof DPM / Strongcoat DPM** TDS (named in the method statements).
+2. **Method statements** still missing: PU-P100, Setseal 300C, Setseal R, Repcoat, Aquathane R100, Repcoat S, Repcoat P, Repcoat FF Plus, the primers. (Callouts for those use TDS wording.)
+3. Rulings on the new conflicts C-07 … C-11 (`qa/conflicts.md`) and C-03 (PU-H50 humidity, now two method-statement revisions say 80%).
+4. **Document dates**, and which revision is current: PU-H50 MS is on the web as DCP00/08-0163-B-2022 and in your upload as DCP00/08-0163-A-2025.
+5. **DCP logo and brand colours** → `assets/brand`.
+6. Missing values: see table B; they show as grey “Data pending”.
 """)
 O.append(sec("D. Data-quality notes (checked, not blocking)"))
 O.append("- DonProof L and R list tensile/elongation per grade; stored as printed strings with grade in the value. A chart will need a per-grade selection rule.\n- DonProof L / R “service_temp” entries are *foldability at low temperature*, not service ranges — do not use as such.\n- Older PDFs (Setseal 300C, Repcoat S/PU1) lose the “ti/fi” ligatures in text extraction; checked values are numeric so verification is unaffected.\n- The page check confirms the printed text is on the cited page; it cannot prove the number is attached to the right label — values were read by me and should be spot-checked by DCP R&D.\n")
