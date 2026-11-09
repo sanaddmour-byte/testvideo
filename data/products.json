@@ -1,0 +1,3001 @@
+{
+ "generated_by": "tools/build_products.py",
+ "rules": "All values copied as printed from source-tds PDFs. Missing = [DATA REQUIRED — R&D]. Page numbers located by script.",
+ "missing_marker": "[DATA REQUIRED — R&D]",
+ "products": [
+  {
+   "id": "PU-P150",
+   "name": "DonProof PU-P150",
+   "family": "DonProof spray polyurea",
+   "classification": "Waterproofing",
+   "source_file": "user-supplied/DonProof_PU-P150.pdf",
+   "doc_code": "08-0206-D-2026",
+   "doc_date": "NOT STATED",
+   "values": {
+    "thickness_min": [
+     {
+      "value": "1.4",
+      "unit": "mm",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-P150.pdf",
+      "page": 2,
+      "doc_code": "08-0206-D-2026",
+      "doc_date": "NOT STATED",
+      "condition": "minimum suggested application thickness, cross-hatch spray (p2 text)"
+     }
+    ],
+    "coverage": [
+     {
+      "value": "1.6 kg/m² to provide 1.5 mm dry film thickness",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-P150.pdf",
+      "page": 3,
+      "doc_code": "08-0206-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "tensile": [
+     {
+      "value": "≥ 15",
+      "unit": "MPa",
+      "test_standard": "ASTM D412",
+      "source_file": "user-supplied/DonProof_PU-P150.pdf",
+      "page": 1,
+      "doc_code": "08-0206-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "elongation": [
+     {
+      "value": "≥ 300",
+      "unit": "%",
+      "test_standard": "ASTM D412",
+      "source_file": "user-supplied/DonProof_PU-P150.pdf",
+      "page": 1,
+      "doc_code": "08-0206-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "bond_concrete": [
+     {
+      "value": "≥ 4",
+      "unit": "MPa",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-P150.pdf",
+      "page": 1,
+      "doc_code": "08-0206-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "bond_steel": [
+     {
+      "value": "≥ 2.0",
+      "unit": "MPa",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-P150.pdf",
+      "page": 1,
+      "doc_code": "08-0206-D-2026",
+      "doc_date": "NOT STATED",
+      "condition": "when primed with DonProof Primer PU at 3 - 4 hr recoating time"
+     }
+    ],
+    "tear": [
+     {
+      "value": "≥ 80",
+      "unit": "N/mm",
+      "test_standard": "ASTM D624",
+      "source_file": "user-supplied/DonProof_PU-P150.pdf",
+      "page": 1,
+      "doc_code": "08-0206-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "crack_bridging": [
+     {
+      "value": "no cracks occurred after 10 cycles",
+      "unit": "",
+      "test_standard": "ASTM C1305 @ 23oC",
+      "source_file": "user-supplied/DonProof_PU-P150.pdf",
+      "page": 1,
+      "doc_code": "08-0206-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "service_temp": [
+     {
+      "value": "-30 to 90",
+      "unit": "°C",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-P150.pdf",
+      "page": 1,
+      "doc_code": "08-0206-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "tack_free": [
+     {
+      "value": "5 - 7",
+      "unit": "sec",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-P150.pdf",
+      "page": 1,
+      "doc_code": "08-0206-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "recoat": [
+     {
+      "value": "4 min - 3 hr",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-P150.pdf",
+      "page": 1,
+      "doc_code": "08-0206-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "traffic_light": [
+     {
+      "value": "12",
+      "unit": "hr",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-P150.pdf",
+      "page": 1,
+      "doc_code": "08-0206-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "traffic_vehicle": [
+     {
+      "value": "2 - 3",
+      "unit": "days",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-P150.pdf",
+      "page": 1,
+      "doc_code": "08-0206-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "water_permeability": [
+     {
+      "value": "Nil",
+      "unit": "",
+      "test_standard": "DIN 1048 @ 5 bars",
+      "source_file": "user-supplied/DonProof_PU-P150.pdf",
+      "page": 1,
+      "doc_code": "08-0206-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "12",
+      "unit": "months",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-P150.pdf",
+      "page": 3,
+      "doc_code": "08-0206-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "voc": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-P150.pdf",
+      "page": null,
+      "doc_code": "08-0206-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "B",
+     "quote": "Sloped and flat roofs (walkable), balconies, and",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "B",
+     "quote": "Under XPS insulation as part of an inverted or",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "A",
+     "quote": "Retaining walls and foundations.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "D",
+     "quote": "Concrete/steel water storage tanks.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "D",
+     "quote": "Swimming pools, aquariums, lakes.",
+     "page": 1,
+     "mapping": "ASSUMED",
+     "note": "Swimming pool mapped to zone D (water-retaining structures) by me — confirm"
+    },
+    {
+     "zone": "B",
+     "quote": "Green roofs and planters.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": null,
+     "quote": "Car park and bridge decks.",
+     "page": 1,
+     "mapping": "EXCLUDED-AREA",
+     "note": "Car park decks belong to Flooring per brief; do not show"
+    }
+   ],
+   "notes": [],
+   "extracted": true,
+   "standards_claimed": [
+    {
+     "printed": "PD CEN/TS",
+     "source_file": "user-supplied/DonProof_PU-P150.pdf",
+     "page": 1,
+     "doc_code": "08-0206-D-2026",
+     "doc_date": "NOT STATED"
+    }
+   ],
+   "not_applicable_fields": [
+    "pot_life"
+   ]
+  },
+  {
+   "id": "PU-P100",
+   "name": "DonProof PU-P100",
+   "family": "DonProof spray polyurea",
+   "classification": "Waterproofing",
+   "source_file": "user-supplied/DonProof_PU-P100.pdf",
+   "doc_code": "08-0164-A-2025",
+   "doc_date": "NOT STATED",
+   "values": {
+    "thickness_min": [
+     {
+      "value": "1.4",
+      "unit": "mm",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-P100.pdf",
+      "page": 2,
+      "doc_code": "08-0164-A-2025",
+      "doc_date": "NOT STATED",
+      "condition": "minimum suggested application thickness, cross-hatch spray (p2 text)"
+     }
+    ],
+    "coverage": [
+     {
+      "value": "1.7 kg/m² to provide 1.5 mm dry film thickness",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-P100.pdf",
+      "page": 2,
+      "doc_code": "08-0164-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "tensile": [
+     {
+      "value": "≥ 20",
+      "unit": "MPa",
+      "test_standard": "ASTM D412",
+      "source_file": "user-supplied/DonProof_PU-P100.pdf",
+      "page": 1,
+      "doc_code": "08-0164-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "elongation": [
+     {
+      "value": "≥ 360",
+      "unit": "%",
+      "test_standard": "ASTM D412",
+      "source_file": "user-supplied/DonProof_PU-P100.pdf",
+      "page": 1,
+      "doc_code": "08-0164-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "bond_concrete": [
+     {
+      "value": "≥ 2.0",
+      "unit": "MPa",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-P100.pdf",
+      "page": 1,
+      "doc_code": "08-0164-A-2025",
+      "doc_date": "NOT STATED",
+      "condition": "when primed with Strongcoat Primer Range"
+     }
+    ],
+    "tear": [
+     {
+      "value": "≥ 80",
+      "unit": "N/mm",
+      "test_standard": "ASTM D624",
+      "source_file": "user-supplied/DonProof_PU-P100.pdf",
+      "page": 1,
+      "doc_code": "08-0164-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "crack_bridging": [
+     {
+      "value": "no cracks occurred after 10 cycles @ 8 mm",
+      "unit": "",
+      "test_standard": "ASTM C1305",
+      "source_file": "user-supplied/DonProof_PU-P100.pdf",
+      "page": 1,
+      "doc_code": "08-0164-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "service_temp": [
+     {
+      "value": "-20 to 90",
+      "unit": "°C",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-P100.pdf",
+      "page": 1,
+      "doc_code": "08-0164-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "tack_free": [
+     {
+      "value": "5 - 7",
+      "unit": "sec",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-P100.pdf",
+      "page": 1,
+      "doc_code": "08-0164-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "recoat": [
+     {
+      "value": "10 sec - 48 hr",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-P100.pdf",
+      "page": 1,
+      "doc_code": "08-0164-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "traffic_light": [
+     {
+      "value": "3",
+      "unit": "hr",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-P100.pdf",
+      "page": 1,
+      "doc_code": "08-0164-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "traffic_vehicle": [
+     {
+      "value": "12",
+      "unit": "hr",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-P100.pdf",
+      "page": 1,
+      "doc_code": "08-0164-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "cure_full": [
+     {
+      "value": "12",
+      "unit": "hr",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-P100.pdf",
+      "page": 1,
+      "doc_code": "08-0164-A-2025",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Curing time",
+      "held_conflict": "C-02",
+      "on_screen_allowed": false
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "12",
+      "unit": "months",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-P100.pdf",
+      "page": 3,
+      "doc_code": "08-0164-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "voc": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-P100.pdf",
+      "page": null,
+      "doc_code": "08-0164-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "B",
+     "quote": "Sloped and flat roofs (walkable), balconies, and",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "B",
+     "quote": "Green roofs",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "A",
+     "quote": "Retaining walls and foundations",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "D",
+     "quote": "Tanks and irrigation canals, suitable for contact with",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "D",
+     "quote": "Swimming pools, aquariums, lakes",
+     "page": 1,
+     "mapping": "ASSUMED",
+     "note": "Swimming pool mapped to zone D by me — confirm"
+    },
+    {
+     "zone": null,
+     "quote": "Car park and bridge decks",
+     "page": 1,
+     "mapping": "EXCLUDED-AREA",
+     "note": "Car park decks belong to Flooring per brief; do not show"
+    }
+   ],
+   "notes": [],
+   "extracted": true,
+   "not_applicable_fields": [
+    "pot_life"
+   ]
+  },
+  {
+   "id": "PU-P60",
+   "name": "DonProof PU-P60",
+   "family": "DonProof spray polyurea",
+   "classification": "Waterproofing",
+   "source_file": "DonProof PU-P60_4.pdf",
+   "doc_code": "08-0176-QA-A-2026",
+   "doc_date": "NOT STATED",
+   "values": {
+    "thickness_min": [
+     {
+      "value": "1000",
+      "unit": "microns",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof PU-P60_4.pdf",
+      "page": 1,
+      "doc_code": "08-0176-QA-A-2026",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Minimum application thickness"
+     }
+    ],
+    "coverage": [
+     {
+      "value": "1 kg/m² to provide 1 mm dry film thickness",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof PU-P60_4.pdf",
+      "page": 3,
+      "doc_code": "08-0176-QA-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "tensile": [
+     {
+      "value": "≥ 20 ± 2",
+      "unit": "MPa",
+      "test_standard": "ASTM D412",
+      "source_file": "DonProof PU-P60_4.pdf",
+      "page": 1,
+      "doc_code": "08-0176-QA-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "elongation": [
+     {
+      "value": "400 ± 50",
+      "unit": "%",
+      "test_standard": "ASTM D412",
+      "source_file": "DonProof PU-P60_4.pdf",
+      "page": 1,
+      "doc_code": "08-0176-QA-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "bond_concrete": [
+     {
+      "value": "≥ 2",
+      "unit": "MPa",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof PU-P60_4.pdf",
+      "page": 1,
+      "doc_code": "08-0176-QA-A-2026",
+      "doc_date": "NOT STATED",
+      "condition": "when primed with Strongcoat Primer Range"
+     }
+    ],
+    "tear": [
+     {
+      "value": "≥ 70",
+      "unit": "N/mm",
+      "test_standard": "ASTM D624",
+      "source_file": "DonProof PU-P60_4.pdf",
+      "page": 1,
+      "doc_code": "08-0176-QA-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "crack_bridging": [
+     {
+      "value": "no cracks occurred after 25 cycles",
+      "unit": "",
+      "test_standard": "ASTM C1305",
+      "source_file": "DonProof PU-P60_4.pdf",
+      "page": 1,
+      "doc_code": "08-0176-QA-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "service_temp": [
+     {
+      "value": "-40 to 120",
+      "unit": "°C (dry)",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof PU-P60_4.pdf",
+      "page": 1,
+      "doc_code": "08-0176-QA-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "service_temp_wet": [
+     {
+      "value": "4 to 50",
+      "unit": "°C (wet)",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof PU-P60_4.pdf",
+      "page": 1,
+      "doc_code": "08-0176-QA-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "gel_time": [
+     {
+      "value": "6 - 20",
+      "unit": "sec",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof PU-P60_4.pdf",
+      "page": 1,
+      "doc_code": "08-0176-QA-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "tack_free": [
+     {
+      "value": "30 - 60",
+      "unit": "sec",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof PU-P60_4.pdf",
+      "page": 1,
+      "doc_code": "08-0176-QA-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "recoat": [
+     {
+      "value": "0 - 6",
+      "unit": "hr",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof PU-P60_4.pdf",
+      "page": 1,
+      "doc_code": "08-0176-QA-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "traffic_light": [
+     {
+      "value": "1 - 4",
+      "unit": "hr",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof PU-P60_4.pdf",
+      "page": 1,
+      "doc_code": "08-0176-QA-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "traffic_vehicle": [
+     {
+      "value": "24",
+      "unit": "hr",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof PU-P60_4.pdf",
+      "page": 1,
+      "doc_code": "08-0176-QA-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "cure_full": [
+     {
+      "value": "24",
+      "unit": "hr",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof PU-P60_4.pdf",
+      "page": 1,
+      "doc_code": "08-0176-QA-A-2026",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Curing time"
+     }
+    ],
+    "voc": [
+     {
+      "value": "< 10",
+      "unit": "g/ltr",
+      "test_standard": "ASTM D2369",
+      "source_file": "DonProof PU-P60_4.pdf",
+      "page": 2,
+      "doc_code": "08-0176-QA-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "12",
+      "unit": "months",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof PU-P60_4.pdf",
+      "page": 3,
+      "doc_code": "08-0176-QA-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "B",
+     "quote": "Sloped and flat roofs (walkable), balconies, and",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "B",
+     "quote": "Green roofs.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "A",
+     "quote": "Retaining walls and foundations.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "D",
+     "quote": "Tanks and irrigation canals, suitable for contact with",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "D",
+     "quote": "Swimming pools, aquariums, lakes.",
+     "page": 1,
+     "mapping": "ASSUMED",
+     "note": "Swimming pool mapped to zone D by me — confirm"
+    }
+   ],
+   "notes": [],
+   "extracted": true,
+   "not_applicable_fields": [
+    "pot_life"
+   ]
+  },
+  {
+   "id": "PU-H50",
+   "name": "DonProof PU-H50",
+   "family": "DonProof spray polyurea",
+   "classification": "Waterproofing",
+   "source_file": "DonProof PU-H50_1.pdf",
+   "doc_code": "08-0163-A-2025",
+   "doc_date": "NOT STATED",
+   "values": {
+    "thickness_min": [
+     {
+      "value": "1.5",
+      "unit": "mm",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof PU-H50_1.pdf",
+      "page": 2,
+      "doc_code": "08-0163-A-2025",
+      "doc_date": "NOT STATED",
+      "condition": "typical minimum suggested application thickness, cross-hatch spray (p2 text)"
+     }
+    ],
+    "coverage": [
+     {
+      "value": "1.7 kg/m² to provide 1.5 mm dry film thickness",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof PU-H50_1.pdf",
+      "page": 2,
+      "doc_code": "08-0163-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "tensile": [
+     {
+      "value": "≥ 18",
+      "unit": "MPa",
+      "test_standard": "ASTM D412",
+      "source_file": "DonProof PU-H50_1.pdf",
+      "page": 1,
+      "doc_code": "08-0163-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "elongation": [
+     {
+      "value": "≥ 350",
+      "unit": "%",
+      "test_standard": "ASTM D412",
+      "source_file": "DonProof PU-H50_1.pdf",
+      "page": 1,
+      "doc_code": "08-0163-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "bond_concrete": [
+     {
+      "value": "≥ 2.0",
+      "unit": "MPa",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof PU-H50_1.pdf",
+      "page": 1,
+      "doc_code": "08-0163-A-2025",
+      "doc_date": "NOT STATED",
+      "condition": "when primed with Strongcoat Primer Range"
+     }
+    ],
+    "tear": [
+     {
+      "value": "≥ 80",
+      "unit": "N/mm",
+      "test_standard": "ASTM D624",
+      "source_file": "DonProof PU-H50_1.pdf",
+      "page": 1,
+      "doc_code": "08-0163-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "crack_bridging": [
+     {
+      "value": "no cracks occurred after 10 cycles @ 8 mm",
+      "unit": "",
+      "test_standard": "ASTM C1305",
+      "source_file": "DonProof PU-H50_1.pdf",
+      "page": 1,
+      "doc_code": "08-0163-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "service_temp": [
+     {
+      "value": "-20 to 90",
+      "unit": "°C",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof PU-H50_1.pdf",
+      "page": 1,
+      "doc_code": "08-0163-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "tack_free": [
+     {
+      "value": "5 - 7",
+      "unit": "sec",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof PU-H50_1.pdf",
+      "page": 1,
+      "doc_code": "08-0163-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "traffic_light": [
+     {
+      "value": "3",
+      "unit": "hr",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof PU-H50_1.pdf",
+      "page": 1,
+      "doc_code": "08-0163-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "cure_full": [
+     {
+      "value": "12",
+      "unit": "hr",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof PU-H50_1.pdf",
+      "page": 1,
+      "doc_code": "08-0163-A-2025",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Curing time",
+      "held_conflict": "C-01",
+      "on_screen_allowed": false
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "12",
+      "unit": "months",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof PU-H50_1.pdf",
+      "page": 3,
+      "doc_code": "08-0163-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "recoat": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof PU-H50_1.pdf",
+      "page": null,
+      "doc_code": "08-0163-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "voc": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof PU-H50_1.pdf",
+      "page": null,
+      "doc_code": "08-0163-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "B",
+     "quote": "Sloped and flat roofs (walkable), balconies, and",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "B",
+     "quote": "Green roofs.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "A",
+     "quote": "Retaining walls and foundations.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "B",
+     "quote": "Concrete decks.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "D",
+     "quote": "Swimming pools, aquariums, lakes.",
+     "page": 1,
+     "mapping": "ASSUMED",
+     "note": "Swimming pool mapped to zone D by me — confirm"
+    },
+    {
+     "zone": null,
+     "quote": "Car park and bridge decks.",
+     "page": 1,
+     "mapping": "EXCLUDED-AREA",
+     "note": "Car park decks belong to Flooring per brief; do not show"
+    }
+   ],
+   "notes": [],
+   "extracted": true,
+   "not_applicable_fields": [
+    "pot_life"
+   ]
+  },
+  {
+   "id": "PU-C100",
+   "name": "DonProof PU-C100",
+   "family": "DonProof liquid polyurea (cold applied)",
+   "classification": "Waterproofing",
+   "source_file": "user-supplied/DonProof_PU-C100.pdf",
+   "doc_code": "08-0207-D-2026",
+   "doc_date": "NOT STATED",
+   "values": {
+    "coverage": [
+     {
+      "value": "minimum total consumption 1.8 - 2.0 kg/m² to provide 1.5 mm total dry film thickness",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-C100.pdf",
+      "page": 2,
+      "doc_code": "08-0207-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "tensile": [
+     {
+      "value": "≥ 3.5",
+      "unit": "MPa",
+      "test_standard": "ASTM D412",
+      "source_file": "user-supplied/DonProof_PU-C100.pdf",
+      "page": 1,
+      "doc_code": "08-0207-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "elongation": [
+     {
+      "value": "≥ 450",
+      "unit": "%",
+      "test_standard": "ASTM D412",
+      "source_file": "user-supplied/DonProof_PU-C100.pdf",
+      "page": 1,
+      "doc_code": "08-0207-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "bond_concrete": [
+     {
+      "value": "≥ 1.5",
+      "unit": "MPa",
+      "test_standard": "ASTM D4541",
+      "source_file": "user-supplied/DonProof_PU-C100.pdf",
+      "page": 1,
+      "doc_code": "08-0207-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "tear": [
+     {
+      "value": "≥ 20",
+      "unit": "N/mm",
+      "test_standard": "ASTM D624",
+      "source_file": "user-supplied/DonProof_PU-C100.pdf",
+      "page": 2,
+      "doc_code": "08-0207-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "crack_bridging": [
+     {
+      "value": "no cracks occurred after 10 cycles @ 1.5 mm",
+      "unit": "",
+      "test_standard": "ASTM C1305 @ 23oC & 20oC",
+      "source_file": "user-supplied/DonProof_PU-C100.pdf",
+      "page": 2,
+      "doc_code": "08-0207-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "service_temp": [
+     {
+      "value": "-30 to 80",
+      "unit": "°C",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-C100.pdf",
+      "page": 1,
+      "doc_code": "08-0207-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "pot_life": [
+     {
+      "value": "70 min @ 25°C; 50 min @ 40°C",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-C100.pdf",
+      "page": 1,
+      "doc_code": "08-0207-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "tack_free": [
+     {
+      "value": "3:30 - 4:30",
+      "unit": "hr",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-C100.pdf",
+      "page": 1,
+      "doc_code": "08-0207-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "recoat": [
+     {
+      "value": "min 4 hr; max 7 days",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-C100.pdf",
+      "page": 1,
+      "doc_code": "08-0207-D-2026",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Minimum / maximum recoating time"
+     }
+    ],
+    "cure_full": [
+     {
+      "value": "7",
+      "unit": "days",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-C100.pdf",
+      "page": 1,
+      "doc_code": "08-0207-D-2026",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Full cure"
+     }
+    ],
+    "voc": [
+     {
+      "value": "≤ 130",
+      "unit": "g/ltr",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-C100.pdf",
+      "page": 2,
+      "doc_code": "08-0207-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "12",
+      "unit": "months",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/DonProof_PU-C100.pdf",
+      "page": 3,
+      "doc_code": "08-0207-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "C",
+     "quote": "Wet areas, bathrooms and kitchens.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "C",
+     "quote": "Balconies and roof decks.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "B",
+     "quote": "Green roofs and planters.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "B",
+     "quote": "Light roofing made of metal or fibrous cement.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": null,
+     "quote": "Floors, parking lots and garages.",
+     "page": 1,
+     "mapping": "EXCLUDED-AREA",
+     "note": "parking = Flooring; do not show"
+    }
+   ],
+   "notes": [],
+   "extracted": true,
+   "not_applicable_fields": []
+  },
+  {
+   "id": "HS",
+   "name": "DonProof HS",
+   "family": "DonProof sheet membranes",
+   "classification": "Waterproofing",
+   "source_file": "DonProof HS.pdf",
+   "doc_code": "08-0201-C-2026",
+   "doc_date": "NOT STATED",
+   "values": {
+    "thickness": [
+     {
+      "value": "1.2, 1.5 or 2.0",
+      "unit": "mm",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof HS.pdf",
+      "page": 1,
+      "doc_code": "08-0201-C-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "tensile": [
+     {
+      "value": "≥ 22",
+      "unit": "MPa",
+      "test_standard": "ASTM D 412, modified",
+      "source_file": "DonProof HS.pdf",
+      "page": 1,
+      "doc_code": "08-0201-C-2026",
+      "doc_date": "NOT STATED",
+      "condition": "MD"
+     }
+    ],
+    "elongation": [
+     {
+      "value": "≥ 500",
+      "unit": "%",
+      "test_standard": "ASTM D 412, modified",
+      "source_file": "DonProof HS.pdf",
+      "page": 1,
+      "doc_code": "08-0201-C-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "tensile_en": [
+     {
+      "value": "≥ 15",
+      "unit": "MPa",
+      "test_standard": "EN ISO 12311-2 Method B",
+      "source_file": "DonProof HS.pdf",
+      "page": 1,
+      "doc_code": "08-0201-C-2026",
+      "doc_date": "NOT STATED",
+      "condition": "MD"
+     }
+    ],
+    "elongation_en": [
+     {
+      "value": "≥ 400",
+      "unit": "%",
+      "test_standard": "EN 12311-2 Method B",
+      "source_file": "DonProof HS.pdf",
+      "page": 1,
+      "doc_code": "08-0201-C-2026",
+      "doc_date": "NOT STATED",
+      "condition": "MD / CMD"
+     }
+    ],
+    "puncture_resistance": [
+     {
+      "value": "1000",
+      "unit": "N",
+      "test_standard": "ASTM E 154",
+      "source_file": "DonProof HS.pdf",
+      "page": 1,
+      "doc_code": "08-0201-C-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "hydrostatic_pressure": [
+     {
+      "value": "≥ 0.7 MPa, (~7 bar)",
+      "unit": "",
+      "test_standard": "ASTM D 5385: 1993, modified",
+      "source_file": "DonProof HS.pdf",
+      "page": 1,
+      "doc_code": "08-0201-C-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "water_tightness": [
+     {
+      "value": "Watertight, 7 bar, 72 hr",
+      "unit": "",
+      "test_standard": "DIN EN 1928:2000 (Method B)",
+      "source_file": "DonProof HS.pdf",
+      "page": 2,
+      "doc_code": "08-0201-C-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "low_temp_flex": [
+     {
+      "value": "-25 (Pass)",
+      "unit": "",
+      "test_standard": "ASTM D 1970",
+      "source_file": "DonProof HS.pdf",
+      "page": 2,
+      "doc_code": "08-0201-C-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "service_temp": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof HS.pdf",
+      "page": null,
+      "doc_code": "08-0201-C-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof HS.pdf",
+      "page": null,
+      "doc_code": "08-0201-C-2026",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "A",
+     "quote": "Below-grade waterproofing.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "A",
+     "quote": "Foundations and basements.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "A",
+     "quote": "Tunneling (MRT, subways, metro).",
+     "page": 1,
+     "mapping": "TDS-LISTED",
+     "note": "tunnels: no film zone; shown only as below-grade civil use if approved"
+    }
+   ],
+   "notes": [],
+   "extracted": true,
+   "standards_claimed": [
+    {
+     "printed": "DonProof HS complies with DIN EN 13967, Type T",
+     "source_file": "DonProof HS.pdf",
+     "page": 2,
+     "doc_code": "08-0201-C-2026",
+     "doc_date": "NOT STATED"
+    }
+   ],
+   "not_applicable_fields": [
+    "crack_bridging"
+   ]
+  },
+  {
+   "id": "FB",
+   "name": "DonProof FB",
+   "family": "DonProof sheet membranes",
+   "classification": "Waterproofing",
+   "source_file": "DonProof FB.pdf",
+   "doc_code": "08-0199-A-2026",
+   "doc_date": "NOT STATED",
+   "values": {
+    "thickness": [
+     {
+      "value": "1.9",
+      "unit": "mm",
+      "test_standard": "EN 1849-2",
+      "source_file": "DonProof FB.pdf",
+      "page": 1,
+      "doc_code": "08-0199-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "tensile": [
+     {
+      "value": "≥ 500",
+      "unit": "N/50 mm",
+      "test_standard": "EN ISO 12311-2 (A)",
+      "source_file": "DonProof FB.pdf",
+      "page": 1,
+      "doc_code": "08-0199-A-2026",
+      "doc_date": "NOT STATED",
+      "condition": "MD/CMD"
+     }
+    ],
+    "water_tightness": [
+     {
+      "value": "≥ 690",
+      "unit": "kPa",
+      "test_standard": "ASTM D 5385",
+      "source_file": "DonProof FB.pdf",
+      "page": 1,
+      "doc_code": "08-0199-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "water_tightness_en": [
+     {
+      "value": "≥ 500 kPa @ 72 hr",
+      "unit": "",
+      "test_standard": "EN 1928 (B)",
+      "source_file": "DonProof FB.pdf",
+      "page": 1,
+      "doc_code": "08-0199-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "crack_bridging": [
+     {
+      "value": "≥ 3.2",
+      "unit": "mm",
+      "test_standard": "ASTM D 5385",
+      "source_file": "DonProof FB.pdf",
+      "page": 1,
+      "doc_code": "08-0199-A-2026",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Crack bridging ability"
+     }
+    ],
+    "service_temp": [
+     {
+      "value": "-5 to 50",
+      "unit": "°C",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof FB.pdf",
+      "page": 1,
+      "doc_code": "08-0199-A-2026",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Working temperature"
+     }
+    ],
+    "tear": [
+     {
+      "value": "≥ 350",
+      "unit": "N (Nail shank)",
+      "test_standard": "EN 12310-1",
+      "source_file": "DonProof FB.pdf",
+      "page": 1,
+      "doc_code": "08-0199-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "impact_resistance": [
+     {
+      "value": "≥ 350",
+      "unit": "mm",
+      "test_standard": "EN 12691 (A)",
+      "source_file": "DonProof FB.pdf",
+      "page": 1,
+      "doc_code": "08-0199-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "18",
+      "unit": "months",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof FB.pdf",
+      "page": 3,
+      "doc_code": "08-0199-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "elongation": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof FB.pdf",
+      "page": null,
+      "doc_code": "08-0199-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "A",
+     "quote": "Foundations and basements.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "A",
+     "quote": "Retaining walls and floor slabs.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "A",
+     "quote": "Tunnel walls and base slabs.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": null,
+     "quote": "Underground car parks and garages.",
+     "page": 1,
+     "mapping": "EXCLUDED-AREA",
+     "note": "listed under below-grade uses; underground car-park DECKS are Flooring — confirm whether this may be shown"
+    }
+   ],
+   "notes": [
+    "Elongation is not reported in this TDS (FB-S reports it)."
+   ],
+   "extracted": true,
+   "standards_claimed": [
+    {
+     "printed": "DIN EN 13967 Type A and",
+     "source_file": "DonProof FB.pdf",
+     "page": 2,
+     "doc_code": "08-0199-A-2026",
+     "doc_date": "NOT STATED"
+    }
+   ],
+   "not_applicable_fields": []
+  },
+  {
+   "id": "FB-S",
+   "name": "DonProof FB-S",
+   "family": "DonProof sheet membranes",
+   "classification": "Waterproofing",
+   "source_file": "DonProof FB-S.pdf",
+   "doc_code": "08-0200-A-2025",
+   "doc_date": "NOT STATED",
+   "values": {
+    "thickness": [
+     {
+      "value": "1.6 mm ± 10%",
+      "unit": "",
+      "test_standard": "EN 1849-2",
+      "source_file": "DonProof FB-S.pdf",
+      "page": 1,
+      "doc_code": "08-0200-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "tensile": [
+     {
+      "value": "≥ 980",
+      "unit": "N/50 mm",
+      "test_standard": "EN ISO 12311-2 (A)",
+      "source_file": "DonProof FB-S.pdf",
+      "page": 1,
+      "doc_code": "08-0200-A-2025",
+      "doc_date": "NOT STATED",
+      "condition": "MD/CMD"
+     }
+    ],
+    "elongation": [
+     {
+      "value": "≥ 240",
+      "unit": "%",
+      "test_standard": "EN ISO 12311-2 (A)",
+      "source_file": "DonProof FB-S.pdf",
+      "page": 1,
+      "doc_code": "08-0200-A-2025",
+      "doc_date": "NOT STATED",
+      "condition": "MD/CMD"
+     }
+    ],
+    "water_tightness": [
+     {
+      "value": "≥ 690",
+      "unit": "kPa",
+      "test_standard": "ASTM D 5385",
+      "source_file": "DonProof FB-S.pdf",
+      "page": 1,
+      "doc_code": "08-0200-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "water_tightness_en": [
+     {
+      "value": "≥ 500 kPa @ 72 hr",
+      "unit": "",
+      "test_standard": "EN 1928 (B)",
+      "source_file": "DonProof FB-S.pdf",
+      "page": 1,
+      "doc_code": "08-0200-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "crack_bridging": [
+     {
+      "value": "≥ 3.2",
+      "unit": "mm",
+      "test_standard": "ASTM D 5385",
+      "source_file": "DonProof FB-S.pdf",
+      "page": 1,
+      "doc_code": "08-0200-A-2025",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Crack bridging ability"
+     }
+    ],
+    "service_temp": [
+     {
+      "value": "-5 to 50",
+      "unit": "°C",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof FB-S.pdf",
+      "page": 1,
+      "doc_code": "08-0200-A-2025",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Working temperature"
+     }
+    ],
+    "tear": [
+     {
+      "value": "≥ 500",
+      "unit": "N (Nail shank)",
+      "test_standard": "EN 12310-1",
+      "source_file": "DonProof FB-S.pdf",
+      "page": 1,
+      "doc_code": "08-0200-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "impact_resistance": [
+     {
+      "value": "≥ 600",
+      "unit": "mm",
+      "test_standard": "EN 12691 (A)",
+      "source_file": "DonProof FB-S.pdf",
+      "page": 1,
+      "doc_code": "08-0200-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "12",
+      "unit": "months",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof FB-S.pdf",
+      "page": 3,
+      "doc_code": "08-0200-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "A",
+     "quote": "Sealing of precast concrete elements to enhance joint",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "A",
+     "quote": "Marine and salt-contaminated environments.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    }
+   ],
+   "notes": [],
+   "extracted": true,
+   "standards_claimed": [
+    {
+     "printed": "DIN EN 13967 Type A and",
+     "source_file": "DonProof FB-S.pdf",
+     "page": 2,
+     "doc_code": "08-0200-A-2025",
+     "doc_date": "NOT STATED"
+    }
+   ],
+   "not_applicable_fields": []
+  },
+  {
+   "id": "L",
+   "name": "DonProof L",
+   "family": "DonProof sheet membranes",
+   "classification": "Waterproofing",
+   "source_file": "DonProof L_4.pdf",
+   "doc_code": "08-0198-A-2026",
+   "doc_date": "NOT STATED",
+   "values": {
+    "thickness": [
+     {
+      "value": "1.5 / 2.0 / 2.5 / 3.0",
+      "unit": "mm",
+      "test_standard": "EN 1849-2",
+      "source_file": "DonProof L_4.pdf",
+      "page": 3,
+      "doc_code": "08-0198-A-2026",
+      "doc_date": "NOT STATED",
+      "condition": "nominal grades L1.5 / L2.0 / L2.5 / L3.0"
+     }
+    ],
+    "tensile": [
+     {
+      "value": "15 / 14 (L1.5); 17 / 16 (L2.0); 16 / 16 (L2.5); 16 / 16 (L3.0)",
+      "unit": "N/mm²",
+      "test_standard": "EN 12311-2 Method B dumbbell",
+      "source_file": "DonProof L_4.pdf",
+      "page": 3,
+      "doc_code": "08-0198-A-2026",
+      "doc_date": "NOT STATED",
+      "condition": "L/T"
+     }
+    ],
+    "elongation": [
+     {
+      "value": "250 / 250 (L1.5); 300 / 300 (L2.0, L2.5, L3.0)",
+      "unit": "%",
+      "test_standard": "EN 12311-2 Method B dumbbell",
+      "source_file": "DonProof L_4.pdf",
+      "page": 3,
+      "doc_code": "08-0198-A-2026",
+      "doc_date": "NOT STATED",
+      "condition": "L/T"
+     }
+    ],
+    "water_tightness": [
+     {
+      "value": "Waterproof",
+      "unit": "",
+      "test_standard": "EN 1296 / EN 1928 (7 bars)",
+      "source_file": "DonProof L_4.pdf",
+      "page": 3,
+      "doc_code": "08-0198-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "service_temp": [
+     {
+      "value": "-25 (L1.5, L2.0, L2.5); -30 (L3.0)",
+      "unit": "°C",
+      "test_standard": "EN 495-5",
+      "source_file": "DonProof L_4.pdf",
+      "page": 3,
+      "doc_code": "08-0198-A-2026",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Foldability at low temperature — not a service-temperature range"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "18",
+      "unit": "months",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof L_4.pdf",
+      "page": 2,
+      "doc_code": "08-0198-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "A",
+     "quote": "Tunnels.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "A",
+     "quote": "Foundations and retaining walls.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "A",
+     "quote": "Vertical and horizontal sealing",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "B",
+     "quote": "Covered or protected roof applications.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "B",
+     "quote": "Terraces.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    }
+   ],
+   "notes": [
+    "DonProof L is a SHEET (loose-laid PVC) membrane — the brief lists it under liquid-applied. See qa/scope_sheet.md."
+   ],
+   "extracted": true,
+   "standards_claimed": [
+    {
+     "printed": "DonProof L complies with EN 13967 and EN 13491",
+     "source_file": "DonProof L_4.pdf",
+     "page": 1,
+     "doc_code": "08-0198-A-2026",
+     "doc_date": "NOT STATED"
+    }
+   ],
+   "not_applicable_fields": [
+    "crack_bridging"
+   ]
+  },
+  {
+   "id": "R",
+   "name": "DonProof R",
+   "family": "DonProof sheet membranes",
+   "classification": "Waterproofing",
+   "source_file": "DonProof R_6.pdf",
+   "doc_code": "08-0197-A-2026",
+   "doc_date": "NOT STATED",
+   "values": {
+    "thickness": [
+     {
+      "value": "1.2 / 1.5 / 1.8 / 2.0",
+      "unit": "mm",
+      "test_standard": "EN 1849-2",
+      "source_file": "DonProof R_6.pdf",
+      "page": 2,
+      "doc_code": "08-0197-A-2026",
+      "doc_date": "NOT STATED",
+      "condition": "grades R1.2 / R1.5 / R1.8 / R2.0 (MDV)"
+     }
+    ],
+    "tensile": [
+     {
+      "value": "≥ 1050",
+      "unit": "N/50 mm",
+      "test_standard": "EN 12311-2 (A)",
+      "source_file": "DonProof R_6.pdf",
+      "page": 2,
+      "doc_code": "08-0197-A-2026",
+      "doc_date": "NOT STATED",
+      "condition": "L/T (MLV)"
+     }
+    ],
+    "elongation": [
+     {
+      "value": "≥ 15",
+      "unit": "%",
+      "test_standard": "EN 12311-2 (A)",
+      "source_file": "DonProof R_6.pdf",
+      "page": 2,
+      "doc_code": "08-0197-A-2026",
+      "doc_date": "NOT STATED",
+      "condition": "L/T (MLV)"
+     }
+    ],
+    "water_tightness": [
+     {
+      "value": "Pass (10 kPa)",
+      "unit": "",
+      "test_standard": "EN 1928 (A)",
+      "source_file": "DonProof R_6.pdf",
+      "page": 2,
+      "doc_code": "08-0197-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "service_temp": [
+     {
+      "value": "≤ -25",
+      "unit": "°C",
+      "test_standard": "EN 495-5",
+      "source_file": "DonProof R_6.pdf",
+      "page": 2,
+      "doc_code": "08-0197-A-2026",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Foldability at low temperatures — not a service-temperature range"
+     }
+    ],
+    "uv_exposure": [
+     {
+      "value": "Pass ≥ 5000 h",
+      "unit": "",
+      "test_standard": "EN 1297",
+      "source_file": "DonProof R_6.pdf",
+      "page": 2,
+      "doc_code": "08-0197-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "5",
+      "unit": "years",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof R_6.pdf",
+      "page": 3,
+      "doc_code": "08-0197-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "B",
+     "quote": "Green roof systems.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "B",
+     "quote": "Ballasted roof systems.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "B",
+     "quote": "Open, fully exposed roof surfaces.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "B",
+     "quote": "Terraces.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    }
+   ],
+   "notes": [
+    "DonProof R is a SHEET (FPO/TPO) roofing membrane — the brief lists it under liquid-applied."
+   ],
+   "extracted": true,
+   "standards_claimed": [
+    {
+     "printed": "EN 13956 as per the technical properties table",
+     "source_file": "DonProof R_6.pdf",
+     "page": 1,
+     "doc_code": "08-0197-A-2026",
+     "doc_date": "NOT STATED"
+    }
+   ],
+   "not_applicable_fields": [
+    "crack_bridging"
+   ]
+  },
+  {
+   "id": "EPW",
+   "name": "Strongcoat EPW (EPW-P / EPW-S, one TDS)",
+   "family": "Strongcoat epoxy waterproofing",
+   "classification": "Waterproofing",
+   "source_file": "Strongcoat EPW_TDS_4.pdf",
+   "doc_code": "06-0020-A-2026",
+   "doc_date": "NOT STATED",
+   "values": {
+    "coverage": [
+     {
+      "value": "0.75 kg/m² per 500 microns DFT per 2 coats",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat EPW_TDS_4.pdf",
+      "page": 3,
+      "doc_code": "06-0020-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "tensile": [
+     {
+      "value": "7.5",
+      "unit": "MPa",
+      "test_standard": "ASTM D412",
+      "source_file": "Strongcoat EPW_TDS_4.pdf",
+      "page": 1,
+      "doc_code": "06-0020-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "elongation": [
+     {
+      "value": "> 20",
+      "unit": "% @ 7 days",
+      "test_standard": "ASTM D412",
+      "source_file": "Strongcoat EPW_TDS_4.pdf",
+      "page": 1,
+      "doc_code": "06-0020-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "bond_concrete": [
+     {
+      "value": "2",
+      "unit": "MPa (concrete failure)",
+      "test_standard": "ASTM D4541",
+      "source_file": "Strongcoat EPW_TDS_4.pdf",
+      "page": 1,
+      "doc_code": "06-0020-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "crack_bridging": [
+     {
+      "value": "Class A3",
+      "unit": "",
+      "test_standard": "EN 1062-7",
+      "source_file": "Strongcoat EPW_TDS_4.pdf",
+      "page": 2,
+      "doc_code": "06-0020-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "service_temp": [
+     {
+      "value": "-10 to 70",
+      "unit": "°C",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat EPW_TDS_4.pdf",
+      "page": 1,
+      "doc_code": "06-0020-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "pot_life": [
+     {
+      "value": "60 min @ 25°C; 45 min @ 35°C; 30 min @ 45°C",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat EPW_TDS_4.pdf",
+      "page": 1,
+      "doc_code": "06-0020-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "recoat": [
+     {
+      "value": "24 hr @ 25°C; 16 hr @ 35°C; 10 hr @ 45°C",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat EPW_TDS_4.pdf",
+      "page": 1,
+      "doc_code": "06-0020-A-2026",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Time between coats"
+     }
+    ],
+    "cure_full": [
+     {
+      "value": "7 days @ 25°C; 4 days @ 35°C; 2 days @ 45°C",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat EPW_TDS_4.pdf",
+      "page": 1,
+      "doc_code": "06-0020-A-2026",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Full cure"
+     }
+    ],
+    "voc": [
+     {
+      "value": "< 30",
+      "unit": "g/ltr",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat EPW_TDS_4.pdf",
+      "page": 1,
+      "doc_code": "06-0020-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "12",
+      "unit": "months",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat EPW_TDS_4.pdf",
+      "page": 3,
+      "doc_code": "06-0020-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "D",
+     "quote": "Strongcoat EPW-P is suitable for use with potable water",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "D",
+     "quote": "Strongcoat EPW-S is suitable for use in reservoirs",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "G",
+     "quote": "Heavy duty protective and waterproof coating for",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": null,
+     "quote": "Heavy duty wall and floor coating in food processing",
+     "page": 1,
+     "mapping": "EXCLUDED-AREA",
+     "note": "TDS also lists car parks"
+    }
+   ],
+   "notes": [
+    "EPW-P and EPW-S share one TDS; they differ in colour and chemical-resistance table only."
+   ],
+   "extracted": true,
+   "standards_claimed": [
+    {
+     "printed": "EN1504-2",
+     "source_file": "Strongcoat EPW_TDS_4.pdf",
+     "page": 1,
+     "doc_code": "06-0020-A-2026",
+     "doc_date": "NOT STATED"
+    },
+    {
+     "printed": "BS 6920:2000",
+     "source_file": "Strongcoat EPW_TDS_4.pdf",
+     "page": 1,
+     "doc_code": "06-0020-A-2026",
+     "doc_date": "NOT STATED"
+    }
+   ],
+   "not_applicable_fields": []
+  },
+  {
+   "id": "EN100",
+   "name": "Strongcoat EN100",
+   "family": "Strongcoat epoxy novolac",
+   "classification": "Protective",
+   "source_file": "Strongcoat EN100_TDS_4.pdf",
+   "doc_code": "06-0008-C-2025",
+   "doc_date": "NOT STATED",
+   "values": {
+    "coverage": [
+     {
+      "value": "Standard: base coat 0.33 kg/m²; topcoat 0.33 kg/m²; approximate system thickness 1.5 mm",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat EN100_TDS_4.pdf",
+      "page": 2,
+      "doc_code": "06-0008-C-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "tensile": [
+     {
+      "value": "≥ 20",
+      "unit": "MPa",
+      "test_standard": "ASTM D638",
+      "source_file": "Strongcoat EN100_TDS_4.pdf",
+      "page": 1,
+      "doc_code": "06-0008-C-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "bond_concrete": [
+     {
+      "value": "≥ 2",
+      "unit": "MPa (concrete failure)",
+      "test_standard": "ASTM D4541",
+      "source_file": "Strongcoat EN100_TDS_4.pdf",
+      "page": 1,
+      "doc_code": "06-0008-C-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "pot_life": [
+     {
+      "value": "40 min @ 25°C",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat EN100_TDS_4.pdf",
+      "page": 1,
+      "doc_code": "06-0008-C-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "recoat": [
+     {
+      "value": "≤ 18 hr @ 23°C; ≤ 12 hr @ 35°C",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat EN100_TDS_4.pdf",
+      "page": 1,
+      "doc_code": "06-0008-C-2025",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Over-coating time"
+     }
+    ],
+    "cure_full": [
+     {
+      "value": "7 days @ 25°C",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat EN100_TDS_4.pdf",
+      "page": 1,
+      "doc_code": "06-0008-C-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "voc": [
+     {
+      "value": "≤ 10",
+      "unit": "g/ltr",
+      "test_standard": "ASTM D2369",
+      "source_file": "Strongcoat EN100_TDS_4.pdf",
+      "page": 1,
+      "doc_code": "06-0008-C-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "12",
+      "unit": "months",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat EN100_TDS_4.pdf",
+      "page": 3,
+      "doc_code": "06-0008-C-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "elongation": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat EN100_TDS_4.pdf",
+      "page": null,
+      "doc_code": "06-0008-C-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "crack_bridging": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat EN100_TDS_4.pdf",
+      "page": null,
+      "doc_code": "06-0008-C-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "service_temp": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat EN100_TDS_4.pdf",
+      "page": null,
+      "doc_code": "06-0008-C-2025",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "G",
+     "quote": "Chemical plants.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "G",
+     "quote": "Sewage treatment plants.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "G",
+     "quote": "Petroleum refineries.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    }
+   ],
+   "notes": [
+    "TDS: 'suitable for use on concrete and steel surfaces'. Elongation, crack bridging and service temperature are not reported."
+   ],
+   "extracted": true,
+   "not_applicable_fields": []
+  },
+  {
+   "id": "SETSEAL-300C",
+   "name": "Setseal 300C",
+   "family": "Setseal cementitious",
+   "classification": "Waterproofing",
+   "source_file": "user-supplied/Setseal_300C.pdf",
+   "doc_code": "08-0079-A-2021",
+   "doc_date": "NOT STATED",
+   "values": {
+    "thickness_min": [
+     {
+      "value": "2 mm (with two coats)",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/Setseal_300C.pdf",
+      "page": 1,
+      "doc_code": "08-0079-A-2021",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Application thickness"
+     }
+    ],
+    "tensile": [
+     {
+      "value": "≥ 1.0",
+      "unit": "MPa @ 28 days, 2 mm",
+      "test_standard": "ASTM D412",
+      "source_file": "user-supplied/Setseal_300C.pdf",
+      "page": 1,
+      "doc_code": "08-0079-A-2021",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "elongation": [
+     {
+      "value": "≥ 20",
+      "unit": "% @ 28 days, 2 mm",
+      "test_standard": "ASTM D412",
+      "source_file": "user-supplied/Setseal_300C.pdf",
+      "page": 1,
+      "doc_code": "08-0079-A-2021",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "bond_concrete": [
+     {
+      "value": "≥ 2.0",
+      "unit": "MPa @ 28 days",
+      "test_standard": "ASTM D4541",
+      "source_file": "user-supplied/Setseal_300C.pdf",
+      "page": 1,
+      "doc_code": "08-0079-A-2021",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "crack_bridging": [
+     {
+      "value": "≥ 0.75",
+      "unit": "mm",
+      "test_standard": "EN 14891 (under standard condition)",
+      "source_file": "user-supplied/Setseal_300C.pdf",
+      "page": 2,
+      "doc_code": "08-0079-A-2021",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "pot_life": [
+     {
+      "value": "1",
+      "unit": "hr",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/Setseal_300C.pdf",
+      "page": 1,
+      "doc_code": "08-0079-A-2021",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Working time"
+     }
+    ],
+    "water_permeability": [
+     {
+      "value": "Nil @ 5 bars",
+      "unit": "",
+      "test_standard": "DIN 1048",
+      "source_file": "user-supplied/Setseal_300C.pdf",
+      "page": 1,
+      "doc_code": "08-0079-A-2021",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "12",
+      "unit": "months",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/Setseal_300C.pdf",
+      "page": 2,
+      "doc_code": "08-0079-A-2021",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "service_temp": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/Setseal_300C.pdf",
+      "page": null,
+      "doc_code": "08-0079-A-2021",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "voc": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/Setseal_300C.pdf",
+      "page": null,
+      "doc_code": "08-0079-A-2021",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "coverage": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "user-supplied/Setseal_300C.pdf",
+      "page": null,
+      "doc_code": "08-0079-A-2021",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "D",
+     "quote": "water retaining structures and",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "A",
+     "quote": "basements, roofs, and",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "C",
+     "quote": "bathrooms and wet areas.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "F",
+     "quote": "masonry against carbon dioxide",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    }
+   ],
+   "notes": [
+    "Setseal 300C is a one-component cementitious waterproof COATING, not a joint sealant (brief lists it under joint sealants)."
+   ],
+   "extracted": true,
+   "standards_claimed": [
+    {
+     "printed": "EN 14891, Type CM",
+     "source_file": "user-supplied/Setseal_300C.pdf",
+     "page": 1,
+     "doc_code": "08-0079-A-2021",
+     "doc_date": "NOT STATED"
+    }
+   ],
+   "not_applicable_fields": []
+  },
+  {
+   "id": "SETSEAL-R",
+   "name": "Setseal R",
+   "family": "Setseal cementitious (crystalline)",
+   "classification": "Waterproofing",
+   "source_file": "Setseal R_TDS_9.pdf",
+   "doc_code": "08-0011-A-2026",
+   "doc_date": "NOT STATED",
+   "values": {
+    "pot_life": [
+     {
+      "value": "25 - 45",
+      "unit": "min @ 25°C",
+      "test_standard": "NOT STATED",
+      "source_file": "Setseal R_TDS_9.pdf",
+      "page": 1,
+      "doc_code": "08-0011-A-2026",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Working time"
+     }
+    ],
+    "coverage": [
+     {
+      "value": "1 – 1.5 kg dry powder/m² per coat; 25 kg bag covers 17 – 20 m² per coat",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Setseal R_TDS_9.pdf",
+      "page": 2,
+      "doc_code": "08-0011-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "water_permeability": [
+     {
+      "value": "At 8 bars: Impermeable",
+      "unit": "",
+      "test_standard": "DIN 1048",
+      "source_file": "Setseal R_TDS_9.pdf",
+      "page": 1,
+      "doc_code": "08-0011-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "12",
+      "unit": "months",
+      "test_standard": "NOT STATED",
+      "source_file": "Setseal R_TDS_9.pdf",
+      "page": 3,
+      "doc_code": "08-0011-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "service_temp": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Setseal R_TDS_9.pdf",
+      "page": null,
+      "doc_code": "08-0011-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "voc": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Setseal R_TDS_9.pdf",
+      "page": null,
+      "doc_code": "08-0011-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "D",
+     "quote": "Potable water tanks.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "A",
+     "quote": "Basements.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "A",
+     "quote": "Retaining walls and foundations.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "D",
+     "quote": "Swimming pools.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "D",
+     "quote": "Sewage tanks.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    }
+   ],
+   "notes": [
+    "TDS describes Setseal R as a 'cementitious crystalline capillary waterproofing system'. Brief excludes crystalline products (Admixtures) AND lists it as a joint sealant. See scope sheet."
+   ],
+   "extracted": true,
+   "standards_claimed": [
+    {
+     "printed": "BS 6920:2000",
+     "source_file": "Setseal R_TDS_9.pdf",
+     "page": 1,
+     "doc_code": "08-0011-A-2026",
+     "doc_date": "NOT STATED"
+    }
+   ],
+   "not_applicable_fields": [
+    "bond_concrete",
+    "crack_bridging",
+    "elongation",
+    "tensile",
+    "thickness_min"
+   ]
+  },
+  {
+   "id": "REPCOAT",
+   "name": "Repcoat",
+   "family": "Repcoat anti-carbonation",
+   "classification": "Protective",
+   "source_file": "Repcoat_TDS_1.pdf",
+   "doc_code": "06-0001-B-2019",
+   "doc_date": "NOT STATED",
+   "values": {
+    "coverage": [
+     {
+      "value": "0.38 litre/m2 per coat to achieve 200 microns dry film thickness",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Repcoat_TDS_1.pdf",
+      "page": 2,
+      "doc_code": "06-0001-B-2019",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "tensile": [
+     {
+      "value": "≥ 1.5",
+      "unit": "MPa @ 7 days",
+      "test_standard": "ASTM D412",
+      "source_file": "Repcoat_TDS_1.pdf",
+      "page": 1,
+      "doc_code": "06-0001-B-2019",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "elongation": [
+     {
+      "value": "≥ 350",
+      "unit": "% @ 7 days",
+      "test_standard": "ASTM D412",
+      "source_file": "Repcoat_TDS_1.pdf",
+      "page": 1,
+      "doc_code": "06-0001-B-2019",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "recoat": [
+     {
+      "value": "4 hr @ 25°C; 2 hr @ 35°C",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Repcoat_TDS_1.pdf",
+      "page": 1,
+      "doc_code": "06-0001-B-2019",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Overcoating time between consecutive coats"
+     }
+    ],
+    "co2_permeability": [
+     {
+      "value": "> 60 m (EN 1504-2 requirement SD > 50 m)",
+      "unit": "",
+      "test_standard": "EN 1062-6",
+      "source_file": "Repcoat_TDS_1.pdf",
+      "page": 2,
+      "doc_code": "06-0001-B-2019",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "carbonation_depth": [
+     {
+      "value": "No penetration in coated sample",
+      "unit": "",
+      "test_standard": "TM:NT Build 372:1991-02",
+      "source_file": "Repcoat_TDS_1.pdf",
+      "page": 1,
+      "doc_code": "06-0001-B-2019",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "voc": [
+     {
+      "value": "< 50",
+      "unit": "g/ltr",
+      "test_standard": "NOT STATED",
+      "source_file": "Repcoat_TDS_1.pdf",
+      "page": 1,
+      "doc_code": "06-0001-B-2019",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "12",
+      "unit": "months",
+      "test_standard": "NOT STATED",
+      "source_file": "Repcoat_TDS_1.pdf",
+      "page": 2,
+      "doc_code": "06-0001-B-2019",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "bond_concrete": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Repcoat_TDS_1.pdf",
+      "page": null,
+      "doc_code": "06-0001-B-2019",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "crack_bridging": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Repcoat_TDS_1.pdf",
+      "page": null,
+      "doc_code": "06-0001-B-2019",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "service_temp": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Repcoat_TDS_1.pdf",
+      "page": null,
+      "doc_code": "06-0001-B-2019",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "F",
+     "quote": "Bridge abutments.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "F",
+     "quote": "Multistory building and villas.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "F",
+     "quote": "Concrete cladding.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "F",
+     "quote": "External concrete surfaces of storage tank and",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    }
+   ],
+   "notes": [],
+   "extracted": true,
+   "standards_claimed": [
+    {
+     "printed": "EN 1504-2",
+     "source_file": "Repcoat_TDS_1.pdf",
+     "page": 1,
+     "doc_code": "06-0001-B-2019",
+     "doc_date": "NOT STATED"
+    }
+   ],
+   "not_applicable_fields": [
+    "cure_full",
+    "pot_life"
+   ]
+  },
+  {
+   "id": "REPCOAT-FF",
+   "name": "Repcoat FF",
+   "family": "Repcoat anti-carbonation",
+   "classification": "Protective",
+   "source_file": "Repcoat FF_TDS_4.pdf",
+   "doc_code": "06-0003-A-2023",
+   "doc_date": "NOT STATED",
+   "values": {
+    "coverage": [
+     {
+      "value": "0.23 - 0.29 litre/m²/coat to give between 80 - 100 micron DFT",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Repcoat FF_TDS_4.pdf",
+      "page": 1,
+      "doc_code": "06-0003-A-2023",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "recoat": [
+     {
+      "value": "2:00 hr @ 25°C; 1:30 hr @ 35°C",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Repcoat FF_TDS_4.pdf",
+      "page": 1,
+      "doc_code": "06-0003-A-2023",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Over coating time"
+     }
+    ],
+    "carbonation_resistance": [
+     {
+      "value": "≥ 85% reduction in carbonation depth against control",
+      "unit": "",
+      "test_standard": "EN13295, 14 days (exposure to 10% CO2)",
+      "source_file": "Repcoat FF_TDS_4.pdf",
+      "page": 1,
+      "doc_code": "06-0003-A-2023",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "voc": [
+     {
+      "value": "< 50",
+      "unit": "g/ltr",
+      "test_standard": "NOT STATED",
+      "source_file": "Repcoat FF_TDS_4.pdf",
+      "page": 1,
+      "doc_code": "06-0003-A-2023",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "18",
+      "unit": "months",
+      "test_standard": "NOT STATED",
+      "source_file": "Repcoat FF_TDS_4.pdf",
+      "page": 2,
+      "doc_code": "06-0003-A-2023",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "tensile": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Repcoat FF_TDS_4.pdf",
+      "page": null,
+      "doc_code": "06-0003-A-2023",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "elongation": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Repcoat FF_TDS_4.pdf",
+      "page": null,
+      "doc_code": "06-0003-A-2023",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "bond_concrete": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Repcoat FF_TDS_4.pdf",
+      "page": null,
+      "doc_code": "06-0003-A-2023",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "crack_bridging": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Repcoat FF_TDS_4.pdf",
+      "page": null,
+      "doc_code": "06-0003-A-2023",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "service_temp": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Repcoat FF_TDS_4.pdf",
+      "page": null,
+      "doc_code": "06-0003-A-2023",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "F",
+     "quote": "Retaining walls.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "F",
+     "quote": "Bridge abutments.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "F",
+     "quote": "Multistory buildings and villas.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "F",
+     "quote": "Pre-cast elements and concrete cladding.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    }
+   ],
+   "notes": [],
+   "extracted": true,
+   "not_applicable_fields": [
+    "cure_full",
+    "pot_life"
+   ]
+  },
+  {
+   "id": "STRONGCOAT-HB",
+   "name": "Strongcoat HB",
+   "family": "Strongcoat floor coating",
+   "classification": "Protective (FLAGGED: TDS = floor coating)",
+   "source_file": "Strongcoat HB_TDS_18.pdf",
+   "doc_code": "05-0016-QA-B-2026",
+   "doc_date": "NOT STATED",
+   "values": {
+    "pot_life": [
+     {
+      "value": "60 - 100 min @ 25°C; 20 - 40 min @ 35°C",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat HB_TDS_18.pdf",
+      "page": 1,
+      "doc_code": "05-0016-QA-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "tensile": [
+     {
+      "value": "≥ 20",
+      "unit": "MPa @ 7 days",
+      "test_standard": "ASTM D638",
+      "source_file": "Strongcoat HB_TDS_18.pdf",
+      "page": 1,
+      "doc_code": "05-0016-QA-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "bond_concrete": [
+     {
+      "value": "≥ 2",
+      "unit": "MPa @ 7 days (concrete failure)",
+      "test_standard": "ASTM D4541 / EN 1542",
+      "source_file": "Strongcoat HB_TDS_18.pdf",
+      "page": 1,
+      "doc_code": "05-0016-QA-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "voc": [
+     {
+      "value": "≤ 10",
+      "unit": "g/ltr",
+      "test_standard": "ASTM D2369",
+      "source_file": "Strongcoat HB_TDS_18.pdf",
+      "page": 1,
+      "doc_code": "05-0016-QA-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "coverage": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat HB_TDS_18.pdf",
+      "page": null,
+      "doc_code": "05-0016-QA-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "elongation": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat HB_TDS_18.pdf",
+      "page": null,
+      "doc_code": "05-0016-QA-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "crack_bridging": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat HB_TDS_18.pdf",
+      "page": null,
+      "doc_code": "05-0016-QA-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "service_temp": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat HB_TDS_18.pdf",
+      "page": null,
+      "doc_code": "05-0016-QA-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "recoat": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat HB_TDS_18.pdf",
+      "page": null,
+      "doc_code": "05-0016-QA-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat HB_TDS_18.pdf",
+      "page": null,
+      "doc_code": "05-0016-QA-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": null,
+     "quote": "Aircraft hangars.",
+     "page": 1,
+     "mapping": "NO-FILM-ZONE",
+     "note": "all listed uses are concrete floors; zone G (steel & industrial) NOT supported by this TDS"
+    },
+    {
+     "zone": null,
+     "quote": "Car parks.",
+     "page": 1,
+     "mapping": "EXCLUDED-AREA"
+    }
+   ],
+   "notes": [
+    "TDS title: 'Solvent free high build epoxy floor coating'. Brief excludes Strongcoat floor systems yet lists HB as in scope — decision needed."
+   ],
+   "extracted": true,
+   "standards_claimed": [
+    {
+     "printed": "EN 1504-2",
+     "source_file": "Strongcoat HB_TDS_18.pdf",
+     "page": 1,
+     "doc_code": "05-0016-QA-B-2026",
+     "doc_date": "NOT STATED"
+    }
+   ],
+   "not_applicable_fields": [
+    "cure_full"
+   ]
+  }
+ ]
+}
