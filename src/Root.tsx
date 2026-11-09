@@ -5,6 +5,9 @@ import { LangProvider } from "./i18n";
 import { chapter, chapterFrames, timeline } from "./data/timeline";
 import { Ch0Cold } from "./chapters/Ch0Cold";
 import { Ch1Map } from "./chapters/Ch1Map";
+import { ZoneChapter } from "./chapters/ZoneChapter";
+import { Ch9Matrix } from "./chapters/Ch9Matrix";
+import { Ch10Close } from "./chapters/Ch10Close";
 import { LookBars, LookLayers, LookMatrix, LookTable } from "./LookDev";
 import audio from "./generated/audioManifest.json";
 
@@ -14,6 +17,9 @@ type Props = { lang: Lang };
 export const CHAPTERS: { id: string; C: React.FC }[] = [
   { id: "Ch0", C: Ch0Cold },
   { id: "Ch1", C: Ch1Map },
+  ...["Ch2", "Ch3", "Ch4", "Ch5", "Ch6", "Ch7", "Ch8"].map((id) => ({ id, C: (() => <ZoneChapter ch={id} />) as React.FC })),
+  { id: "Ch9", C: Ch9Matrix },
+  { id: "Ch10", C: Ch10Close },
 ];
 
 // One music slot + one voiceover slot. The film renders cleanly when the files are absent (audioManifest.json is written by `npm run audio:scan`).

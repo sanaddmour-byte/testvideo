@@ -3,14 +3,23 @@ import { bundle } from "@remotion/bundler";
 import { renderStill, selectComposition } from "@remotion/renderer";
 import { mkdirSync } from "node:fs";
 import path from "node:path";
+import { readFileSync } from "node:fs";
 import { CHAPTER_STILLS } from "./stillsPlan";
+
+// Chapters Ch2+ : one key frame per scene (a late frame inside each beat, so builds have finished).
+const timeline = JSON.parse(readFileSync("data/timeline.json", "utf8")) as { chapters: { id: string; start: number }[]; beats: { ch: string; start: number; dur: number }[] };
+const plan: Record<string, number[]> = { ...CHAPTER_STILLS };
+for (const c of timeline.chapters) {
+  if (c.id in plan) continue;
+  plan[c.id] = timeline.beats.filter((b) => b.ch === c.id).map((b) => Math.round((b.start - c.start + b.dur * 0.82) * 30));
+}
 
 const BROWSER = "/opt/pw-browsers/chromium";
 const want = process.argv.slice(2);
 const main = async () => {
   mkdirSync("qa/stills", { recursive: true });
   const serveUrl = await bundle({ entryPoint: path.resolve("src/index.ts"), onProgress: () => undefined });
-  for (const [id, frames] of Object.entries(CHAPTER_STILLS)) {
+  for (const [id, frames] of Object.entries(plan)) {
     if (want.length && !want.includes(id)) continue;
     const comp = await selectComposition({ serveUrl, id, browserExecutable: BROWSER });
     for (const fr of frames) {

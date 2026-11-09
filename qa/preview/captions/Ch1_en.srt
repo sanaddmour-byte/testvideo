@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:03,385
+A building has seven places that need protection.
+
+2
+00:00:03,385 --> 00:00:05,500
+Each has its own products.
+
+3
+00:00:05,500 --> 00:00:06,333
+Below ground:
+
+4
+00:00:06,333 --> 00:00:08,000
+raft, walls, lift pits.
+
+5
+00:00:08,000 --> 00:00:10,500
+Roofs and podium decks.
+
+6
+00:00:10,500 --> 00:00:13,000
+Wet areas and balconies.
+
+7
+00:00:13,000 --> 00:00:15,500
+Water tanks and water-retaining structures.
+
+8
+00:00:15,500 --> 00:00:18,000
+Joints and penetrations.
+
+9
+00:00:18,000 --> 00:00:20,500
+Façades and exposed concrete.
+
+10
+00:00:20,500 --> 00:00:24,000
+Steel and industrial exposure.
+

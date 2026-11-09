@@ -16,7 +16,7 @@ export const ComparisonBars: React.FC<{
   products: string[]; props: BarProp[]; frame: number; start?: number; x: number; y: number; width?: number;
 }> = ({ products, props, frame, start = 0, x, y, width = 1100 }) => {
   const t = useT();
-  const rowH = 58, labelW = 330, barMax = width - labelW - 330;
+  const rowH = 58, labelW = 400, barMax = width - labelW - 420;
   let yy = y;
   return (
     <div style={{ position: "absolute", left: x, top: y, width }}>
@@ -36,7 +36,7 @@ export const ComparisonBars: React.FC<{
               const w = num === null ? 0 : Math.max(8, (num / p.axisMax) * barMax) * grow;
               return (
                 <div key={id} style={{ display: "flex", alignItems: "center", height: rowH }}>
-                  <div style={{ width: labelW, fontSize: type.body, fontWeight: 600 }}>{productName(id)}</div>
+                  <div style={{ width: labelW, fontSize: type.body, fontWeight: 600, whiteSpace: "nowrap" }}>{productName(id)}</div>
                   <div style={{ width: barMax, borderLeft: `3px solid ${brand.ink}` }}>
                     <div style={{ height: 30, width: w, background: colorOf(id), borderRadius: "0 6px 6px 0" }} />
                   </div>

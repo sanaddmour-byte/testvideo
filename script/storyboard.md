@@ -78,7 +78,7 @@ Rules applied: ≤3 products and ≤4 properties per panel; bars only where all 
 - **VO:** Zone A: below-grade.
 ### Scene 2.2 — 4 s (t = 0:40)
 - **Visuals:** Problem diagram (linework, no numbers): groundwater and soil moisture pressing on a basement wall and raft; arrows at a construction joint.
-- **On-screen text:** groundwater and soil moisture pressing on a basement wall and raft; arrows at a construction joint.
+- **On-screen text:** Below ground, water presses on walls and slabs.
 - **VO:** Below ground, water presses on walls and slabs.
 ### Scene 2.3 — 3.5 s (t = 0:44)
 - **Visuals:** Product chips slide in, colour = product family: DonProof FB, DonProof FB-S, DonProof HS
@@ -92,8 +92,8 @@ Rules applied: ≤3 products and ≤4 properties per panel; bars only where all 
 - **Footnote:** Source: DonProof FB TDS, 08-0199-A-2026, NOT STATED
 - **VO:** Membrane on blinding, over a geotextile cushion; concrete is cast against it.
 ### Scene 2.5 — 4.5 s (t = 0:54)
-- **Visuals:** DetailCallout pins on the section; wording from the method statement / TDS 'Method of use': “A 20 mm fillet should be formed at the base” (DonProof FB p5) / “should be a minimum of 50 mm” (DonProof FB p6) / “staggered by a minimum of 300 mm” (DonProof FB p8)
-- **On-screen text:** A 20 mm fillet should be formed at the base / should be a minimum of 50 mm / staggered by a minimum of 300 mm
+- **Visuals:** DetailCallout pins on the section; wording from the method statement / TDS 'Method of use': “A 20 mm fillet should be formed at the base of the retaining walls, formwork stop ends, and upstands” (DonProof FB p5) / “All overlaps of the membranes should be a minimum of 50 mm and must be detailed by a heat” (DonProof FB p6) / “The ends of the membrane should be staggered by a minimum of 300 mm” (DonProof FB p8)
+- **On-screen text:** A 20 mm fillet should be formed at the base of the retaining walls, formwork stop ends, and upstands / All overlaps of the membranes should be a minimum of 50 mm and must be detailed by a heat / The ends of the membrane should be staggered by a minimum of 300 mm
 - **Footnote:** Source: DonProof FB Method Statement, DCP00/08-0199/0200-A-2025, NOT STATED
 - **VO:** Base fillet, minimum overlap, staggered roll ends.
 ### Scene 2.6 — 5.5 s (t = 0:58)
@@ -116,22 +116,22 @@ Rules applied: ≤3 products and ≤4 properties per panel; bars only where all 
 - **VO:** Zone B: roofs and podium decks.
 ### Scene 3.2 — 4 s (t = 1:10)
 - **Visuals:** Problem diagram (linework, no numbers): rain and sun on a flat roof; ponding at an upstand; a crack opening under a membrane.
-- **On-screen text:** rain and sun on a flat roof; ponding at an upstand; a crack opening under a membrane.
+- **On-screen text:** On roofs, the surface sees rain, sun and foot traffic.
 - **VO:** On roofs, the surface sees rain, sun and foot traffic.
 ### Scene 3.3 — 3.5 s (t = 1:14)
 - **Visuals:** Product chips slide in, colour = product family: DonProof PU-P150, DonProof PU-P100, DonProof PU-P60
 - **On-screen text:** DonProof PU-P150 · DonProof PU-P100 · DonProof PU-P60
 - **VO:** Candidate products: DonProof PU-P150, DonProof PU-P100, DonProof PU-P60.
 ### Scene 3.4 — 6 s (t = 1:18)
-- **Visuals:** LayerStack builds bottom-up: Concrete deck → Primer — DonProof Primer EP (named for concrete in the PU-P150 TDS) → DonProof PU-P150 membrane → Minimum suggested thickness → DonProof AL aliphatic polyurethane topcoat
-- **On-screen text:** Concrete deck | Primer — DonProof Primer EP (named for concrete in the PU-P150 TDS) | DonProof PU-P150 membrane | Minimum suggested thickness | DonProof AL aliphatic polyurethane topcoat
+- **Visuals:** LayerStack builds bottom-up: Concrete deck → Primer — DonProof Primer EP → DonProof PU-P150 membrane → DonProof AL aliphatic polyurethane topcoat
+- **On-screen text:** Concrete deck | Primer — DonProof Primer EP | DonProof PU-P150 membrane | DonProof AL aliphatic polyurethane topcoat
 - **Data keys:** `PU-P150.coverage`, `PU-P150.thickness_min`, `AL.coverage`
 - **Values shown (as printed):** PU-P150.coverage = 1.6 kg/m² to provide 1.5 mm dry film thickness; PU-P150.thickness_min = 1.4 mm; AL.coverage = Approximately 2.5 - 3.5 m²/kg per coat
 - **Footnote:** Source: DonProof PU-P150 TDS, 08-0206-D-2026, NOT STATED · Source: DonProof AL TDS, 06-0074-B-2026, NOT STATED
 - **VO:** Primed deck, hot-sprayed polyurea, then an aliphatic polyurethane topcoat.
 ### Scene 3.5 — 4.5 s (t = 1:24)
-- **Visuals:** DetailCallout pins on the section; wording from the method statement / TDS 'Method of use': “perpendicularly to the substrate” (DonProof PU-P60 p3) / “texture” (DonProof PU-P60 p3) / “All 90-degree internal corners shall be strip coated” (DonProof PU-P150 p11)
-- **On-screen text:** perpendicularly to the substrate / texture / All 90-degree internal corners shall be strip coated
+- **Visuals:** DetailCallout pins on the section; wording from the method statement / TDS 'Method of use': “always apply DonProof PU-P60 perpendicularly to the substrate regardless of whether the surface is horizontal or vertical” (DonProof PU-P60 p3) / “a texture “stipple” coat can be applied for non-skid purposes” (DonProof PU-P60 p3) / “All 90-degree internal corners shall be strip coated and allowed to gel prior to application of the finish coat” (DonProof PU-P150 p11)
+- **On-screen text:** always apply DonProof PU-P60 perpendicularly to the substrate regardless of whether the surface is horizontal or vertical / a texture “stipple” coat can be applied for non-skid purposes / All 90-degree internal corners shall be strip coated and allowed to gel prior to application of the finish coat
 - **Footnote:** Source: DonProof PU-P60 TDS, 08-0176-QA-A-2026, NOT STATED · DonProof PU-P150 Method Statement, DCP00/08-0206-C-2026, NOT STATED
 - **VO:** Spray perpendicular to the substrate; strip-coat internal corners.
 ### Scene 3.6 — 5.5 s (t = 1:28)
@@ -142,8 +142,8 @@ Rules applied: ≤3 products and ≤4 properties per panel; bars only where all 
 - **Footnote:** Source: DonProof PU-P150 TDS, 08-0206-D-2026, NOT STATED · Source: DonProof PU-P100 TDS, 08-0164-A-2025, NOT STATED · Source: DonProof PU-P60 TDS, 08-0176-QA-A-2026, NOT STATED
 - **VO:** All three report tensile, elongation and tear to the same ASTM methods.
 ### Scene 3.7 — 4.5 s (t = 1:34)
-- **Visuals:** Two-column 'Choose X when… / Choose Y when…' using TDS wording: DonProof PU-P150: “Under XPS insulation as part of an inverted or” (p1) ; DonProof PU-P60: “Cold Resistance: down to minus 40” (p1)
-- **On-screen text:** Choose DonProof PU-P150 when: Under XPS insulation as part of an inverted or / Choose DonProof PU-P60 when: Cold Resistance: down to minus 40
+- **Visuals:** Two-column 'Choose X when… / Choose Y when…' using TDS wording: DonProof PU-P150: “Under XPS insulation as part of an inverted or” (p1) ; DonProof PU-P60: “Cold Resistance: down to minus 40ºC.” (p1)
+- **On-screen text:** Choose DonProof PU-P150 when: Under XPS insulation as part of an inverted or / Choose DonProof PU-P60 when: Cold Resistance: down to minus 40ºC.
 - **VO:** P150: inverted roofs under XPS. P60: cold resistance to minus forty.
 
 ## Ch4
@@ -154,7 +154,7 @@ Rules applied: ≤3 products and ≤4 properties per panel; bars only where all 
 - **VO:** Zone C: wet areas and balconies.
 ### Scene 4.2 — 4 s (t = 1:40)
 - **Visuals:** Problem diagram (linework, no numbers): water splashing a tiled bathroom floor and a balcony edge; moisture tracking under tiles.
-- **On-screen text:** water splashing a tiled bathroom floor and a balcony edge; moisture tracking under tiles.
+- **On-screen text:** In wet areas, water sits on the surface.
 - **VO:** In wet areas, water sits on the surface.
 ### Scene 4.3 — 3.5 s (t = 1:44)
 - **Visuals:** Product chips slide in, colour = product family: DonProof PU-C100, Aquathane R100, Aquathane E400
@@ -168,8 +168,8 @@ Rules applied: ≤3 products and ≤4 properties per panel; bars only where all 
 - **Footnote:** Source: DonProof Primer PU TDS, 08-0212-A-2026, NOT STATED · Source: DonProof PU-C100 TDS, 08-0207-D-2026, NOT STATED
 - **VO:** Primer, membrane in one or two coats, then the tile finish.
 ### Scene 4.5 — 5 s (t = 1:54)
-- **Visuals:** DetailCallout pins on the section; wording from the method statement / TDS 'Method of use': “minimum 1 cm x 1 cm fillet” (Aquathane E400 p6) / “30 cm strip to be placed over the first coat while still wet” (Aquathane E400 p7) / “Do not leave more than 24 hours between two coats” (Aquathane E400 p7)
-- **On-screen text:** minimum 1 cm x 1 cm fillet / 30 cm strip to be placed over the first coat while still wet / Do not leave more than 24 hours between two coats
+- **Visuals:** DetailCallout pins on the section; wording from the method statement / TDS 'Method of use': “formed at all corners and normal PVC pipes minimum 1 cm x 1 cm fillet” (Aquathane E400 p6) / “with a 30 cm strip to be placed over the first coat while still wet” (Aquathane E400 p7) / “Do not leave more than 24 hours between two coats of Aquathane E400” (Aquathane E400 p7)
+- **On-screen text:** formed at all corners and normal PVC pipes minimum 1 cm x 1 cm fillet / with a 30 cm strip to be placed over the first coat while still wet / Do not leave more than 24 hours between two coats of Aquathane E400
 - **Footnote:** Source: Aquathane E400 Method Statement, DCP00/08-0106-B-2024, NOT STATED
 - **VO:** Corner fillet, reinforcing strip at changes of plane, recoat within 24 hours.
 ### Scene 4.6 — 5.5 s (t = 1:59)
@@ -192,7 +192,7 @@ Rules applied: ≤3 products and ≤4 properties per panel; bars only where all 
 - **VO:** Zone D: tanks and water-retaining structures.
 ### Scene 5.2 — 4 s (t = 2:12)
 - **Visuals:** Problem diagram (linework, no numbers): water pressing from inside a tank wall; seep at the wall-floor junction.
-- **On-screen text:** water pressing from inside a tank wall; seep at the wall-floor junction.
+- **On-screen text:** Tanks hold water against the lining.
 - **VO:** Tanks hold water against the lining.
 ### Scene 5.3 — 3.5 s (t = 2:16)
 - **Visuals:** Product chips slide in, colour = product family: Strongcoat EPW-P, Strongcoat EPW-S, Setseal 300C
@@ -206,8 +206,8 @@ Rules applied: ≤3 products and ≤4 properties per panel; bars only where all 
 - **Footnote:** Source: Strongcoat EPW TDS, 06-0020-A-2026, NOT STATED
 - **VO:** Two coats of Strongcoat EPW on the concrete wall.
 ### Scene 5.5 — 5 s (t = 2:26)
-- **Visuals:** DetailCallout pins on the section; wording from the method statement / TDS 'Method of use': “Apply the second coat of Strongcoat EPW within 24 hours” (Strongcoat EPW (EPW-P / EPW-S, one TDS) p2) / “relative humidity will exceed 90%” (Strongcoat EPW (EPW-P / EPW-S, one TDS) p2) / “Application should not be carried out, when there is” (Strongcoat EPW (EPW-P / EPW-S, one TDS) p2)
-- **On-screen text:** Apply the second coat of Strongcoat EPW within 24 hours / relative humidity will exceed 90% / Application should not be carried out, when there is
+- **Visuals:** DetailCallout pins on the section; wording from the method statement / TDS 'Method of use': “Apply the second coat of Strongcoat EPW within 24 hours at 25oC or 10 hours at 45oC” (Strongcoat EPW (EPW-P / EPW-S, one TDS) p2) / “Strongcoat EPW should not be applied if the application temperature is expected to drop below 5oC or if the relative humidity will exceed 90%” (Strongcoat EPW (EPW-P / EPW-S, one TDS) p2) / “Application should not be carried out, when there is standing or running water.” (Strongcoat EPW (EPW-P / EPW-S, one TDS) p2)
+- **On-screen text:** Apply the second coat of Strongcoat EPW within 24 hours at 25oC or 10 hours at 45oC / Strongcoat EPW should not be applied if the application temperature is expected to drop below 5oC or if the relative humidity will exceed 90% / Application should not be carried out, when there is standing or running water.
 - **Footnote:** Source: Strongcoat EPW (EPW-P / EPW-S, one TDS) Method Statement, NOT STATED, NOT STATED · Strongcoat EPW (EPW-P / EPW-S, one TDS) TDS, 06-0020-A-2026, NOT STATED
 - **VO:** Second coat within 24 hours at 25 degrees; never over standing water.
 ### Scene 5.6 — 5.5 s (t = 2:30)
@@ -230,7 +230,7 @@ Rules applied: ≤3 products and ≤4 properties per panel; bars only where all 
 - **VO:** Zone E: joints and penetrations.
 ### Scene 6.2 — 4 s (t = 2:42)
 - **Visuals:** Problem diagram (linework, no numbers): a movement joint and a pipe passing through a wall; water tracks along both.
-- **On-screen text:** a movement joint and a pipe passing through a wall; water tracks along both.
+- **On-screen text:** Joints and penetrations are where water finds a path.
 - **VO:** Joints and penetrations are where water finds a path.
 ### Scene 6.3 — 3.5 s (t = 2:46)
 - **Visuals:** Product chips slide in, colour = product family: Hydrostop HW, Hyperseal DP-2010H
@@ -244,8 +244,8 @@ Rules applied: ≤3 products and ≤4 properties per panel; bars only where all 
 - **Footnote:** Source: Hydrostop HW TDS, 08-0061-QA-B-2026, NOT STATED
 - **VO:** A PVC waterstop is cast across the joint.
 ### Scene 6.5 — 4.5 s (t = 2:56)
-- **Visuals:** DetailCallout pins on the section; wording from the method statement / TDS 'Method of use': “tied by wire to the reinforcement through the eyelets” (Hydrostop HW p1) / “Full range of factory made junction pieces” (Hydrostop HW p1) / “Allow 24 hours for curing before pouring concrete” (Hyperseal DP-2010H p2)
-- **On-screen text:** tied by wire to the reinforcement through the eyelets / Full range of factory made junction pieces / Allow 24 hours for curing before pouring concrete
+- **Visuals:** DetailCallout pins on the section; wording from the method statement / TDS 'Method of use': “should be tied by wire to the reinforcement through the eyelets in the edge flanges” (Hydrostop HW p1) / “Full range of factory made junction pieces are available for all profiles” (Hydrostop HW p1) / “Allow 24 hours for curing before pouring concrete on top of the joint” (Hyperseal DP-2010H p2)
+- **On-screen text:** should be tied by wire to the reinforcement through the eyelets in the edge flanges / Full range of factory made junction pieces are available for all profiles / Allow 24 hours for curing before pouring concrete on top of the joint
 - **Footnote:** Source: Hydrostop HW TDS, 08-0061-QA-B-2026, NOT STATED · Hyperseal DP-2010H Method Statement, NOT STATED, NOT STATED
 - **VO:** Tie waterstops to reinforcement; allow 24 hours after bonding before pouring.
 ### Scene 6.6 — 5.5 s (t = 3:00)
@@ -268,7 +268,7 @@ Rules applied: ≤3 products and ≤4 properties per panel; bars only where all 
 - **VO:** Zone F: façades and exposed concrete.
 ### Scene 7.2 — 4 s (t = 3:13)
 - **Visuals:** Problem diagram (linework, no numbers): CO₂ and rain on a façade; carbonation front inside the cover.
-- **On-screen text:** CO₂ and rain on a façade; carbonation front inside the cover.
+- **On-screen text:** Exposed concrete faces carbon dioxide, rain and sun.
 - **VO:** Exposed concrete faces carbon dioxide, rain and sun.
 ### Scene 7.3 — 4 s (t = 3:17)
 - **Visuals:** Product chips slide in, colour = product family: Repcoat, Repcoat FF, Repcoat FF Plus, Repcoat S
@@ -282,8 +282,8 @@ Rules applied: ≤3 products and ≤4 properties per panel; bars only where all 
 - **Footnote:** Source: Repcoat TDS, 06-0001-B-2019, NOT STATED
 - **VO:** Primer first, then Repcoat at the stated rate per coat.
 ### Scene 7.5 — 4.5 s (t = 3:27)
-- **Visuals:** DetailCallout pins on the section; wording from the method statement / TDS 'Method of use': “Two coats should always be used on dark, absorbent” (Repcoat p2) / “wait for a minimum of 12” (Repcoat p2) / “The first coat can be diluted by up to 15% with clean water” (Repcoat FF p1)
-- **On-screen text:** Two coats should always be used on dark, absorbent / wait for a minimum of 12 / The first coat can be diluted by up to 15% with clean water
+- **Visuals:** DetailCallout pins on the section; wording from the method statement / TDS 'Method of use': “Two coats should always be used on dark, absorbent and heavily textured surfaces” (Repcoat p2) / “It is important to wait for a minimum of 12 hours before the application of Repcoat” (Repcoat p2) / “The first coat can be diluted by up to 15% with clean water depending on the surface porosity” (Repcoat FF p1)
+- **On-screen text:** Two coats should always be used on dark, absorbent and heavily textured surfaces / It is important to wait for a minimum of 12 hours before the application of Repcoat / The first coat can be diluted by up to 15% with clean water depending on the surface porosity
 - **Footnote:** Source: Repcoat TDS, 06-0001-B-2019, NOT STATED · Repcoat FF TDS, 06-0003-A-2023, NOT STATED
 - **VO:** Wait for the primer; two coats on dark, absorbent surfaces.
 ### Scene 7.6 — 5.5 s (t = 3:32)
@@ -306,7 +306,7 @@ Rules applied: ≤3 products and ≤4 properties per panel; bars only where all 
 - **VO:** Zone G: steel and industrial exposure.
 ### Scene 8.2 — 4 s (t = 3:42)
 - **Visuals:** Problem diagram (linework, no numbers): chemical splash on a steel tank and a concrete bund; corrosion at the steel edge.
-- **On-screen text:** chemical splash on a steel tank and a concrete bund; corrosion at the steel edge.
+- **On-screen text:** Industrial exposure adds chemicals.
 - **VO:** Industrial exposure adds chemicals.
 ### Scene 8.3 — 3.5 s (t = 3:46)
 - **Visuals:** Product chips slide in, colour = product family: Strongcoat EN100, Strongcoat EPW-S, Repcoat P
@@ -320,8 +320,8 @@ Rules applied: ≤3 products and ≤4 properties per panel; bars only where all 
 - **Footnote:** Source: Strongcoat EN100 TDS, 06-0008-C-2025, NOT STATED
 - **VO:** EN100: base coat and topcoat on prepared concrete or steel.
 ### Scene 8.5 — 4.5 s (t = 3:56)
-- **Visuals:** DetailCallout pins on the section; wording from the method statement / TDS 'Method of use': “Apply first coat of Strongcoat EN100 at a rate of 0.33 kg/m2” (Strongcoat EN100 p2) / “Strongcoat EN100 is designed to be used without a primer.” (Strongcoat EN100 p1) / “Precaution is recommended if the application is taking” (Strongcoat EPW (EPW-P / EPW-S, one TDS) p2)
-- **On-screen text:** Apply first coat of Strongcoat EN100 at a rate of 0.33 kg/m2 / Strongcoat EN100 is designed to be used without a primer. / Precaution is recommended if the application is taking
+- **Visuals:** DetailCallout pins on the section; wording from the method statement / TDS 'Method of use': “Apply first coat of Strongcoat EN100 at a rate of 0.33 kg/m2 to achieve 250 micron thickness” (Strongcoat EN100 p2) / “Strongcoat EN100 is designed to be used without a primer.” (Strongcoat EN100 p1) / “Precaution is recommended if the application is taking place at high temperatures (above 30oC)” (Strongcoat EPW (EPW-P / EPW-S, one TDS) p2)
+- **On-screen text:** Apply first coat of Strongcoat EN100 at a rate of 0.33 kg/m2 to achieve 250 micron thickness / Strongcoat EN100 is designed to be used without a primer. / Precaution is recommended if the application is taking place at high temperatures (above 30oC)
 - **Footnote:** Source: Strongcoat EN100 Method Statement, NOT STATED, NOT STATED · Strongcoat EN100 TDS, 06-0008-C-2025, NOT STATED · Strongcoat EPW (EPW-P / EPW-S, one TDS) TDS, 06-0020-A-2026, NOT STATED
 - **VO:** Base coat at the stated rate; no primer unless porous.
 ### Scene 8.6 — 5.5 s (t = 4:00)

@@ -99,5 +99,56 @@
     "table": "",
     "matrix": "",
     "callout": ""
+  },
+  "ch": {
+    "candidates": "",
+    "stack": "",
+    "details": "",
+    "compare": "",
+    "chooseWhen": "",
+    "problem": "",
+    "zone": ""
+  },
+  "ch9": {
+    "title": "",
+    "subtitle": "",
+    "note": "",
+    "group": "",
+    "source": ""
+  },
+  "close": {
+    "text": "",
+    "logo": "",
+    "contact": ""
+  },
+  "zc": {
+    "Ch2": {
+      "problem": "",
+      "problemVo": ""
+    },
+    "Ch3": {
+      "problem": "",
+      "problemVo": ""
+    },
+    "Ch4": {
+      "problem": "",
+      "problemVo": ""
+    },
+    "Ch5": {
+      "problem": "",
+      "problemVo": ""
+    },
+    "Ch6": {
+      "problem": "",
+      "problemVo": ""
+    },
+    "Ch7": {
+      "problem": "",
+      "problemVo": ""
+    },
+    "Ch8": {
+      "problem": "",
+      "problemVo": ""
+    }
   }
 }

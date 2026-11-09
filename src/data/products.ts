@@ -62,3 +62,9 @@ export const footnotes = (keys: string[], lang: Lang = "en"): string[] => {
   }
   return out;
 };
+
+/** TDS footnote line for a product (used where a frame quotes TDS wording rather than a numeric value). */
+export const productFootnote = (pid: string, lang: Lang = "en") => {
+  const pr = product(pid);
+  return translate(lang, "footnote.tds", { product: productName(pid), code: pr.doc_code, date: pr.doc_date });
+};

@@ -17,7 +17,7 @@ export const SelectorMatrix: React.FC<{
         {ZONES.map((z) => (
           <div key={z} style={{ width: zoneW, textAlign: "center", color: highlightZone === z ? brand.accent : brand.ink }}>{z}</div>
         ))}
-        <div style={{ width: otherW, fontSize: type.body * 0.75, color: brand.muted, paddingLeft: 12 }}>{t("table.otherUses")}</div>
+        <div style={{ width: otherW, fontSize: type.body, color: brand.muted, paddingLeft: 12 }}>{t("table.otherUses")}</div>
       </div>
       {rows.map((r, i) => {
         const a = prog(frame, start + i * frames.stagger * 2, frames.base);
@@ -36,7 +36,7 @@ export const SelectorMatrix: React.FC<{
                 </div>
               );
             })}
-            <div style={{ width: otherW, paddingLeft: 12, fontSize: type.body * 0.72, color: brand.muted, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+            <div style={{ width: otherW, paddingLeft: 12, fontSize: type.body, color: brand.muted, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
               {r.other_listed_uses.join("; ")}
             </div>
           </div>

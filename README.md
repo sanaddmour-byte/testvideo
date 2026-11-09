@@ -1,6 +1,6 @@
 # DCP Waterproofing & Protective Coatings — animated explainer film
 
-Status: **Phase 3 stopped after Ch1 — awaiting look approval** (see `qa/phase3_notes.md`).
+Status: **Phase 4 complete — master (4:42) and 11 chapter MP4s rendered; awaiting master approval before vertical cutdowns.** See `qa/qa_report.md`.
 
 | Path | What |
 |---|---|

@@ -1,0 +1,52 @@
+1
+00:00:00,000 --> 00:00:01,667
+Zone A:
+
+2
+00:00:01,667 --> 00:00:02,500
+below-grade.
+
+3
+00:00:02,500 --> 00:00:06,500
+Below ground, water presses on walls and slabs.
+
+4
+00:00:06,500 --> 00:00:07,375
+Candidate products:
+
+5
+00:00:07,375 --> 00:00:10,000
+DonProof FB, DonProof FB-S, DonProof HS.
+
+6
+00:00:10,000 --> 00:00:13,500
+Membrane on blinding, over a geotextile cushion;
+
+7
+00:00:13,500 --> 00:00:16,000
+concrete is cast against it.
+
+8
+00:00:16,000 --> 00:00:20,500
+Base fillet, minimum overlap, staggered roll ends.
+
+9
+00:00:20,500 --> 00:00:26,000
+FB and FB-S report the same tests, so they compare directly.
+
+10
+00:00:26,000 --> 00:00:26,444
+FB-S:
+
+11
+00:00:26,444 --> 00:00:27,778
+pre- or post-applied.
+
+12
+00:00:27,778 --> 00:00:28,222
+HS:
+
+13
+00:00:28,222 --> 00:00:30,000
+no priming or fillets.
+

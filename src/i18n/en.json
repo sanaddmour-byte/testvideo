@@ -99,5 +99,49 @@
     "table": "Different test standards: table",
     "matrix": "Selector matrix",
     "callout": "Detail callout"
+  },
+  "ch": {
+    "candidates": "Candidate products",
+    "stack": "Build-up (schematic, not to scale)",
+    "details": "Details",
+    "compare": "Comparison",
+    "chooseWhen": "Choose {product} when",
+    "problem": "The problem",
+    "zone": "Zone {zone}"
+  },
+  "ch9": {
+    "title": "Selector matrix",
+    "subtitle": "Zone × product — a tick only where the TDS lists the use",
+    "note": "Check each data sheet and your project conditions before you specify.",
+    "group": "{family}",
+    "source": "Source: Uses / Applications section of each product TDS"
+  },
+  "close": {
+    "text": "HPD and VOC data available. EPD on request. Third-party testing commissioned when a project or CE mark requires it.",
+    "logo": "[Logo placeholder: assets/brand]",
+    "contact": "[Contact details placeholder]"
+  },
+  "zc": {
+    "Ch2": {
+      "problem": "Below ground, water presses on walls and slabs."
+    },
+    "Ch3": {
+      "problem": "On roofs, the surface sees rain, sun and foot traffic."
+    },
+    "Ch4": {
+      "problem": "In wet areas, water sits on the surface."
+    },
+    "Ch5": {
+      "problem": "Tanks hold water against the lining."
+    },
+    "Ch6": {
+      "problem": "Joints and penetrations are where water finds a path."
+    },
+    "Ch7": {
+      "problem": "Exposed concrete faces carbon dioxide, rain and sun."
+    },
+    "Ch8": {
+      "problem": "Industrial exposure adds chemicals."
+    }
   }
 }

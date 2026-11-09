@@ -2,7 +2,7 @@
 import { bundle } from "@remotion/bundler";
 import { renderMedia, selectComposition, getCompositions } from "@remotion/renderer";
 import { execFileSync } from "node:child_process";
-import { copyFileSync, mkdirSync, writeFileSync } from "node:fs";
+import { copyFileSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import timeline from "../data/timeline.json" with { type: "json" };
 
@@ -15,6 +15,7 @@ const addChapters = (src: string, dst: string, list: { id: string; start: number
   const mf = dst + ".meta.txt";
   writeFileSync(mf, meta);
   execFileSync("ffmpeg", ["-y", "-loglevel", "error", "-i", src, "-i", mf, "-map", "0:v", "-map", "0:a?", "-map_metadata", "1", "-map_chapters", "1", "-codec", "copy", "-movflags", "+faststart", dst]);
+  rmSync(mf); rmSync(src);
 };
 
 const main = async () => {
@@ -26,7 +27,7 @@ const main = async () => {
   const render = async (id: string, out: string) => {
     const composition = await selectComposition({ serveUrl, id, browserExecutable: BROWSER });
     console.log(`rendering ${id} (${composition.durationInFrames} frames)…`);
-    await renderMedia({ composition, serveUrl, codec: "h264", pixelFormat: "yuv420p", outputLocation: out, browserExecutable: BROWSER, concurrency: 2, imageFormat: "png", crf: 18, onProgress: (() => { let last = -1; return ({ progress }: { progress: number }) => { const p = Math.floor(progress * 10); if (p !== last) { last = p; process.stdout.write(`  ${p * 10}%`); } }; })() });
+    await renderMedia({ composition, serveUrl, codec: "h264", pixelFormat: "yuv420p", outputLocation: out, browserExecutable: BROWSER, concurrency: 4, imageFormat: "png", crf: 18, onProgress: (() => { let last = -1; return ({ progress }: { progress: number }) => { const p = Math.floor(progress * 10); if (p !== last) { last = p; process.stdout.write(`  ${p * 10}%`); } }; })() });
     process.stdout.write("\n");
   };
   if (mode === "chapters") {

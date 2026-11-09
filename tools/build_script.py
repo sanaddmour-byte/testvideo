@@ -119,9 +119,11 @@ for i, z in enumerate("ABCDEFG"):
 def zone(ch, z, problem, problem_vo, cands, stack, callouts, panel, choose, vo_intro, vo_stack, vo_callout, vo_panel, vo_choose):
     n = ch[2:]
     B(ch, f"{n}.1", 2.5, f"Camera zooms from the building to zone {z}; index list highlights {z}.", f"{z}  {ZN[z]}", [], vo_intro)
-    B(ch, f"{n}.2", 4, "Problem diagram (linework, no numbers): " + problem, problem, [], problem_vo)
+    B(ch, f"{n}.2", 4, "Problem diagram (linework, no numbers): " + problem, problem_vo, [], problem_vo)
     B(ch, f"{n}.3", 3.5, "Product chips slide in, colour = product family: " + ", ".join(NAMES[c] for c in cands), " · ".join(NAMES[c] for c in cands), [], "Candidate products: " + ", ".join(NAMES[c] for c in cands) + ".")
-    keys = [k for _, k in stack if k]
+    keys = []
+    for _, k in stack:
+        if k: keys += k if isinstance(k, list) else [k]
     for k in keys: val(k)
     B(ch, f"{n}.4", 6, "LayerStack builds bottom-up: " + " → ".join(lbl for lbl, _ in stack), " | ".join(lbl for lbl, _ in stack), keys, vo_stack)
     ck = []
@@ -136,8 +138,6 @@ def zone(ch, z, problem, problem_vo, cands, stack, callouts, panel, choose, vo_i
     beats[-1]["foot"] = "Source: " + " · ".join(dict.fromkeys(srcs))
     kind, prods, props = panel
     panel_check(kind, prods, props)
-    CHAPS.append(dict(ch=ch, zone=z, candidates=cands, panel=dict(kind=kind, products=prods, props=[pr[0] if isinstance(pr, tuple) else pr for pr in props]),
-                      choose=[dict(product=pid, quote=q) for pid, q in choose]))
     pk = keys_for(prods, props)
     for k in pk: val(k)
     vis = ("ComparisonBars" if kind == "bars" else "ComparisonTable (tag: different test methods)") + ": " + ", ".join(NAMES[p] for p in prods) + " × " + ", ".join(pr[0] if isinstance(pr, tuple) else pr for pr in props)
@@ -147,13 +147,24 @@ def zone(ch, z, problem, problem_vo, cands, stack, callouts, panel, choose, vo_i
         pg, _ = quote_ok(pid, q); cc.append((pid, q, pg))
     B(ch, f"{n}.7", 2.5 * (1 if len(choose) <= 2 else 1.4), "Two-column 'Choose X when… / Choose Y when…' using TDS wording: " + " ; ".join(f"{NAMES[p]}: “{q}” (p{pg})" for p, q, pg in cc),
       " / ".join(f"Choose {NAMES[p]} when: {q}" for p, q, _ in cc), [], vo_choose)
+    rows = []
+    for pr in props:
+        if isinstance(pr, tuple):
+            rows.append(dict(prop=pr[0], cells=[(f"{p}.{pr[1][p]}" if p in pr[1] else None) for p in prods]))
+        else:
+            rows.append(dict(prop=pr, cells=[f"{p}.{pr}" for p in prods]))
+    CHAPS.append(dict(ch=ch, zone=z, candidates=cands, problem=problem, problem_vo=problem_vo,
+                      stack=[dict(label=l, key=k) for l, k in stack],
+                      callouts=[dict(product=p, quote=q, page=pg, source=srcs[i]) for i, (p, q, pg) in enumerate(ck)],
+                      panel=dict(kind=kind, products=prods, props=[r["prop"] for r in rows], rows=rows),
+                      choose=[dict(product=pid, quote=q, page=pg) for (pid, q, pg) in cc]))
 
 
 zone("Ch2", "A", "groundwater and soil moisture pressing on a basement wall and raft; arrows at a construction joint.",
      "Below ground, water presses on walls and slabs.",
      ["FB", "FB-S", "HS"],
      [("Blinding concrete or compacted sand", None), ("Geotextile cushion layer", "FB.cushion_layer"), ("DonProof FB membrane", "FB.thickness"), ("Structural concrete cast against membrane", None)],
-     [("FB", "A 20 mm fillet should be formed at the base", "ms"), ("FB", "should be a minimum of 50 mm", "ms"), ("FB", "staggered by a minimum of 300 mm", "ms")],
+     [("FB", "A 20 mm fillet should be formed at the base of the retaining walls, formwork stop ends, and upstands", "ms"), ("FB", "All overlaps of the membranes should be a minimum of 50 mm and must be detailed by a heat", "ms"), ("FB", "The ends of the membrane should be staggered by a minimum of 300 mm", "ms")],
      ("bars", ["FB", "FB-S"], ["tensile", "tear", "water_tightness", "crack_bridging"]),
      [("FB-S", "Can be used both pre- and post-applied."), ("HS", "Easy and quick application, no priming or fillets required.")],
      "Zone A: below-grade.",
@@ -165,10 +176,10 @@ zone("Ch2", "A", "groundwater and soil moisture pressing on a basement wall and 
 zone("Ch3", "B", "rain and sun on a flat roof; ponding at an upstand; a crack opening under a membrane.",
      "On roofs, the surface sees rain, sun and foot traffic.",
      ["PU-P150", "PU-P100", "PU-P60"],
-     [("Concrete deck", None), ("Primer — DonProof Primer EP (named for concrete in the PU-P150 TDS)", None), ("DonProof PU-P150 membrane", "PU-P150.coverage"), ("Minimum suggested thickness", "PU-P150.thickness_min"), ("DonProof AL aliphatic polyurethane topcoat", "AL.coverage")],
-     [("PU-P60", "perpendicularly to the substrate"), ("PU-P60", "texture"), ("PU-P150", "All 90-degree internal corners shall be strip coated", "ms")],
+     [("Concrete deck", None), ("Primer — DonProof Primer EP", None), ("DonProof PU-P150 membrane", ["PU-P150.coverage", "PU-P150.thickness_min"]), ("DonProof AL aliphatic polyurethane topcoat", "AL.coverage")],
+     [("PU-P60", "always apply DonProof PU-P60 perpendicularly to the substrate regardless of whether the surface is horizontal or vertical"), ("PU-P60", "a texture “stipple” coat can be applied for non-skid purposes"), ("PU-P150", "All 90-degree internal corners shall be strip coated and allowed to gel prior to application of the finish coat", "ms")],
      ("bars", ["PU-P150", "PU-P100", "PU-P60"], ["tensile", "elongation", "tear"]),
-     [("PU-P150", "Under XPS insulation as part of an inverted or"), ("PU-P60", "Cold Resistance: down to minus 40")],
+     [("PU-P150", "Under XPS insulation as part of an inverted or"), ("PU-P60", "Cold Resistance: down to minus 40ºC.")],
      "Zone B: roofs and podium decks.",
      "Primed deck, hot-sprayed polyurea, then an aliphatic polyurethane topcoat.",
      "Spray perpendicular to the substrate; strip-coat internal corners.",
@@ -179,7 +190,7 @@ zone("Ch4", "C", "water splashing a tiled bathroom floor and a balcony edge; moi
      "In wet areas, water sits on the surface.",
      ["PU-C100", "AQUATHANE-R100", "AQUATHANE-E400"],
      [("Concrete or screed", None), ("Primer — DonProof Primer PU", "PRIMER-PU.coverage"), ("DonProof PU-C100 membrane", "PU-C100.coverage"), ("Under-tile finish", None)],
-     [("AQUATHANE-E400", "minimum 1 cm x 1 cm fillet", "ms"), ("AQUATHANE-E400", "30 cm strip to be placed over the first coat while still wet", "ms"), ("AQUATHANE-E400", "Do not leave more than 24 hours between two coats", "ms")],
+     [("AQUATHANE-E400", "formed at all corners and normal PVC pipes minimum 1 cm x 1 cm fillet", "ms"), ("AQUATHANE-E400", "with a 30 cm strip to be placed over the first coat while still wet", "ms"), ("AQUATHANE-E400", "Do not leave more than 24 hours between two coats of Aquathane E400", "ms")],
      ("bars", ["PU-C100", "AQUATHANE-R100", "AQUATHANE-E400"], ["bond_concrete"]),
      [("PU-C100", "Cold applied with a roller, brush, trowel, squeegee or"), ("AQUATHANE-E400", "Wet areas, kitchens and bathrooms (under tiles).")],
      "Zone C: wet areas and balconies.",
@@ -192,7 +203,7 @@ zone("Ch5", "D", "water pressing from inside a tank wall; seep at the wall-floor
      "Tanks hold water against the lining.",
      ["EPW-P", "EPW-S", "SETSEAL-300C"],
      [("Concrete wall", None), ("Strongcoat EPW — two coats", "EPW.coverage")],
-     [("EPW", "Apply the second coat of Strongcoat EPW within 24 hours", "ms"), ("EPW", "relative humidity will exceed 90%", "ms"), ("EPW", "Application should not be carried out, when there is")],
+     [("EPW", "Apply the second coat of Strongcoat EPW within 24 hours at 25oC or 10 hours at 45oC", "ms"), ("EPW", "Strongcoat EPW should not be applied if the application temperature is expected to drop below 5oC or if the relative humidity will exceed 90%", "ms"), ("EPW", "Application should not be carried out, when there is standing or running water.")],
      ("table", ["EPW-P", "EPW-S"], ["colour", "chem_citric_acid_10_7d", "chem_nitric_acid_25_spot"]),
      [("EPW-P", "Strongcoat EPW-P is suitable for use with potable water"), ("EPW-S", "Strongcoat EPW-S is suitable for use in reservoirs")],
      "Zone D: tanks and water-retaining structures.",
@@ -205,7 +216,7 @@ zone("Ch6", "E", "a movement joint and a pipe passing through a wall; water trac
      "Joints and penetrations are where water finds a path.",
      ["HYDROSTOP-HW", "HYPERSEAL-DP2010H"],
      [("Concrete on both sides of the joint", None), ("Hydrostop HW cast across the joint", "HYDROSTOP-HW.tensile")],
-     [("HYDROSTOP-HW", "tied by wire to the reinforcement through the eyelets"), ("HYDROSTOP-HW", "Full range of factory made junction pieces"), ("HYPERSEAL-DP2010H", "Allow 24 hours for curing before pouring concrete", "ms")],
+     [("HYDROSTOP-HW", "should be tied by wire to the reinforcement through the eyelets in the edge flanges"), ("HYDROSTOP-HW", "Full range of factory made junction pieces are available for all profiles"), ("HYPERSEAL-DP2010H", "Allow 24 hours for curing before pouring concrete on top of the joint", "ms")],
      ("table", ["HYDROSTOP-HW", "HYPERSEAL-DP2010H"], [("tensile", {"HYDROSTOP-HW": "tensile"}), ("elongation", {"HYDROSTOP-HW": "elongation"}), ("expansion", {"HYPERSEAL-DP2010H": "expansion"}), ("service_temp", {"HYPERSEAL-DP2010H": "service_temp"})]),
      [("HYDROSTOP-HW", "Hollow center bulb for expansion joints to accommodate"), ("HYPERSEAL-DP2010H", "Slow expansion rate to prevent damage to freshly")],
      "Zone E: joints and penetrations.",
@@ -218,7 +229,7 @@ zone("Ch7", "F", "CO₂ and rain on a façade; carbonation front inside the cove
      "Exposed concrete faces carbon dioxide, rain and sun.",
      ["REPCOAT", "REPCOAT-FF", "REPCOAT-FF-PLUS", "REPCOAT-S"],
      [("Concrete surface", None), ("Repcoat Primer", "REPCOAT.primer_coverage"), ("Repcoat — per coat", "REPCOAT.coverage")],
-     [("REPCOAT", "Two coats should always be used on dark, absorbent"), ("REPCOAT", "wait for a minimum of 12"), ("REPCOAT-FF", "The first coat can be diluted by up to 15% with clean water")],
+     [("REPCOAT", "Two coats should always be used on dark, absorbent and heavily textured surfaces"), ("REPCOAT", "It is important to wait for a minimum of 12 hours before the application of Repcoat"), ("REPCOAT-FF", "The first coat can be diluted by up to 15% with clean water depending on the surface porosity")],
      ("table", ["REPCOAT", "REPCOAT-FF", "REPCOAT-FF-PLUS"], ["coverage", "recoat", ("carbonation", {"REPCOAT": "carbonation_depth", "REPCOAT-FF": "carbonation_resistance", "REPCOAT-FF-PLUS": "carbonation_resistance"}), "voc"]),
      [("REPCOAT", "High build elastomeric, microporous coating."), ("REPCOAT-FF", "Matt finish helping to hide irregularities.")],
      "Zone F: façades and exposed concrete.",
@@ -231,7 +242,7 @@ zone("Ch8", "G", "chemical splash on a steel tank and a concrete bund; corrosion
      "Industrial exposure adds chemicals.",
      ["EN100", "EPW-S", "REPCOAT-P"],
      [("Concrete or steel (grit-blasted)", None), ("Strongcoat EN100 base coat + topcoat", "EN100.coverage")],
-     [("EN100", "Apply first coat of Strongcoat EN100 at a rate of 0.33 kg/m2", "ms"), ("EN100", "Strongcoat EN100 is designed to be used without a primer."), ("EPW", "Precaution is recommended if the application is taking")],
+     [("EN100", "Apply first coat of Strongcoat EN100 at a rate of 0.33 kg/m2 to achieve 250 micron thickness", "ms"), ("EN100", "Strongcoat EN100 is designed to be used without a primer."), ("EPW", "Precaution is recommended if the application is taking place at high temperatures (above 30oC)")],
      ("bars", ["EN100", "EPW-S", "REPCOAT-P"], ["bond_concrete"]),
      [("EN100", "Excellent chemical resistance."), ("REPCOAT-P", "Excellent UV resistance.")],
      "Zone G: steel and industrial exposure.",
@@ -358,4 +369,15 @@ def write_srt(path, items, offset=0.0):
 write_srt(f"{ROOT}/script/captions_en.srt", [x for c in cues for x in cues[c]])
 for c in cues:
     write_srt(f"{ROOT}/script/captions/{c}_en.srt", cues[c], offset=min(x['start'] for x in tl if x['ch'] == c))
+# ---- sync generated zone copy into en.json (components only reference i18n keys); ar.json gets the same keys, empty
+EN = f"{ROOT}/src/i18n/en.json"; AR = f"{ROOT}/src/i18n/ar.json"
+en = json.load(open(EN)); en["zc"] = {c["ch"]: dict(problem=c["problem_vo"]) for c in CHAPS}
+json.dump(en, open(EN, "w"), ensure_ascii=False, indent=2)
+def blank_merge(src, dst):
+    for k, v in src.items():
+        if isinstance(v, dict):
+            blank_merge(v, dst.setdefault(k, {}))
+        else:
+            dst.setdefault(k, "")
+ar = json.load(open(AR)); blank_merge(en, ar); json.dump(ar, open(AR, "w"), ensure_ascii=False, indent=2)
 print(f"runtime {mm(total)} ({total:.1f}s), scenes {len(beats)}")

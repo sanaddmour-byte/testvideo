@@ -4,4 +4,4 @@ import { Config } from "@remotion/cli/config";
 Config.setBrowserExecutable("/opt/pw-browsers/chromium");
 Config.setVideoImageFormat("jpeg");
 Config.setCodec("h264");
-Config.setConcurrency(2);
+Config.setConcurrency(4);

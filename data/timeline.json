@@ -172,7 +172,7 @@
    "id": "2.2",
    "start": 40.0,
    "dur": 4,
-   "on": "groundwater and soil moisture pressing on a basement wall and raft; arrows at a construction joint.",
+   "on": "Below ground, water presses on walls and slabs.",
    "vo": "Below ground, water presses on walls and slabs.",
    "keys": []
   },
@@ -202,7 +202,7 @@
    "id": "2.5",
    "start": 53.5,
    "dur": 4.5,
-   "on": "A 20 mm fillet should be formed at the base / should be a minimum of 50 mm / staggered by a minimum of 300 mm",
+   "on": "A 20 mm fillet should be formed at the base of the retaining walls, formwork stop ends, and upstands / All overlaps of the membranes should be a minimum of 50 mm and must be detailed by a heat / The ends of the membrane should be staggered by a minimum of 300 mm",
    "vo": "Base fillet, minimum overlap, staggered roll ends.",
    "keys": []
   },
@@ -247,7 +247,7 @@
    "id": "3.2",
    "start": 70.0,
    "dur": 4,
-   "on": "rain and sun on a flat roof; ponding at an upstand; a crack opening under a membrane.",
+   "on": "On roofs, the surface sees rain, sun and foot traffic.",
    "vo": "On roofs, the surface sees rain, sun and foot traffic.",
    "keys": []
   },
@@ -265,7 +265,7 @@
    "id": "3.4",
    "start": 77.5,
    "dur": 6,
-   "on": "Concrete deck | Primer — DonProof Primer EP (named for concrete in the PU-P150 TDS) | DonProof PU-P150 membrane | Minimum suggested thickness | DonProof AL aliphatic polyurethane topcoat",
+   "on": "Concrete deck | Primer — DonProof Primer EP | DonProof PU-P150 membrane | DonProof AL aliphatic polyurethane topcoat",
    "vo": "Primed deck, hot-sprayed polyurea, then an aliphatic polyurethane topcoat.",
    "keys": [
     "PU-P150.coverage",
@@ -278,7 +278,7 @@
    "id": "3.5",
    "start": 83.5,
    "dur": 4.5,
-   "on": "perpendicularly to the substrate / texture / All 90-degree internal corners shall be strip coated",
+   "on": "always apply DonProof PU-P60 perpendicularly to the substrate regardless of whether the surface is horizontal or vertical / a texture “stipple” coat can be applied for non-skid purposes / All 90-degree internal corners shall be strip coated and allowed to gel prior to application of the finish coat",
    "vo": "Spray perpendicular to the substrate; strip-coat internal corners.",
    "keys": []
   },
@@ -306,7 +306,7 @@
    "id": "3.7",
    "start": 93.5,
    "dur": 4.5,
-   "on": "Choose DonProof PU-P150 when: Under XPS insulation as part of an inverted or / Choose DonProof PU-P60 when: Cold Resistance: down to minus 40",
+   "on": "Choose DonProof PU-P150 when: Under XPS insulation as part of an inverted or / Choose DonProof PU-P60 when: Cold Resistance: down to minus 40ºC.",
    "vo": "P150: inverted roofs under XPS. P60: cold resistance to minus forty.",
    "keys": []
   },
@@ -324,7 +324,7 @@
    "id": "4.2",
    "start": 100.5,
    "dur": 4,
-   "on": "water splashing a tiled bathroom floor and a balcony edge; moisture tracking under tiles.",
+   "on": "In wet areas, water sits on the surface.",
    "vo": "In wet areas, water sits on the surface.",
    "keys": []
   },
@@ -354,7 +354,7 @@
    "id": "4.5",
    "start": 114.0,
    "dur": 5.0,
-   "on": "minimum 1 cm x 1 cm fillet / 30 cm strip to be placed over the first coat while still wet / Do not leave more than 24 hours between two coats",
+   "on": "formed at all corners and normal PVC pipes minimum 1 cm x 1 cm fillet / with a 30 cm strip to be placed over the first coat while still wet / Do not leave more than 24 hours between two coats of Aquathane E400",
    "vo": "Corner fillet, reinforcing strip at changes of plane, recoat within 24 hours.",
    "keys": []
   },
@@ -394,7 +394,7 @@
    "id": "5.2",
    "start": 132.0,
    "dur": 4,
-   "on": "water pressing from inside a tank wall; seep at the wall-floor junction.",
+   "on": "Tanks hold water against the lining.",
    "vo": "Tanks hold water against the lining.",
    "keys": []
   },
@@ -423,7 +423,7 @@
    "id": "5.5",
    "start": 145.5,
    "dur": 5.0,
-   "on": "Apply the second coat of Strongcoat EPW within 24 hours / relative humidity will exceed 90% / Application should not be carried out, when there is",
+   "on": "Apply the second coat of Strongcoat EPW within 24 hours at 25oC or 10 hours at 45oC / Strongcoat EPW should not be applied if the application temperature is expected to drop below 5oC or if the relative humidity will exceed 90% / Application should not be carried out, when there is standing or running water.",
    "vo": "Second coat within 24 hours at 25 degrees; never over standing water.",
    "keys": []
   },
@@ -466,7 +466,7 @@
    "id": "6.2",
    "start": 162.5,
    "dur": 4,
-   "on": "a movement joint and a pipe passing through a wall; water tracks along both.",
+   "on": "Joints and penetrations are where water finds a path.",
    "vo": "Joints and penetrations are where water finds a path.",
    "keys": []
   },
@@ -495,7 +495,7 @@
    "id": "6.5",
    "start": 176.0,
    "dur": 4.5,
-   "on": "tied by wire to the reinforcement through the eyelets / Full range of factory made junction pieces / Allow 24 hours for curing before pouring concrete",
+   "on": "should be tied by wire to the reinforcement through the eyelets in the edge flanges / Full range of factory made junction pieces are available for all profiles / Allow 24 hours for curing before pouring concrete on top of the joint",
    "vo": "Tie waterstops to reinforcement; allow 24 hours after bonding before pouring.",
    "keys": []
   },
@@ -536,7 +536,7 @@
    "id": "7.2",
    "start": 193.0,
    "dur": 4,
-   "on": "CO₂ and rain on a façade; carbonation front inside the cover.",
+   "on": "Exposed concrete faces carbon dioxide, rain and sun.",
    "vo": "Exposed concrete faces carbon dioxide, rain and sun.",
    "keys": []
   },
@@ -566,7 +566,7 @@
    "id": "7.5",
    "start": 207.0,
    "dur": 4.5,
-   "on": "Two coats should always be used on dark, absorbent / wait for a minimum of 12 / The first coat can be diluted by up to 15% with clean water",
+   "on": "Two coats should always be used on dark, absorbent and heavily textured surfaces / It is important to wait for a minimum of 12 hours before the application of Repcoat / The first coat can be diluted by up to 15% with clean water depending on the surface porosity",
    "vo": "Wait for the primer; two coats on dark, absorbent surfaces.",
    "keys": []
   },
@@ -615,7 +615,7 @@
    "id": "8.2",
    "start": 222.0,
    "dur": 4,
-   "on": "chemical splash on a steel tank and a concrete bund; corrosion at the steel edge.",
+   "on": "Industrial exposure adds chemicals.",
    "vo": "Industrial exposure adds chemicals.",
    "keys": []
   },
@@ -644,7 +644,7 @@
    "id": "8.5",
    "start": 235.5,
    "dur": 4.5,
-   "on": "Apply first coat of Strongcoat EN100 at a rate of 0.33 kg/m2 / Strongcoat EN100 is designed to be used without a primer. / Precaution is recommended if the application is taking",
+   "on": "Apply first coat of Strongcoat EN100 at a rate of 0.33 kg/m2 to achieve 250 micron thickness / Strongcoat EN100 is designed to be used without a primer. / Precaution is recommended if the application is taking place at high temperatures (above 30oC)",
    "vo": "Base coat at the stated rate; no primer unless porous.",
    "keys": []
   },

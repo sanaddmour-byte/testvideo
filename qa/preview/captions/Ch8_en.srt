@@ -1,0 +1,56 @@
+1
+00:00:00,000 --> 00:00:00,833
+Zone G:
+
+2
+00:00:00,833 --> 00:00:02,500
+steel and industrial exposure.
+
+3
+00:00:02,500 --> 00:00:06,500
+Industrial exposure adds chemicals.
+
+4
+00:00:06,500 --> 00:00:07,375
+Candidate products:
+
+5
+00:00:07,375 --> 00:00:10,000
+Strongcoat EN100, Strongcoat EPW-S, Repcoat P.
+
+6
+00:00:10,000 --> 00:00:10,600
+EN100:
+
+7
+00:00:10,600 --> 00:00:16,000
+base coat and topcoat on prepared concrete or steel.
+
+8
+00:00:16,000 --> 00:00:18,700
+Base coat at the stated rate;
+
+9
+00:00:18,700 --> 00:00:20,500
+no primer unless porous.
+
+10
+00:00:20,500 --> 00:00:26,000
+Bond strength uses the same method for all three.
+
+11
+00:00:26,000 --> 00:00:26,429
+EN100:
+
+12
+00:00:26,429 --> 00:00:27,286
+chemical resistance.
+
+13
+00:00:27,286 --> 00:00:28,143
+Repcoat P:
+
+14
+00:00:28,143 --> 00:00:29,000
+UV resistance.
+

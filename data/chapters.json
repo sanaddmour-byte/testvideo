@@ -7,6 +7,46 @@
    "FB-S",
    "HS"
   ],
+  "problem": "groundwater and soil moisture pressing on a basement wall and raft; arrows at a construction joint.",
+  "problem_vo": "Below ground, water presses on walls and slabs.",
+  "stack": [
+   {
+    "label": "Blinding concrete or compacted sand",
+    "key": null
+   },
+   {
+    "label": "Geotextile cushion layer",
+    "key": "FB.cushion_layer"
+   },
+   {
+    "label": "DonProof FB membrane",
+    "key": "FB.thickness"
+   },
+   {
+    "label": "Structural concrete cast against membrane",
+    "key": null
+   }
+  ],
+  "callouts": [
+   {
+    "product": "FB",
+    "quote": "A 20 mm fillet should be formed at the base of the retaining walls, formwork stop ends, and upstands",
+    "page": 5,
+    "source": "DonProof FB Method Statement, DCP00/08-0199/0200-A-2025, NOT STATED"
+   },
+   {
+    "product": "FB",
+    "quote": "All overlaps of the membranes should be a minimum of 50 mm and must be detailed by a heat",
+    "page": 6,
+    "source": "DonProof FB Method Statement, DCP00/08-0199/0200-A-2025, NOT STATED"
+   },
+   {
+    "product": "FB",
+    "quote": "The ends of the membrane should be staggered by a minimum of 300 mm",
+    "page": 8,
+    "source": "DonProof FB Method Statement, DCP00/08-0199/0200-A-2025, NOT STATED"
+   }
+  ],
   "panel": {
    "kind": "bars",
    "products": [
@@ -18,16 +58,48 @@
     "tear",
     "water_tightness",
     "crack_bridging"
+   ],
+   "rows": [
+    {
+     "prop": "tensile",
+     "cells": [
+      "FB.tensile",
+      "FB-S.tensile"
+     ]
+    },
+    {
+     "prop": "tear",
+     "cells": [
+      "FB.tear",
+      "FB-S.tear"
+     ]
+    },
+    {
+     "prop": "water_tightness",
+     "cells": [
+      "FB.water_tightness",
+      "FB-S.water_tightness"
+     ]
+    },
+    {
+     "prop": "crack_bridging",
+     "cells": [
+      "FB.crack_bridging",
+      "FB-S.crack_bridging"
+     ]
+    }
    ]
   },
   "choose": [
    {
     "product": "FB-S",
-    "quote": "Can be used both pre- and post-applied."
+    "quote": "Can be used both pre- and post-applied.",
+    "page": 1
    },
    {
     "product": "HS",
-    "quote": "Easy and quick application, no priming or fillets required."
+    "quote": "Easy and quick application, no priming or fillets required.",
+    "page": 2
    }
   ]
  },
@@ -38,6 +110,49 @@
    "PU-P150",
    "PU-P100",
    "PU-P60"
+  ],
+  "problem": "rain and sun on a flat roof; ponding at an upstand; a crack opening under a membrane.",
+  "problem_vo": "On roofs, the surface sees rain, sun and foot traffic.",
+  "stack": [
+   {
+    "label": "Concrete deck",
+    "key": null
+   },
+   {
+    "label": "Primer — DonProof Primer EP",
+    "key": null
+   },
+   {
+    "label": "DonProof PU-P150 membrane",
+    "key": [
+     "PU-P150.coverage",
+     "PU-P150.thickness_min"
+    ]
+   },
+   {
+    "label": "DonProof AL aliphatic polyurethane topcoat",
+    "key": "AL.coverage"
+   }
+  ],
+  "callouts": [
+   {
+    "product": "PU-P60",
+    "quote": "always apply DonProof PU-P60 perpendicularly to the substrate regardless of whether the surface is horizontal or vertical",
+    "page": 3,
+    "source": "DonProof PU-P60 TDS, 08-0176-QA-A-2026, NOT STATED"
+   },
+   {
+    "product": "PU-P60",
+    "quote": "a texture “stipple” coat can be applied for non-skid purposes",
+    "page": 3,
+    "source": "DonProof PU-P60 TDS, 08-0176-QA-A-2026, NOT STATED"
+   },
+   {
+    "product": "PU-P150",
+    "quote": "All 90-degree internal corners shall be strip coated and allowed to gel prior to application of the finish coat",
+    "page": 11,
+    "source": "DonProof PU-P150 Method Statement, DCP00/08-0206-C-2026, NOT STATED"
+   }
   ],
   "panel": {
    "kind": "bars",
@@ -50,16 +165,44 @@
     "tensile",
     "elongation",
     "tear"
+   ],
+   "rows": [
+    {
+     "prop": "tensile",
+     "cells": [
+      "PU-P150.tensile",
+      "PU-P100.tensile",
+      "PU-P60.tensile"
+     ]
+    },
+    {
+     "prop": "elongation",
+     "cells": [
+      "PU-P150.elongation",
+      "PU-P100.elongation",
+      "PU-P60.elongation"
+     ]
+    },
+    {
+     "prop": "tear",
+     "cells": [
+      "PU-P150.tear",
+      "PU-P100.tear",
+      "PU-P60.tear"
+     ]
+    }
    ]
   },
   "choose": [
    {
     "product": "PU-P150",
-    "quote": "Under XPS insulation as part of an inverted or"
+    "quote": "Under XPS insulation as part of an inverted or",
+    "page": 1
    },
    {
     "product": "PU-P60",
-    "quote": "Cold Resistance: down to minus 40"
+    "quote": "Cold Resistance: down to minus 40ºC.",
+    "page": 1
    }
   ]
  },
@@ -71,6 +214,46 @@
    "AQUATHANE-R100",
    "AQUATHANE-E400"
   ],
+  "problem": "water splashing a tiled bathroom floor and a balcony edge; moisture tracking under tiles.",
+  "problem_vo": "In wet areas, water sits on the surface.",
+  "stack": [
+   {
+    "label": "Concrete or screed",
+    "key": null
+   },
+   {
+    "label": "Primer — DonProof Primer PU",
+    "key": "PRIMER-PU.coverage"
+   },
+   {
+    "label": "DonProof PU-C100 membrane",
+    "key": "PU-C100.coverage"
+   },
+   {
+    "label": "Under-tile finish",
+    "key": null
+   }
+  ],
+  "callouts": [
+   {
+    "product": "AQUATHANE-E400",
+    "quote": "formed at all corners and normal PVC pipes minimum 1 cm x 1 cm fillet",
+    "page": 6,
+    "source": "Aquathane E400 Method Statement, DCP00/08-0106-B-2024, NOT STATED"
+   },
+   {
+    "product": "AQUATHANE-E400",
+    "quote": "with a 30 cm strip to be placed over the first coat while still wet",
+    "page": 7,
+    "source": "Aquathane E400 Method Statement, DCP00/08-0106-B-2024, NOT STATED"
+   },
+   {
+    "product": "AQUATHANE-E400",
+    "quote": "Do not leave more than 24 hours between two coats of Aquathane E400",
+    "page": 7,
+    "source": "Aquathane E400 Method Statement, DCP00/08-0106-B-2024, NOT STATED"
+   }
+  ],
   "panel": {
    "kind": "bars",
    "products": [
@@ -80,16 +263,28 @@
    ],
    "props": [
     "bond_concrete"
+   ],
+   "rows": [
+    {
+     "prop": "bond_concrete",
+     "cells": [
+      "PU-C100.bond_concrete",
+      "AQUATHANE-R100.bond_concrete",
+      "AQUATHANE-E400.bond_concrete"
+     ]
+    }
    ]
   },
   "choose": [
    {
     "product": "PU-C100",
-    "quote": "Cold applied with a roller, brush, trowel, squeegee or"
+    "quote": "Cold applied with a roller, brush, trowel, squeegee or",
+    "page": 1
    },
    {
     "product": "AQUATHANE-E400",
-    "quote": "Wet areas, kitchens and bathrooms (under tiles)."
+    "quote": "Wet areas, kitchens and bathrooms (under tiles).",
+    "page": 1
    }
   ]
  },
@@ -101,6 +296,38 @@
    "EPW-S",
    "SETSEAL-300C"
   ],
+  "problem": "water pressing from inside a tank wall; seep at the wall-floor junction.",
+  "problem_vo": "Tanks hold water against the lining.",
+  "stack": [
+   {
+    "label": "Concrete wall",
+    "key": null
+   },
+   {
+    "label": "Strongcoat EPW — two coats",
+    "key": "EPW.coverage"
+   }
+  ],
+  "callouts": [
+   {
+    "product": "EPW",
+    "quote": "Apply the second coat of Strongcoat EPW within 24 hours at 25oC or 10 hours at 45oC",
+    "page": 2,
+    "source": "Strongcoat EPW (EPW-P / EPW-S, one TDS) Method Statement, NOT STATED, NOT STATED"
+   },
+   {
+    "product": "EPW",
+    "quote": "Strongcoat EPW should not be applied if the application temperature is expected to drop below 5oC or if the relative humidity will exceed 90%",
+    "page": 2,
+    "source": "Strongcoat EPW (EPW-P / EPW-S, one TDS) Method Statement, NOT STATED, NOT STATED"
+   },
+   {
+    "product": "EPW",
+    "quote": "Application should not be carried out, when there is standing or running water.",
+    "page": 2,
+    "source": "Strongcoat EPW (EPW-P / EPW-S, one TDS) TDS, 06-0020-A-2026, NOT STATED"
+   }
+  ],
   "panel": {
    "kind": "table",
    "products": [
@@ -111,16 +338,41 @@
     "colour",
     "chem_citric_acid_10_7d",
     "chem_nitric_acid_25_spot"
+   ],
+   "rows": [
+    {
+     "prop": "colour",
+     "cells": [
+      "EPW-P.colour",
+      "EPW-S.colour"
+     ]
+    },
+    {
+     "prop": "chem_citric_acid_10_7d",
+     "cells": [
+      "EPW-P.chem_citric_acid_10_7d",
+      "EPW-S.chem_citric_acid_10_7d"
+     ]
+    },
+    {
+     "prop": "chem_nitric_acid_25_spot",
+     "cells": [
+      "EPW-P.chem_nitric_acid_25_spot",
+      "EPW-S.chem_nitric_acid_25_spot"
+     ]
+    }
    ]
   },
   "choose": [
    {
     "product": "EPW-P",
-    "quote": "Strongcoat EPW-P is suitable for use with potable water"
+    "quote": "Strongcoat EPW-P is suitable for use with potable water",
+    "page": 1
    },
    {
     "product": "EPW-S",
-    "quote": "Strongcoat EPW-S is suitable for use in reservoirs"
+    "quote": "Strongcoat EPW-S is suitable for use in reservoirs",
+    "page": 1
    }
   ]
  },
@@ -130,6 +382,38 @@
   "candidates": [
    "HYDROSTOP-HW",
    "HYPERSEAL-DP2010H"
+  ],
+  "problem": "a movement joint and a pipe passing through a wall; water tracks along both.",
+  "problem_vo": "Joints and penetrations are where water finds a path.",
+  "stack": [
+   {
+    "label": "Concrete on both sides of the joint",
+    "key": null
+   },
+   {
+    "label": "Hydrostop HW cast across the joint",
+    "key": "HYDROSTOP-HW.tensile"
+   }
+  ],
+  "callouts": [
+   {
+    "product": "HYDROSTOP-HW",
+    "quote": "should be tied by wire to the reinforcement through the eyelets in the edge flanges",
+    "page": 1,
+    "source": "Hydrostop HW TDS, 08-0061-QA-B-2026, NOT STATED"
+   },
+   {
+    "product": "HYDROSTOP-HW",
+    "quote": "Full range of factory made junction pieces are available for all profiles",
+    "page": 1,
+    "source": "Hydrostop HW TDS, 08-0061-QA-B-2026, NOT STATED"
+   },
+   {
+    "product": "HYPERSEAL-DP2010H",
+    "quote": "Allow 24 hours for curing before pouring concrete on top of the joint",
+    "page": 2,
+    "source": "Hyperseal DP-2010H Method Statement, NOT STATED, NOT STATED"
+   }
   ],
   "panel": {
    "kind": "table",
@@ -142,16 +426,48 @@
     "elongation",
     "expansion",
     "service_temp"
+   ],
+   "rows": [
+    {
+     "prop": "tensile",
+     "cells": [
+      "HYDROSTOP-HW.tensile",
+      null
+     ]
+    },
+    {
+     "prop": "elongation",
+     "cells": [
+      "HYDROSTOP-HW.elongation",
+      null
+     ]
+    },
+    {
+     "prop": "expansion",
+     "cells": [
+      null,
+      "HYPERSEAL-DP2010H.expansion"
+     ]
+    },
+    {
+     "prop": "service_temp",
+     "cells": [
+      null,
+      "HYPERSEAL-DP2010H.service_temp"
+     ]
+    }
    ]
   },
   "choose": [
    {
     "product": "HYDROSTOP-HW",
-    "quote": "Hollow center bulb for expansion joints to accommodate"
+    "quote": "Hollow center bulb for expansion joints to accommodate",
+    "page": 1
    },
    {
     "product": "HYPERSEAL-DP2010H",
-    "quote": "Slow expansion rate to prevent damage to freshly"
+    "quote": "Slow expansion rate to prevent damage to freshly",
+    "page": 1
    }
   ]
  },
@@ -163,6 +479,42 @@
    "REPCOAT-FF",
    "REPCOAT-FF-PLUS",
    "REPCOAT-S"
+  ],
+  "problem": "CO₂ and rain on a façade; carbonation front inside the cover.",
+  "problem_vo": "Exposed concrete faces carbon dioxide, rain and sun.",
+  "stack": [
+   {
+    "label": "Concrete surface",
+    "key": null
+   },
+   {
+    "label": "Repcoat Primer",
+    "key": "REPCOAT.primer_coverage"
+   },
+   {
+    "label": "Repcoat — per coat",
+    "key": "REPCOAT.coverage"
+   }
+  ],
+  "callouts": [
+   {
+    "product": "REPCOAT",
+    "quote": "Two coats should always be used on dark, absorbent and heavily textured surfaces",
+    "page": 2,
+    "source": "Repcoat TDS, 06-0001-B-2019, NOT STATED"
+   },
+   {
+    "product": "REPCOAT",
+    "quote": "It is important to wait for a minimum of 12 hours before the application of Repcoat",
+    "page": 2,
+    "source": "Repcoat TDS, 06-0001-B-2019, NOT STATED"
+   },
+   {
+    "product": "REPCOAT-FF",
+    "quote": "The first coat can be diluted by up to 15% with clean water depending on the surface porosity",
+    "page": 1,
+    "source": "Repcoat FF TDS, 06-0003-A-2023, NOT STATED"
+   }
   ],
   "panel": {
    "kind": "table",
@@ -176,16 +528,52 @@
     "recoat",
     "carbonation",
     "voc"
+   ],
+   "rows": [
+    {
+     "prop": "coverage",
+     "cells": [
+      "REPCOAT.coverage",
+      "REPCOAT-FF.coverage",
+      "REPCOAT-FF-PLUS.coverage"
+     ]
+    },
+    {
+     "prop": "recoat",
+     "cells": [
+      "REPCOAT.recoat",
+      "REPCOAT-FF.recoat",
+      "REPCOAT-FF-PLUS.recoat"
+     ]
+    },
+    {
+     "prop": "carbonation",
+     "cells": [
+      "REPCOAT.carbonation_depth",
+      "REPCOAT-FF.carbonation_resistance",
+      "REPCOAT-FF-PLUS.carbonation_resistance"
+     ]
+    },
+    {
+     "prop": "voc",
+     "cells": [
+      "REPCOAT.voc",
+      "REPCOAT-FF.voc",
+      "REPCOAT-FF-PLUS.voc"
+     ]
+    }
    ]
   },
   "choose": [
    {
     "product": "REPCOAT",
-    "quote": "High build elastomeric, microporous coating."
+    "quote": "High build elastomeric, microporous coating.",
+    "page": 1
    },
    {
     "product": "REPCOAT-FF",
-    "quote": "Matt finish helping to hide irregularities."
+    "quote": "Matt finish helping to hide irregularities.",
+    "page": 1
    }
   ]
  },
@@ -197,6 +585,38 @@
    "EPW-S",
    "REPCOAT-P"
   ],
+  "problem": "chemical splash on a steel tank and a concrete bund; corrosion at the steel edge.",
+  "problem_vo": "Industrial exposure adds chemicals.",
+  "stack": [
+   {
+    "label": "Concrete or steel (grit-blasted)",
+    "key": null
+   },
+   {
+    "label": "Strongcoat EN100 base coat + topcoat",
+    "key": "EN100.coverage"
+   }
+  ],
+  "callouts": [
+   {
+    "product": "EN100",
+    "quote": "Apply first coat of Strongcoat EN100 at a rate of 0.33 kg/m2 to achieve 250 micron thickness",
+    "page": 2,
+    "source": "Strongcoat EN100 Method Statement, NOT STATED, NOT STATED"
+   },
+   {
+    "product": "EN100",
+    "quote": "Strongcoat EN100 is designed to be used without a primer.",
+    "page": 1,
+    "source": "Strongcoat EN100 TDS, 06-0008-C-2025, NOT STATED"
+   },
+   {
+    "product": "EPW",
+    "quote": "Precaution is recommended if the application is taking place at high temperatures (above 30oC)",
+    "page": 2,
+    "source": "Strongcoat EPW (EPW-P / EPW-S, one TDS) TDS, 06-0020-A-2026, NOT STATED"
+   }
+  ],
   "panel": {
    "kind": "bars",
    "products": [
@@ -206,16 +626,28 @@
    ],
    "props": [
     "bond_concrete"
+   ],
+   "rows": [
+    {
+     "prop": "bond_concrete",
+     "cells": [
+      "EN100.bond_concrete",
+      "EPW-S.bond_concrete",
+      "REPCOAT-P.bond_concrete"
+     ]
+    }
    ]
   },
   "choose": [
    {
     "product": "EN100",
-    "quote": "Excellent chemical resistance."
+    "quote": "Excellent chemical resistance.",
+    "page": 1
    },
    {
     "product": "REPCOAT-P",
-    "quote": "Excellent UV resistance."
+    "quote": "Excellent UV resistance.",
+    "page": 1
    }
   ]
  }
