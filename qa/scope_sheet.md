@@ -79,7 +79,7 @@ Source: PDFs downloaded from dcp-int.com (Qatar download pages; Lebanon page for
 ## 3. Named in the brief but NO document found
 
 - **Repcoat P Ultra** — Named as the UV protection coat in the PU-H50 / PU-P60 method statements. The Repcoat P TDS you uploaded is byte-identical to the Qatar-site Repcoat P TDS (06-0005-B-2026) and does not say whether P Ultra is the same product — unconfirmed
-- **Method statements still missing** — PU-P100, Setseal 300C, Setseal R, Repcoat, Repcoat S/P/FF Plus, primers, DPM
+- **Method statements still missing** — PU-P100, Setseal 300C, Repcoat, Repcoat FF Plus, primers, DPM
 - **Aliphatic PU topcoat** — supplied by you: **DonProof AL** (“aliphatic polyurethane UV protective topcoat for polyurea membranes”). **Repcoat P Ultra** (named in the web method statements for PU-H50 / PU-P60) is still not supplied.
 - **Strongcoat EPW-P / EPW-S** share one TDS (`Strongcoat EPW_TDS_4.pdf`); the data is stored once as `EPW`.
 

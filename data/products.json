@@ -2663,6 +2663,13 @@
     "TDS describes Setseal R as a 'cementitious crystalline capillary waterproofing system'. Brief excludes crystalline products (Admixtures) AND lists it as a joint sealant. See scope sheet."
    ],
    "extracted": true,
+   "method_statements": [
+    {
+     "file": "user-supplied-3/Setseal_R_MS.pdf",
+     "ref": "NOT STATED",
+     "doc_date": "NOT STATED"
+    }
+   ],
    "standards_claimed": [
     {
      "printed": "BS 6920:2000",
@@ -3793,6 +3800,13 @@
    ],
    "notes": [],
    "extracted": true,
+   "method_statements": [
+    {
+     "file": "user-supplied-3/Repcoat_S.pdf",
+     "ref": "NOT STATED",
+     "doc_date": "NOT STATED"
+    }
+   ],
    "not_applicable_fields": [
     "bond_concrete",
     "crack_bridging",
@@ -3855,7 +3869,9 @@
       "page": 1,
       "doc_code": "06-0005-B-2026",
       "doc_date": "NOT STATED",
-      "label_as_printed": "Overcoating time"
+      "label_as_printed": "Overcoating time",
+      "held_conflict": "C-14",
+      "on_screen_allowed": false
      }
     ],
     "cure_full": [
@@ -3915,6 +3931,13 @@
    ],
    "notes": [],
    "extracted": true,
+   "method_statements": [
+    {
+     "file": "user-supplied-3/Repcoat_P.pdf",
+     "ref": "NOT STATED",
+     "doc_date": "NOT STATED"
+    }
+   ],
    "not_applicable_fields": [
     "coverage",
     "crack_bridging",

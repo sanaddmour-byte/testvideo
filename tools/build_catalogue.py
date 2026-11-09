@@ -56,7 +56,7 @@ for pid, name, rel, cls, title, quote, zone, note in rows:
                     values_extracted=False))
 missing_docs = [
  dict(name="Repcoat P Ultra", reason="Named as the UV protection coat in the PU-H50 / PU-P60 method statements. The Repcoat P TDS you uploaded is byte-identical to the Qatar-site Repcoat P TDS (06-0005-B-2026) and does not say whether P Ultra is the same product — unconfirmed"),
- dict(name="Method statements still missing", reason="PU-P100, Setseal 300C, Setseal R, Repcoat, Repcoat S/P/FF Plus, primers, DPM"),
+ dict(name="Method statements still missing", reason="PU-P100, Setseal 300C, Repcoat, Repcoat FF Plus, primers, DPM"),
 ]
 json.dump(dict(catalogue=out, documents_not_found=missing_docs),
           open(os.path.join(bp.ROOT, "data", "catalogue.json"), "w"), ensure_ascii=False, indent=1)

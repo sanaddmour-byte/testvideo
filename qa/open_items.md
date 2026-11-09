@@ -43,8 +43,8 @@ DonProof Primer EP, Primer PU, Primer PU1000, DonProof AL (aliphatic topcoat), R
 ## C3. Still needed from you
 
 1. **Repcoat P Ultra** TDS — or confirmation that it is the same product as Repcoat P (the Repcoat P TDS you uploaded is identical to the one already held).
-2. **Method statements** still missing: PU-P100, Setseal 300C, Setseal R, Repcoat, Repcoat S, Repcoat P, Repcoat FF Plus, the primers/DPM. (Callouts for those use TDS wording.)
-3. Rulings on the new conflicts C-07 … C-13 (`qa/conflicts.md`) and C-03 (PU-H50 humidity, now two method-statement revisions say 80%).
+2. **Method statements** still missing: PU-P100, Setseal 300C, Repcoat, Repcoat FF Plus, the primers/DPM. (Callouts for those use TDS wording.)
+3. Rulings on the new conflicts C-07 … C-14 (`qa/conflicts.md`) and C-03 (PU-H50 humidity, now two method-statement revisions say 80%).
 4. **Document dates**, and which revision is current: PU-H50 MS is on the web as DCP00/08-0163-B-2022 and in your upload as DCP00/08-0163-A-2025.
 5. ~~DCP logo~~ taken from dcp-int.com on your instruction (`assets/brand`); brand colours are those printed in the logo SVG. Confirm they are the full palette.
 6. Missing values: see table B; they show as grey “Data pending”.

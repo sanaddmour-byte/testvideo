@@ -45,3 +45,14 @@ Method statements carry no date. The short MS for EN100, EPW, Repcoat FF and Hyp
 
 Supporting evidence for **C-06** (not a ruling): the DPM TDS say DPM is for substrates “where the relative humidity level is above 75%”, and PU-C100 TDS says “screed … higher than 75%” — in line with the PU-P60 **TDS** (75%), not the PU-P60 MS (80–85%). Still your call.
 Repcoat P TDS (uploaded) is byte-identical to the Qatar-site copy; no new information.
+
+---
+## Added after the fourth batch (Repcoat P / S, Setseal R method statements)
+
+| ID | Product | Item | Document A | Document B | On screen? |
+|---|---|---|---|---|---|
+| C-14 | Repcoat P | Overcoating time | TDS (06-0005-B-2026) p1: “Overcoating time: 24 hr @ 25oC” | `user-supplied-3/Repcoat_P.pdf` 2.2: “minimum of 6 hours at 35oC or 8 hours at 23oC … Do not exceed 24 hours between the two coats” | **Held back** (`REPCOAT-P.recoat`) |
+
+Checked, **no conflict**: Setseal R MS vs TDS (17 m² per 25 kg bag, ≤1 mm per coat, dampen 24 h, keep moist 3 days, 5 °C); Repcoat P Primer TDS vs Repcoat P MS (6–24 h overcoat); Repcoat S MS primer cure 5 h @ 25 °C = TDS.
+**Unit differences — not converted, not compared (brief §3.3):** Repcoat S MS gives “6 m²/litre per coat to achieve a 70 microns” while its TDS gives “0.16 litre/m²/coat”; Repcoat P Primer MS gives “0.12 - 0.16 litre/m2” while its TDS gives “5.5 - 6.5 m2/kg”. Tell me if you want me to treat these as consistent.
+Duplicates received and discarded (byte-identical to files already held): Repcoat FF method statement, Setseal 300C TDS.

@@ -416,6 +416,7 @@ P.append(p)
 
 p = Product("SETSEAL-R", "Setseal R", "Setseal R_TDS_9.pdf", "Setseal cementitious (crystalline)", "Waterproofing",
             CEM, na=["thickness_min", "tensile", "elongation", "bond_concrete", "crack_bridging"])
+p.ms("user-supplied-3/Setseal_R_MS.pdf")
 p.v("pot_life", "25 - 45", "min @ 25°C", printed="25 - 45 min @ 25", label="Working time")
 p.v("coverage", "1 – 1.5 kg dry powder/m² per coat; 25 kg bag covers 17 – 20 m² per coat", "", printed="17 – 20 m² per coat")
 p.v("water_permeability", "At 8 bars: Impermeable", "", "DIN 1048", printed="At 8 bars: Impermeable")
@@ -536,6 +537,7 @@ P.append(p)
 
 p = Product("REPCOAT-S", "Repcoat S", "regional/lb/Repcoat S_TDS.pdf", "Repcoat anti-carbonation (solvent, aliphatic acrylate)", "Protective", LIQ,
             na=["pot_life", "cure_full", "tensile", "elongation", "bond_concrete", "crack_bridging", "service_temp"])
+p.ms("user-supplied-3/Repcoat_S.pdf")
 p.v("coverage", "0.16 litre/m²/coat (Repcoat S Primer 0.2 litre/m²/coat)", "", printed="0.16 litre/m²/coat")
 p.v("recoat", "5 hr @ 25°C (over Repcoat S Primer)", "", printed="5 hr @ 25", label="Over coating time for Repcoat S Primer")
 p.v("co2_permeability", "> 250 m equivalent thickness of air", "", "Taywood method", printed="> 250 m equivalent")
@@ -548,8 +550,9 @@ p = Product("REPCOAT-P", "Repcoat P", "Repcoat P_TDS_7.pdf", "Repcoat PU protect
             na=["coverage", "elongation", "crack_bridging", "service_temp"])
 p.v("tensile", "≥ 4", "MPa @ 7 days", "ASTM D412", printed="≥ 4 MPa @ 7 days")
 p.v("bond_concrete", "≥ 2.0", "MPa @ 7 days (concrete failure)", "ASTM D4541", printed="≥ 2.0 MPa @ 7 days")
+p.ms("user-supplied-3/Repcoat_P.pdf")
 p.v("pot_life", "4 - 6", "hr @ 25oC", printed="4 - 6 hr @ 25")
-p.v("recoat", "24", "hr @ 25oC", printed="24 hr @ 25", label="Overcoating time")
+p.v("recoat", "24", "hr @ 25oC", printed="24 hr @ 25", label="Overcoating time", held="C-14")
 p.v("cure_full", "7", "days", printed="7 days", label="Full curing")
 p.use("G", "Steel tanks.")
 p.use("G", "Chemical processing areas.")
