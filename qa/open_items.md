@@ -22,20 +22,29 @@
 | Repcoat | 06-0001-B-2019 | bond_concrete, crack_bridging, service_temp |
 | Repcoat FF | 06-0003-A-2023 | tensile, elongation, bond_concrete, crack_bridging, service_temp |
 | Strongcoat HB | 05-0016-QA-B-2026 | coverage, elongation, crack_bridging, service_temp, recoat, shelf_life |
+| Aquathane R100 | 08-0022-QA-D-2026 | crack_bridging, voc |
+| Aquathane E400 | 08-0106-QA-A-2025 | recoat, voc |
+| Repcoat S | 06-0002-A-2010 | voc, shelf_life |
+| Repcoat P | 06-0005-B-2026 | voc, shelf_life |
 
 Field sets are per family (spray / sheet / liquid / cementitious) and reflect what a comparison panel would want; fields marked not-applicable are listed in `not_applicable_fields` per product.
 
-## C. Decisions needed
+## C. Decisions recorded (user reply after Phase 1)
 
-1. Include or drop PU-P100, PU-H50, PU-C100 and every table-2 product (scope sheet).
-2. DonProof L / R are sheets, Setseal 300C / R are not joint sealants, Strongcoat HB is a floor coating — confirm drop/keep (scope sheet §5).
-3. Zone E has no TDS support in the listed products — approve waterstop/hydrophilic products or leave E out.
-4. Missing documents: DonProof Primer PU, Primer EP, Repcoat FF Plus, “aliphatic PU topcoats” (which product?), Repcoat P Ultra (named by the PU-H50 method statement).
-5. Brief §3.4 says show coverage as m²/kg or m²/ltr, but §3.3 says never convert. TDS print kg/m² (spray), litre/m² (acrylics). I store and will show them **as printed**. ASSUMED until you rule.
-6. Swimming pools / aquariums → zone D mapping (marked ASSUMED).
-7. PRIMER_NAMING stays “legacy” (default) — nothing built yet depends on it.
-8. Products whose TDS also list car-park decks (PU-P150, PU-P100, PU-H50, PU-C100 “parking”, FB “underground car parks”, EPW): the car-park use will not be shown; other uses will. Confirm.
-9. HS shelf life: TDS is silent (the 5-year figure in my first read belongs to DonProof R — the build check caught that).
+- APPROVED: PU-P100, PU-H50, PU-C100, Aquathane R100 / E400, Hydrostop HW, Hyperseal DP-2010H, Repcoat S, Repcoat P (all now in `products.json`). Other catalogue items (table 2 of the scope sheet) remain **not extracted** — they are not used in the film yet.
+- CONFIRMED: DonProof L/R are sheets (L vs R comparison dropped); Setseal 300C/R are not joint sealants (pairing dropped; both products kept); Strongcoat HB/HB400 dropped as floor coatings.
+- KEEP: swimming-pool lines (mapped to zone D) and car-park lines. Car parks have no film zone, so they appear in the selector matrix's “Other TDS-listed uses” column, not as a zone tick. *(My reading of “should stay” — tell me if you want them shown differently.)*
+- STILL ASSUMED: coverage shown as printed (kg/m², litre/m²), not converted; Qatar-site documents are the baseline; PRIMER_NAMING = legacy.
+
+## C2. Needed from you (documents not available on dcp-int.com)
+
+1. **DonProof Primer PU** and **DonProof Primer EP** TDS (named inside the PU-P150 / PU-C100 TDS).
+2. **Repcoat FF Plus** TDS.
+3. **Aliphatic PU topcoat** — which product(s)? Also the **Repcoat P Ultra** TDS named by the PU-H50 / PU-P60 method statements.
+4. **Method statements** for HS, FB, FB-S, L, R, PU-P150, PU-P100, PU-C100, Strongcoat EPW, EN100, Setseal 300C/R, Repcoat, Repcoat FF, Aquathane E400, Hydrostop HW, Hyperseal DP-2010H. Only PU-H50 and PU-P60 method statements were available, so the detail callouts for other products currently use the TDS “Method of use” wording (quoted in the storyboard).
+5. **Document dates** (no PDF prints one) and the current revision where regional sites differ.
+6. **DCP logo and brand colours** → `assets/brand` (placeholder palette until then).
+7. Missing values: VOC for PU-P150 / PU-P100 / PU-H50 / Setseal 300C and others listed in table B are shown as grey “Data pending”.
 
 ## D. Data-quality notes (checked, not blocking)
 

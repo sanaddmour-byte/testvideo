@@ -1,21 +1,6 @@
 {
  "catalogue": [
   {
-   "id": "AQUATHANE-R100",
-   "name": "Aquathane R100",
-   "source_file": "Aquathane R100_TDS_17.pdf",
-   "doc_code": "08-0022-QA-D-2026",
-   "doc_date": "NOT STATED",
-   "proposed_classification": "Waterproofing",
-   "title_as_printed": "Polyurethane liquid membrane for waterproofing and protection",
-   "title_page": 1,
-   "use_quote": "Wet areas, bathrooms and kitchens.",
-   "use_page": 1,
-   "zone_hint": "C",
-   "note": null,
-   "values_extracted": false
-  },
-  {
    "id": "AQUATHANE-R100-BLK",
    "name": "Aquathane R100 Black",
    "source_file": "Aquathane R100 Black_TDS_3.pdf",
@@ -28,21 +13,6 @@
    "use_page": null,
    "zone_hint": null,
    "note": "uses not read yet",
-   "values_extracted": false
-  },
-  {
-   "id": "AQUATHANE-E400",
-   "name": "Aquathane E400",
-   "source_file": "Aquathane E400_1.pdf",
-   "doc_code": "08-0106-QA-A-2025",
-   "doc_date": "NOT STATED",
-   "proposed_classification": "Waterproofing",
-   "title_as_printed": "One component, water based polyurethane liquid membrane",
-   "title_page": 1,
-   "use_quote": "Basements and retaining walls.",
-   "use_page": 1,
-   "zone_hint": "A",
-   "note": null,
    "values_extracted": false
   },
   {
@@ -136,21 +106,6 @@
    "values_extracted": false
   },
   {
-   "id": "HYDROSTOP-HW",
-   "name": "Hydrostop HW",
-   "source_file": "Hydrostop HW_TDS_11.pdf",
-   "doc_code": "08-0061-QA-B-2026",
-   "doc_date": "NOT STATED",
-   "proposed_classification": "Accessory (waterstop)",
-   "title_as_printed": "PVC Waterstops",
-   "title_page": 1,
-   "use_quote": "Water reservoirs.",
-   "use_page": 1,
-   "zone_hint": "E",
-   "note": null,
-   "values_extracted": false
-  },
-  {
    "id": "HYDROSTOP-AW-C531",
    "name": "Hydrostop AW-C531",
    "source_file": "Hydrostop AW-C531.pdf",
@@ -162,21 +117,6 @@
    "use_quote": "Swimming pools.",
    "use_page": 1,
    "zone_hint": "E",
-   "note": null,
-   "values_extracted": false
-  },
-  {
-   "id": "HYPERSEAL-DP2010H",
-   "name": "Hyperseal DP-2010H",
-   "source_file": "Hyperseal DP-2010H_TDS_2.pdf",
-   "doc_code": "08-0018-QA-A-2025",
-   "doc_date": "NOT STATED",
-   "proposed_classification": "Accessory (waterstop)",
-   "title_as_printed": "High performance hydrophilic waterstops",
-   "title_page": 1,
-   "use_quote": null,
-   "use_page": null,
-   "zone_hint": null,
    "note": null,
    "values_extracted": false
   },
@@ -286,21 +226,6 @@
    "values_extracted": false
   },
   {
-   "id": "REPCOAT-P",
-   "name": "Repcoat P",
-   "source_file": "Repcoat P_TDS_7.pdf",
-   "doc_code": "06-0005-B-2026",
-   "doc_date": "NOT STATED",
-   "proposed_classification": "Protective",
-   "title_as_printed": "High performance polyurethane based protective coating and sealer",
-   "title_page": 1,
-   "use_quote": "Steel tanks.",
-   "use_page": 1,
-   "zone_hint": "G",
-   "note": "TDS does not use the word 'aliphatic'",
-   "values_extracted": false
-  },
-  {
    "id": "REPCOAT-ZR",
    "name": "Repcoat ZR",
    "source_file": "Repcoat ZR_TDS_4.pdf",
@@ -346,27 +271,12 @@
    "values_extracted": false
   },
   {
-   "id": "REPCOAT-S",
-   "name": "Repcoat S",
-   "source_file": "regional/lb/Repcoat S_TDS.pdf",
-   "doc_code": "06-0002-A-2010",
-   "doc_date": "NOT STATED",
-   "proposed_classification": "Protective",
-   "title_as_printed": "Solvent based high performance alipha",
-   "title_page": 1,
-   "use_quote": "Retaining walls.",
-   "use_page": 1,
-   "zone_hint": "F",
-   "note": "'aliphatic acrylate' (ligature-damaged in PDF text); Lebanon-site document",
-   "values_extracted": false
-  },
-  {
    "id": "STRONGCOAT-HB400",
    "name": "Strongcoat HB400",
    "source_file": "Strongcoat HB400_TDS_21.pdf",
    "doc_code": "05-0058-C-2026",
    "doc_date": "NOT STATED",
-   "proposed_classification": "Out of scope",
+   "proposed_classification": "DROPPED (floor coating; user confirmed)",
    "title_as_printed": "Solvent free high build epoxy floor coating",
    "title_page": 1,
    "use_quote": "Aircraft hangars.",

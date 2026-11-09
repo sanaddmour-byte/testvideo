@@ -1,0 +1,214 @@
+{
+ "rule": "tick only where the TDS lists that use (data/products.json uses[])",
+ "rows": [
+  {
+   "id": "PU-P150",
+   "name": "DonProof PU-P150",
+   "zones": [
+    "A",
+    "B",
+    "D"
+   ],
+   "other_listed_uses": [
+    "Car park and bridge decks."
+   ]
+  },
+  {
+   "id": "PU-P100",
+   "name": "DonProof PU-P100",
+   "zones": [
+    "A",
+    "B",
+    "D"
+   ],
+   "other_listed_uses": [
+    "Car park and bridge decks"
+   ]
+  },
+  {
+   "id": "PU-P60",
+   "name": "DonProof PU-P60",
+   "zones": [
+    "A",
+    "B",
+    "D"
+   ],
+   "other_listed_uses": []
+  },
+  {
+   "id": "PU-H50",
+   "name": "DonProof PU-H50",
+   "zones": [
+    "A",
+    "B",
+    "D"
+   ],
+   "other_listed_uses": [
+    "Car park and bridge decks."
+   ]
+  },
+  {
+   "id": "PU-C100",
+   "name": "DonProof PU-C100",
+   "zones": [
+    "B",
+    "C"
+   ],
+   "other_listed_uses": [
+    "Floors, parking lots and garages."
+   ]
+  },
+  {
+   "id": "HS",
+   "name": "DonProof HS",
+   "zones": [
+    "A"
+   ],
+   "other_listed_uses": []
+  },
+  {
+   "id": "FB",
+   "name": "DonProof FB",
+   "zones": [
+    "A"
+   ],
+   "other_listed_uses": [
+    "Underground car parks and garages."
+   ]
+  },
+  {
+   "id": "FB-S",
+   "name": "DonProof FB-S",
+   "zones": [
+    "A"
+   ],
+   "other_listed_uses": []
+  },
+  {
+   "id": "L",
+   "name": "DonProof L",
+   "zones": [
+    "A",
+    "B"
+   ],
+   "other_listed_uses": []
+  },
+  {
+   "id": "R",
+   "name": "DonProof R",
+   "zones": [
+    "B"
+   ],
+   "other_listed_uses": []
+  },
+  {
+   "id": "EPW",
+   "name": "Strongcoat EPW (EPW-P / EPW-S, one TDS)",
+   "zones": [
+    "D",
+    "G"
+   ],
+   "other_listed_uses": [
+    "Heavy duty wall and floor coating in food processing"
+   ]
+  },
+  {
+   "id": "EN100",
+   "name": "Strongcoat EN100",
+   "zones": [
+    "G"
+   ],
+   "other_listed_uses": []
+  },
+  {
+   "id": "SETSEAL-300C",
+   "name": "Setseal 300C",
+   "zones": [
+    "A",
+    "C",
+    "D",
+    "F"
+   ],
+   "other_listed_uses": []
+  },
+  {
+   "id": "SETSEAL-R",
+   "name": "Setseal R",
+   "zones": [
+    "A",
+    "D"
+   ],
+   "other_listed_uses": []
+  },
+  {
+   "id": "REPCOAT",
+   "name": "Repcoat",
+   "zones": [
+    "F"
+   ],
+   "other_listed_uses": []
+  },
+  {
+   "id": "REPCOAT-FF",
+   "name": "Repcoat FF",
+   "zones": [
+    "F"
+   ],
+   "other_listed_uses": []
+  },
+  {
+   "id": "AQUATHANE-R100",
+   "name": "Aquathane R100",
+   "zones": [
+    "A",
+    "B",
+    "C"
+   ],
+   "other_listed_uses": []
+  },
+  {
+   "id": "AQUATHANE-E400",
+   "name": "Aquathane E400",
+   "zones": [
+    "A",
+    "B",
+    "C"
+   ],
+   "other_listed_uses": []
+  },
+  {
+   "id": "HYDROSTOP-HW",
+   "name": "Hydrostop HW",
+   "zones": [
+    "A",
+    "D",
+    "E"
+   ],
+   "other_listed_uses": []
+  },
+  {
+   "id": "HYPERSEAL-DP2010H",
+   "name": "Hyperseal DP-2010H",
+   "zones": [
+    "E"
+   ],
+   "other_listed_uses": []
+  },
+  {
+   "id": "REPCOAT-S",
+   "name": "Repcoat S",
+   "zones": [
+    "F"
+   ],
+   "other_listed_uses": []
+  },
+  {
+   "id": "REPCOAT-P",
+   "name": "Repcoat P",
+   "zones": [
+    "G"
+   ],
+   "other_listed_uses": []
+  }
+ ]
+}

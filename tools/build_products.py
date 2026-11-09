@@ -274,6 +274,9 @@ p.v("service_temp", "-5 to 50", "°C", printed="-5 to 50", label="Working temper
 p.v("tear", "≥ 350", "N (Nail shank)", "EN 12310-1", printed="≥ 350 N (Nail shank)")
 p.v("impact_resistance", "≥ 350", "mm", "EN 12691 (A)", printed="≥ 350 mm")
 p.v("shelf_life", "18", "months", printed="18 months")
+p.v("cushion_layer", "no less than 300", "g/m² (geotextile over blinding)", printed="300g/m²")
+p.v("fillet", "20", "mm (base of retaining walls, stop ends, upstands)", printed="A 20 mm fillet")
+p.v("overlap_min", "50", "mm", printed="overlapped by a minimum of 50 mm")
 p.std("DIN EN 13967 Type A and")
 p.use("A", "Foundations and basements.")
 p.use("A", "Retaining walls and floor slabs.")
@@ -345,6 +348,9 @@ p.v("pot_life", "60 min @ 25°C; 45 min @ 35°C; 30 min @ 45°C", "", printed="6
 p.v("recoat", "24 hr @ 25°C; 16 hr @ 35°C; 10 hr @ 45°C", "", printed="24 hr @ 25", label="Time between coats")
 p.v("cure_full", "7 days @ 25°C; 4 days @ 35°C; 2 days @ 45°C", "", printed="7 days @ 25", label="Full cure")
 p.v("voc", "< 30", "g/ltr", printed="< 30 g/ltr")
+p.v("colour", "EPW-P: Light grey; EPW-S: Black", "", printed=["EPW-P: Light", "EPW-S: Black"])
+p.v("chem_citric_acid_10_7d", "EPW-P: R; EPW-S: RS + SS", "", "ASTM D1308 (7 days immersion)", printed="RS + SS")
+p.v("chem_nitric_acid_25_spot", "EPW-P: RS; EPW-S: R", "", "ASTM D1308 (spot test @ 1 hr)", printed=["Nitric Acid 25%", "RS"])
 p.v("shelf_life", "12", "months", printed="12 months")
 p.std("EN1504-2")
 p.std("BS 6920:2000")
@@ -404,6 +410,7 @@ P.append(p)
 
 p = Product("REPCOAT", "Repcoat", "Repcoat_TDS_1.pdf", "Repcoat anti-carbonation", "Protective", LIQ, na=["pot_life", "cure_full"])
 p.v("coverage", "0.38 litre/m2 per coat to achieve 200 microns dry film thickness", "", printed="0.38 litre/m2 per coat to achieve 200 microns dry film thickness")
+p.v("primer_coverage", "Repcoat Primer 0.1 - 0.2 litre/m2, depending on the substrate porosity", "", printed="0.1 - 0.2 litre/m2")
 p.v("tensile", "≥ 1.5", "MPa @ 7 days", "ASTM D412", printed="≥ 1.5 MPa @ 7 days")
 p.v("elongation", "≥ 350", "% @ 7 days", "ASTM D412", printed="≥ 350% @ 7 days")
 p.v("recoat", "4 hr @ 25°C; 2 hr @ 35°C", "", printed="4 hr @ 25", label="Overcoating time between consecutive coats")
@@ -442,7 +449,104 @@ p.use(None, "Car parks.", "EXCLUDED-AREA")
 p.note("TDS title: 'Solvent free high build epoxy floor coating'. Brief excludes Strongcoat floor systems yet lists HB as in scope — decision needed.")
 P.append(p)
 
+# ---------------------------------------------------------------- approved candidates (scope approved by user)
+p = Product("AQUATHANE-R100", "Aquathane R100", "Aquathane R100_TDS_17.pdf", "Aquathane liquid PU", "Waterproofing", LIQ,
+            na=["coverage", "pot_life"])
+p.v("tensile", "≥ 5", "MPa", "ASTM D412", printed="≥ 5 MPa")
+p.v("elongation", "≥ 500", "%", "ASTM D412", printed="≥ 500%")
+p.v("bond_concrete", "≥ 1", "MPa", "ASTM D4541", printed="≥ 1 MPa", label="Bond strength (substrate not stated)")
+p.v("service_temp", "-40 to 80", "°C", printed="-40 to 80")
+p.v("recoat", "6 - 24", "hr", printed="6 - 24 hr", label="Recoatable time")
+p.v("cure_full", "7", "days", printed="7 days", label="Final curing time")
+p.v("tack_free", "4 - 8", "hr", printed="4 - 8 hr")
+p.v("shelf_life", "12", "months", printed="12 months")
+p.std("Aquathane R100 complies with ASTM C836.")
+p.use("B", "Roofs.")
+p.use("C", "Wet areas, bathrooms and kitchens.")
+p.use("C", "Verandas and balconies.")
+p.use("A", "Retaining walls and basements.")
+p.use("B", "green roofs.")
+p.note("TDS LIMITATION: 'Not recommended for waterproofing of swimming pools surfaces in contact with chemically treated water.' Crack bridging and VOC not reported.")
+P.append(p)
+
+p = Product("AQUATHANE-E400", "Aquathane E400", "Aquathane E400_1.pdf", "Aquathane liquid PU", "Waterproofing", LIQ,
+            na=["coverage", "pot_life"])
+p.v("tensile", "> 1.3", "MPa @ 23oC", "ASTM D412, Die C", printed="> 1.3 MPa @ 23oC")
+p.v("elongation", "> 400", "%", "ASTM D412, Die C", printed="> 400%")
+p.v("bond_concrete", "> 1.3", "MPa", "ASTM D4541", printed="> 1.3 MPa", label="Adhesion to concrete")
+p.v("crack_bridging", "3", "mm @ 23oC", "ASTM C1305", printed="3 mm @ 23oC")
+p.v("service_temp", "-5 to +70", "°C", printed="-5 to +70")
+p.v("cure_full", "7 days @ 23oC", "", printed="7 days @ 23oC", label="Full cure")
+p.v("shelf_life", "12", "months", printed="12 months")
+p.std("LEED EQ Credit 4.2")
+p.use("B", "Exposed roofs, balconies and decks.")
+p.use("C", "Wet areas, kitchens and bathrooms (under tiles).")
+p.use("A", "Basements and retaining walls.")
+p.note("VOC: TDS says 'Low VOC content' / 'VOC < 100 g/l' (LEED statement), no measured value with test standard -> VOC left as [DATA REQUIRED].")
+P.append(p)
+
+p = Product("HYDROSTOP-HW", "Hydrostop HW", "Hydrostop HW_TDS_11.pdf", "Waterstop (accessory)", "Accessory (joints)",
+            ["tensile", "elongation", "service_temp", "shelf_life"], na=["service_temp", "shelf_life"])
+p.v("tensile", "≥ 13.0", "MPa", "ASTM D638, Type I", printed="≥ 13.0 MPa")
+p.v("elongation", "> 300", "%", "ASTM D638, Type I", printed="> 300 %")
+p.v("hardness", "80 - 90 (Initial)", "Shore A", "ASTM D2240", printed="80 - 90 (Initial)")
+p.std("BS 2782")
+p.use("E", "contraction and expansion concrete joints in the following")
+p.use("D", "Water reservoirs.")
+p.use("D", "Swimming pools.")
+p.use("A", "Retaining walls, foundations,")
+P.append(p)
+
+p = Product("HYPERSEAL-DP2010H", "Hyperseal DP-2010H", "Hyperseal DP-2010H_TDS_2.pdf", "Hydrophilic waterstop (accessory)", "Accessory (joints)",
+            ["service_temp", "shelf_life", "expansion"], na=["shelf_life"])
+p.v("service_temp", "-30 to 70", "°C", printed="-30 to 70")
+p.v("expansion", "Fresh water 200%; Saline water 80 - 100%", "", printed="200%", label="Expansion volume")
+p.v("hydrostatic_pressure", "> 50 m (5 bars)", "", printed="> 50 m (5 bars)")
+p.std("KS M 6518")
+p.use("E", "Hydrophilic waterstop can be applied against existing")
+p.note("TDS: 'should not be used in expansion joints, or any concrete section of less than 150 mm width.'")
+P.append(p)
+
+p = Product("REPCOAT-S", "Repcoat S", "regional/lb/Repcoat S_TDS.pdf", "Repcoat anti-carbonation (solvent, aliphatic acrylate)", "Protective", LIQ,
+            na=["pot_life", "cure_full", "tensile", "elongation", "bond_concrete", "crack_bridging", "service_temp"])
+p.v("coverage", "0.16 litre/m²/coat (Repcoat S Primer 0.2 litre/m²/coat)", "", printed="0.16 litre/m²/coat")
+p.v("recoat", "5 hr @ 25°C (over Repcoat S Primer)", "", printed="5 hr @ 25", label="Over coating time for Repcoat S Primer")
+p.v("co2_permeability", "> 250 m equivalent thickness of air", "", "Taywood method", printed="> 250 m equivalent")
+p.use("F", "Retaining walls.")
+p.use("F", "Bridge abutments.")
+p.use("F", "buildings and villas.")
+P.append(p)
+
+p = Product("REPCOAT-P", "Repcoat P", "Repcoat P_TDS_7.pdf", "Repcoat PU protective", "Protective", LIQ,
+            na=["coverage", "elongation", "crack_bridging", "service_temp"])
+p.v("tensile", "≥ 4", "MPa @ 7 days", "ASTM D412", printed="≥ 4 MPa @ 7 days")
+p.v("bond_concrete", "≥ 2.0", "MPa @ 7 days (concrete failure)", "ASTM D4541", printed="≥ 2.0 MPa @ 7 days")
+p.v("pot_life", "4 - 6", "hr @ 25oC", printed="4 - 6 hr @ 25")
+p.v("recoat", "24", "hr @ 25oC", printed="24 hr @ 25", label="Overcoating time")
+p.v("cure_full", "7", "days", printed="7 days", label="Full curing")
+p.use("G", "Steel tanks.")
+p.use("G", "Chemical processing areas.")
+p.use("G", "Concrete walls and floors.")
+P.append(p)
+
 out = [x.done() for x in P]
+
+APPROVED_BY_USER = "APPROVED by user (reply after Phase 1)"
+DECISIONS = {
+ "STRONGCOAT-HB": "DROPPED: floor coating (user confirmed)",
+ "L": "KEPT (listed in brief); L vs R comparison DROPPED (user confirmed)",
+ "R": "KEPT (listed in brief); L vs R comparison DROPPED (user confirmed)",
+ "SETSEAL-300C": "KEPT as cementitious waterproof coating; joint-sealant pairing DROPPED (user confirmed)",
+ "SETSEAL-R": "KEPT (listed in brief; TDS says crystalline capillary system — flagged); pairing DROPPED (user confirmed)",
+}
+for o in out:
+    o["scope_decision"] = DECISIONS.get(o["id"], APPROVED_BY_USER)
+    for u in o["uses"]:
+        if u["mapping"] == "ASSUMED":
+            u["mapping"] = "USER-CONFIRMED"
+        if u["mapping"] == "EXCLUDED-AREA":
+            u["mapping"] = "USER-KEEP-AS-LISTED"
+            u["note"] = "User ruled: swimming-pool/car-park lines stay. No film zone exists for car parks; show as listed-use text, not as a selector-matrix tick unless a zone is added."
 
 json.dump(dict(
     generated_by="tools/build_products.py",

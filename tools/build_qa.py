@@ -11,22 +11,28 @@ ZONES = {"A": "Below-grade", "B": "Roofs & podium decks", "C": "Wet areas & balc
          "F": "Façades & exposed concrete", "G": "Steel & industrial"}
 BRIEF = {  # brief section 4/6 membership + comparison set + my recommendation
  "PU-P150": ("Listed", "Spray polyurea (panel 1)", "KEEP"),
- "PU-P100": ("Not listed (proposed pair)", "Spray polyurea (panel 1, panel 2)", "APPROVE?"),
+ "PU-P100": ("Not listed (proposed pair)", "Spray polyurea (panel 1, panel 2)", "APPROVED"),
  "PU-P60":  ("Listed", "Spray polyurea (panel 1)", "KEEP"),
- "PU-H50":  ("Not listed (proposed pair)", "Spray polyurea (panel 2)", "APPROVE?"),
- "PU-C100": ("Not listed", "Liquid-applied (see note)", "APPROVE?"),
+ "PU-H50":  ("Not listed (proposed pair)", "Spray polyurea (panel 2)", "APPROVED"),
+ "PU-C100": ("Not listed", "Liquid-applied (see note)", "APPROVED"),
  "HS": ("Listed", "Sheet / pre-applied (HS in text table)", "KEEP"),
  "FB": ("Listed", "Sheet / pre-applied (FB vs FB-S bars)", "KEEP"),
  "FB-S": ("Listed", "Sheet / pre-applied (FB vs FB-S bars)", "KEEP"),
- "L": ("Listed as 'liquid-applied' — WRONG: TDS is a loose-laid PVC SHEET", "L vs R pair DROPPED", "DECIDE"),
- "R": ("Listed as 'liquid-applied' — WRONG: TDS is an FPO/TPO roofing SHEET", "L vs R pair DROPPED", "DECIDE"),
+ "L": ("Listed as 'liquid-applied' — WRONG: TDS is a loose-laid PVC SHEET", "L vs R pair DROPPED", "KEPT (see decision)"),
+ "R": ("Listed as 'liquid-applied' — WRONG: TDS is an FPO/TPO roofing SHEET", "L vs R pair DROPPED", "KEPT (see decision)"),
  "EPW": ("Listed (EPW-P / EPW-S, one TDS)", "Epoxy waterproofing (text table)", "KEEP"),
  "EN100": ("Listed", "none (single product)", "KEEP"),
- "SETSEAL-300C": ("Listed as 'joint sealant' — WRONG: cementitious waterproof coating", "Joint-sealant pair DROPPED", "DECIDE"),
- "SETSEAL-R": ("Listed as 'joint sealant' — WRONG; TDS says crystalline capillary system (brief excludes crystalline)", "Joint-sealant pair DROPPED", "DECIDE"),
+ "SETSEAL-300C": ("Listed as 'joint sealant' — WRONG: cementitious waterproof coating", "Joint-sealant pair DROPPED", "KEPT (see decision)"),
+ "SETSEAL-R": ("Listed as 'joint sealant' — WRONG; TDS says crystalline capillary system (brief excludes crystalline)", "Joint-sealant pair DROPPED", "KEPT (see decision)"),
  "REPCOAT": ("Listed", "Anti-carbonation (table: different methods)", "KEEP"),
  "REPCOAT-FF": ("Listed", "Anti-carbonation (table: different methods)", "KEEP"),
- "STRONGCOAT-HB": ("Listed — but TDS is a concrete FLOOR coating", "HB vs HB400 pair DROPPED", "DECIDE"),
+ "AQUATHANE-R100": ("Not listed (approved)", "Liquid-applied panel", "APPROVED"),
+ "AQUATHANE-E400": ("Not listed (approved)", "Liquid-applied panel", "APPROVED"),
+ "HYDROSTOP-HW": ("Not listed (approved)", "Zone E (text table)", "APPROVED"),
+ "HYPERSEAL-DP2010H": ("Not listed (approved)", "Zone E (text table)", "APPROVED"),
+ "REPCOAT-S": ("Not listed (approved)", "Anti-carbonation (table)", "APPROVED"),
+ "REPCOAT-P": ("Not listed (approved; aliphatic not stated)", "none", "APPROVED"),
+ "STRONGCOAT-HB": ("Listed — but TDS is a concrete FLOOR coating", "HB vs HB400 pair DROPPED", "DROPPED"),
 }
 
 def sec(title):
@@ -37,7 +43,7 @@ L = ["# Scope sheet — DCP Waterproofing & Protective Coatings film\n",
      "Source: PDFs downloaded from dcp-int.com (Qatar download pages; Lebanon page for Repcoat PU1 / S) plus the four PDFs you uploaded (`source-tds/user-supplied/`). "
      "**No PDF prints a document date**, so every `doc_date` is `NOT STATED` (see open items).\n"]
 
-L.append(sec("1. Products with values extracted (17)"))
+L.append(sec("1. Products with values extracted"))
 L.append("| Product | Brief status | Classification | Doc code | Zones (TDS-listed uses, page) | Comparison set | Rec. | Missing fields |\n|---|---|---|---|---|---|---|---|\n")
 for p in P["products"]:
     zs = {}
@@ -101,16 +107,20 @@ for p in P["products"]:
     if miss:
         O.append(f'| {p["name"]} | {p["doc_code"]} | {", ".join(miss)} |\n')
 O.append("\nField sets are per family (spray / sheet / liquid / cementitious) and reflect what a comparison panel would want; fields marked not-applicable are listed in `not_applicable_fields` per product.\n")
-O.append(sec("C. Decisions needed"))
-O.append("""1. Include or drop PU-P100, PU-H50, PU-C100 and every table-2 product (scope sheet).
-2. DonProof L / R are sheets, Setseal 300C / R are not joint sealants, Strongcoat HB is a floor coating — confirm drop/keep (scope sheet §5).
-3. Zone E has no TDS support in the listed products — approve waterstop/hydrophilic products or leave E out.
-4. Missing documents: DonProof Primer PU, Primer EP, Repcoat FF Plus, “aliphatic PU topcoats” (which product?), Repcoat P Ultra (named by the PU-H50 method statement).
-5. Brief §3.4 says show coverage as m²/kg or m²/ltr, but §3.3 says never convert. TDS print kg/m² (spray), litre/m² (acrylics). I store and will show them **as printed**. ASSUMED until you rule.
-6. Swimming pools / aquariums → zone D mapping (marked ASSUMED).
-7. PRIMER_NAMING stays “legacy” (default) — nothing built yet depends on it.
-8. Products whose TDS also list car-park decks (PU-P150, PU-P100, PU-H50, PU-C100 “parking”, FB “underground car parks”, EPW): the car-park use will not be shown; other uses will. Confirm.
-9. HS shelf life: TDS is silent (the 5-year figure in my first read belongs to DonProof R — the build check caught that).
+O.append(sec("C. Decisions recorded (user reply after Phase 1)"))
+O.append("""- APPROVED: PU-P100, PU-H50, PU-C100, Aquathane R100 / E400, Hydrostop HW, Hyperseal DP-2010H, Repcoat S, Repcoat P (all now in `products.json`). Other catalogue items (table 2 of the scope sheet) remain **not extracted** — they are not used in the film yet.
+- CONFIRMED: DonProof L/R are sheets (L vs R comparison dropped); Setseal 300C/R are not joint sealants (pairing dropped; both products kept); Strongcoat HB/HB400 dropped as floor coatings.
+- KEEP: swimming-pool lines (mapped to zone D) and car-park lines. Car parks have no film zone, so they appear in the selector matrix's “Other TDS-listed uses” column, not as a zone tick. *(My reading of “should stay” — tell me if you want them shown differently.)*
+- STILL ASSUMED: coverage shown as printed (kg/m², litre/m²), not converted; Qatar-site documents are the baseline; PRIMER_NAMING = legacy.
+""")
+O.append(sec("C2. Needed from you (documents not available on dcp-int.com)"))
+O.append("""1. **DonProof Primer PU** and **DonProof Primer EP** TDS (named inside the PU-P150 / PU-C100 TDS).
+2. **Repcoat FF Plus** TDS.
+3. **Aliphatic PU topcoat** — which product(s)? Also the **Repcoat P Ultra** TDS named by the PU-H50 / PU-P60 method statements.
+4. **Method statements** for HS, FB, FB-S, L, R, PU-P150, PU-P100, PU-C100, Strongcoat EPW, EN100, Setseal 300C/R, Repcoat, Repcoat FF, Aquathane E400, Hydrostop HW, Hyperseal DP-2010H. Only PU-H50 and PU-P60 method statements were available, so the detail callouts for other products currently use the TDS “Method of use” wording (quoted in the storyboard).
+5. **Document dates** (no PDF prints one) and the current revision where regional sites differ.
+6. **DCP logo and brand colours** → `assets/brand` (placeholder palette until then).
+7. Missing values: VOC for PU-P150 / PU-P100 / PU-H50 / Setseal 300C and others listed in table B are shown as grey “Data pending”.
 """)
 O.append(sec("D. Data-quality notes (checked, not blocking)"))
 O.append("- DonProof L and R list tensile/elongation per grade; stored as printed strings with grade in the value. A chart will need a per-grade selection rule.\n- DonProof L / R “service_temp” entries are *foldability at low temperature*, not service ranges — do not use as such.\n- Older PDFs (Setseal 300C, Repcoat S/PU1) lose the “ti/fi” ligatures in text extraction; checked values are numeric so verification is unaffected.\n- The page check confirms the printed text is on the cited page; it cannot prove the number is attached to the right label — values were read by me and should be spot-checked by DCP R&D.\n")

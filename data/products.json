@@ -220,7 +220,7 @@
      "zone": "D",
      "quote": "Swimming pools, aquariums, lakes.",
      "page": 1,
-     "mapping": "ASSUMED",
+     "mapping": "USER-CONFIRMED",
      "note": "Swimming pool mapped to zone D (water-retaining structures) by me — confirm"
     },
     {
@@ -233,8 +233,8 @@
      "zone": null,
      "quote": "Car park and bridge decks.",
      "page": 1,
-     "mapping": "EXCLUDED-AREA",
-     "note": "Car park decks belong to Flooring per brief; do not show"
+     "mapping": "USER-KEEP-AS-LISTED",
+     "note": "User ruled: swimming-pool/car-park lines stay. No film zone exists for car parks; show as listed-use text, not as a selector-matrix tick unless a zone is added."
     }
    ],
    "notes": [],
@@ -250,7 +250,8 @@
    ],
    "not_applicable_fields": [
     "pot_life"
-   ]
+   ],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
   },
   {
    "id": "PU-P100",
@@ -461,22 +462,23 @@
      "zone": "D",
      "quote": "Swimming pools, aquariums, lakes",
      "page": 1,
-     "mapping": "ASSUMED",
+     "mapping": "USER-CONFIRMED",
      "note": "Swimming pool mapped to zone D by me — confirm"
     },
     {
      "zone": null,
      "quote": "Car park and bridge decks",
      "page": 1,
-     "mapping": "EXCLUDED-AREA",
-     "note": "Car park decks belong to Flooring per brief; do not show"
+     "mapping": "USER-KEEP-AS-LISTED",
+     "note": "User ruled: swimming-pool/car-park lines stay. No film zone exists for car parks; show as listed-use text, not as a selector-matrix tick unless a zone is added."
     }
    ],
    "notes": [],
    "extracted": true,
    "not_applicable_fields": [
     "pot_life"
-   ]
+   ],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
   },
   {
    "id": "PU-P60",
@@ -707,7 +709,7 @@
      "zone": "D",
      "quote": "Swimming pools, aquariums, lakes.",
      "page": 1,
-     "mapping": "ASSUMED",
+     "mapping": "USER-CONFIRMED",
      "note": "Swimming pool mapped to zone D by me — confirm"
     }
    ],
@@ -715,7 +717,8 @@
    "extracted": true,
    "not_applicable_fields": [
     "pot_life"
-   ]
+   ],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
   },
   {
    "id": "PU-H50",
@@ -915,22 +918,23 @@
      "zone": "D",
      "quote": "Swimming pools, aquariums, lakes.",
      "page": 1,
-     "mapping": "ASSUMED",
+     "mapping": "USER-CONFIRMED",
      "note": "Swimming pool mapped to zone D by me — confirm"
     },
     {
      "zone": null,
      "quote": "Car park and bridge decks.",
      "page": 1,
-     "mapping": "EXCLUDED-AREA",
-     "note": "Car park decks belong to Flooring per brief; do not show"
+     "mapping": "USER-KEEP-AS-LISTED",
+     "note": "User ruled: swimming-pool/car-park lines stay. No film zone exists for car parks; show as listed-use text, not as a selector-matrix tick unless a zone is added."
     }
    ],
    "notes": [],
    "extracted": true,
    "not_applicable_fields": [
     "pot_life"
-   ]
+   ],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
   },
   {
    "id": "PU-C100",
@@ -1116,13 +1120,14 @@
      "zone": null,
      "quote": "Floors, parking lots and garages.",
      "page": 1,
-     "mapping": "EXCLUDED-AREA",
-     "note": "parking = Flooring; do not show"
+     "mapping": "USER-KEEP-AS-LISTED",
+     "note": "User ruled: swimming-pool/car-park lines stay. No film zone exists for car parks; show as listed-use text, not as a selector-matrix tick unless a zone is added."
     }
    ],
    "notes": [],
    "extracted": true,
-   "not_applicable_fields": []
+   "not_applicable_fields": [],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
   },
   {
    "id": "HS",
@@ -1292,7 +1297,8 @@
    ],
    "not_applicable_fields": [
     "crack_bridging"
-   ]
+   ],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
   },
   {
    "id": "FB",
@@ -1405,6 +1411,39 @@
       "doc_date": "NOT STATED"
      }
     ],
+    "cushion_layer": [
+     {
+      "value": "no less than 300",
+      "unit": "g/m² (geotextile over blinding)",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof FB.pdf",
+      "page": 2,
+      "doc_code": "08-0199-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "fillet": [
+     {
+      "value": "20",
+      "unit": "mm (base of retaining walls, stop ends, upstands)",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof FB.pdf",
+      "page": 2,
+      "doc_code": "08-0199-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "overlap_min": [
+     {
+      "value": "50",
+      "unit": "mm",
+      "test_standard": "NOT STATED",
+      "source_file": "DonProof FB.pdf",
+      "page": 2,
+      "doc_code": "08-0199-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
     "elongation": [
      {
       "value": "[DATA REQUIRED — R&D]",
@@ -1440,8 +1479,8 @@
      "zone": null,
      "quote": "Underground car parks and garages.",
      "page": 1,
-     "mapping": "EXCLUDED-AREA",
-     "note": "listed under below-grade uses; underground car-park DECKS are Flooring — confirm whether this may be shown"
+     "mapping": "USER-KEEP-AS-LISTED",
+     "note": "User ruled: swimming-pool/car-park lines stay. No film zone exists for car parks; show as listed-use text, not as a selector-matrix tick unless a zone is added."
     }
    ],
    "notes": [
@@ -1457,7 +1496,8 @@
      "doc_date": "NOT STATED"
     }
    ],
-   "not_applicable_fields": []
+   "not_applicable_fields": [],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
   },
   {
    "id": "FB-S",
@@ -1608,7 +1648,8 @@
      "doc_date": "NOT STATED"
     }
    ],
-   "not_applicable_fields": []
+   "not_applicable_fields": [],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
   },
   {
    "id": "L",
@@ -1737,7 +1778,8 @@
    ],
    "not_applicable_fields": [
     "crack_bridging"
-   ]
+   ],
+   "scope_decision": "KEPT (listed in brief); L vs R comparison DROPPED (user confirmed)"
   },
   {
    "id": "R",
@@ -1871,7 +1913,8 @@
    ],
    "not_applicable_fields": [
     "crack_bridging"
-   ]
+   ],
+   "scope_decision": "KEPT (listed in brief); L vs R comparison DROPPED (user confirmed)"
   },
   {
    "id": "EPW",
@@ -1994,6 +2037,39 @@
       "doc_date": "NOT STATED"
      }
     ],
+    "colour": [
+     {
+      "value": "EPW-P: Light grey; EPW-S: Black",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Strongcoat EPW_TDS_4.pdf",
+      "page": 1,
+      "doc_code": "06-0020-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "chem_citric_acid_10_7d": [
+     {
+      "value": "EPW-P: R; EPW-S: RS + SS",
+      "unit": "",
+      "test_standard": "ASTM D1308 (7 days immersion)",
+      "source_file": "Strongcoat EPW_TDS_4.pdf",
+      "page": 3,
+      "doc_code": "06-0020-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "chem_nitric_acid_25_spot": [
+     {
+      "value": "EPW-P: RS; EPW-S: R",
+      "unit": "",
+      "test_standard": "ASTM D1308 (spot test @ 1 hr)",
+      "source_file": "Strongcoat EPW_TDS_4.pdf",
+      "page": 2,
+      "doc_code": "06-0020-A-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
     "shelf_life": [
      {
       "value": "12",
@@ -2029,8 +2105,8 @@
      "zone": null,
      "quote": "Heavy duty wall and floor coating in food processing",
      "page": 1,
-     "mapping": "EXCLUDED-AREA",
-     "note": "TDS also lists car parks"
+     "mapping": "USER-KEEP-AS-LISTED",
+     "note": "User ruled: swimming-pool/car-park lines stay. No film zone exists for car parks; show as listed-use text, not as a selector-matrix tick unless a zone is added."
     }
    ],
    "notes": [
@@ -2053,7 +2129,8 @@
      "doc_date": "NOT STATED"
     }
    ],
-   "not_applicable_fields": []
+   "not_applicable_fields": [],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
   },
   {
    "id": "EN100",
@@ -2211,7 +2288,8 @@
     "TDS: 'suitable for use on concrete and steel surfaces'. Elongation, crack bridging and service temperature are not reported."
    ],
    "extracted": true,
-   "not_applicable_fields": []
+   "not_applicable_fields": [],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
   },
   {
    "id": "SETSEAL-300C",
@@ -2385,7 +2463,8 @@
      "doc_date": "NOT STATED"
     }
    ],
-   "not_applicable_fields": []
+   "not_applicable_fields": [],
+   "scope_decision": "KEPT as cementitious waterproof coating; joint-sealant pairing DROPPED (user confirmed)"
   },
   {
    "id": "SETSEAL-R",
@@ -2515,7 +2594,8 @@
     "elongation",
     "tensile",
     "thickness_min"
-   ]
+   ],
+   "scope_decision": "KEPT (listed in brief; TDS says crystalline capillary system — flagged); pairing DROPPED (user confirmed)"
   },
   {
    "id": "REPCOAT",
@@ -2529,6 +2609,17 @@
     "coverage": [
      {
       "value": "0.38 litre/m2 per coat to achieve 200 microns dry film thickness",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Repcoat_TDS_1.pdf",
+      "page": 2,
+      "doc_code": "06-0001-B-2019",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "primer_coverage": [
+     {
+      "value": "Repcoat Primer 0.1 - 0.2 litre/m2, depending on the substrate porosity",
       "unit": "",
       "test_standard": "NOT STATED",
       "source_file": "Repcoat_TDS_1.pdf",
@@ -2689,7 +2780,8 @@
    "not_applicable_fields": [
     "cure_full",
     "pot_life"
-   ]
+   ],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
   },
   {
    "id": "REPCOAT-FF",
@@ -2843,7 +2935,8 @@
    "not_applicable_fields": [
     "cure_full",
     "pot_life"
-   ]
+   ],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
   },
   {
    "id": "STRONGCOAT-HB",
@@ -2977,7 +3070,8 @@
      "zone": null,
      "quote": "Car parks.",
      "page": 1,
-     "mapping": "EXCLUDED-AREA"
+     "mapping": "USER-KEEP-AS-LISTED",
+     "note": "User ruled: swimming-pool/car-park lines stay. No film zone exists for car parks; show as listed-use text, not as a selector-matrix tick unless a zone is added."
     }
    ],
    "notes": [
@@ -2995,7 +3089,706 @@
    ],
    "not_applicable_fields": [
     "cure_full"
-   ]
+   ],
+   "scope_decision": "DROPPED: floor coating (user confirmed)"
+  },
+  {
+   "id": "AQUATHANE-R100",
+   "name": "Aquathane R100",
+   "family": "Aquathane liquid PU",
+   "classification": "Waterproofing",
+   "source_file": "Aquathane R100_TDS_17.pdf",
+   "doc_code": "08-0022-QA-D-2026",
+   "doc_date": "NOT STATED",
+   "values": {
+    "tensile": [
+     {
+      "value": "≥ 5",
+      "unit": "MPa",
+      "test_standard": "ASTM D412",
+      "source_file": "Aquathane R100_TDS_17.pdf",
+      "page": 1,
+      "doc_code": "08-0022-QA-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "elongation": [
+     {
+      "value": "≥ 500",
+      "unit": "%",
+      "test_standard": "ASTM D412",
+      "source_file": "Aquathane R100_TDS_17.pdf",
+      "page": 1,
+      "doc_code": "08-0022-QA-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "bond_concrete": [
+     {
+      "value": "≥ 1",
+      "unit": "MPa",
+      "test_standard": "ASTM D4541",
+      "source_file": "Aquathane R100_TDS_17.pdf",
+      "page": 1,
+      "doc_code": "08-0022-QA-D-2026",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Bond strength (substrate not stated)"
+     }
+    ],
+    "service_temp": [
+     {
+      "value": "-40 to 80",
+      "unit": "°C",
+      "test_standard": "NOT STATED",
+      "source_file": "Aquathane R100_TDS_17.pdf",
+      "page": 1,
+      "doc_code": "08-0022-QA-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "recoat": [
+     {
+      "value": "6 - 24",
+      "unit": "hr",
+      "test_standard": "NOT STATED",
+      "source_file": "Aquathane R100_TDS_17.pdf",
+      "page": 1,
+      "doc_code": "08-0022-QA-D-2026",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Recoatable time"
+     }
+    ],
+    "cure_full": [
+     {
+      "value": "7",
+      "unit": "days",
+      "test_standard": "NOT STATED",
+      "source_file": "Aquathane R100_TDS_17.pdf",
+      "page": 1,
+      "doc_code": "08-0022-QA-D-2026",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Final curing time"
+     }
+    ],
+    "tack_free": [
+     {
+      "value": "4 - 8",
+      "unit": "hr",
+      "test_standard": "NOT STATED",
+      "source_file": "Aquathane R100_TDS_17.pdf",
+      "page": 1,
+      "doc_code": "08-0022-QA-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "12",
+      "unit": "months",
+      "test_standard": "NOT STATED",
+      "source_file": "Aquathane R100_TDS_17.pdf",
+      "page": 2,
+      "doc_code": "08-0022-QA-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "crack_bridging": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Aquathane R100_TDS_17.pdf",
+      "page": null,
+      "doc_code": "08-0022-QA-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "voc": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Aquathane R100_TDS_17.pdf",
+      "page": null,
+      "doc_code": "08-0022-QA-D-2026",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "B",
+     "quote": "Roofs.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "C",
+     "quote": "Wet areas, bathrooms and kitchens.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "C",
+     "quote": "Verandas and balconies.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "A",
+     "quote": "Retaining walls and basements.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "B",
+     "quote": "green roofs.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    }
+   ],
+   "notes": [
+    "TDS LIMITATION: 'Not recommended for waterproofing of swimming pools surfaces in contact with chemically treated water.' Crack bridging and VOC not reported."
+   ],
+   "extracted": true,
+   "standards_claimed": [
+    {
+     "printed": "Aquathane R100 complies with ASTM C836.",
+     "source_file": "Aquathane R100_TDS_17.pdf",
+     "page": 2,
+     "doc_code": "08-0022-QA-D-2026",
+     "doc_date": "NOT STATED"
+    }
+   ],
+   "not_applicable_fields": [
+    "coverage",
+    "pot_life"
+   ],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
+  },
+  {
+   "id": "AQUATHANE-E400",
+   "name": "Aquathane E400",
+   "family": "Aquathane liquid PU",
+   "classification": "Waterproofing",
+   "source_file": "Aquathane E400_1.pdf",
+   "doc_code": "08-0106-QA-A-2025",
+   "doc_date": "NOT STATED",
+   "values": {
+    "tensile": [
+     {
+      "value": "> 1.3",
+      "unit": "MPa @ 23oC",
+      "test_standard": "ASTM D412, Die C",
+      "source_file": "Aquathane E400_1.pdf",
+      "page": 1,
+      "doc_code": "08-0106-QA-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "elongation": [
+     {
+      "value": "> 400",
+      "unit": "%",
+      "test_standard": "ASTM D412, Die C",
+      "source_file": "Aquathane E400_1.pdf",
+      "page": 1,
+      "doc_code": "08-0106-QA-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "bond_concrete": [
+     {
+      "value": "> 1.3",
+      "unit": "MPa",
+      "test_standard": "ASTM D4541",
+      "source_file": "Aquathane E400_1.pdf",
+      "page": 1,
+      "doc_code": "08-0106-QA-A-2025",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Adhesion to concrete"
+     }
+    ],
+    "crack_bridging": [
+     {
+      "value": "3",
+      "unit": "mm @ 23oC",
+      "test_standard": "ASTM C1305",
+      "source_file": "Aquathane E400_1.pdf",
+      "page": 1,
+      "doc_code": "08-0106-QA-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "service_temp": [
+     {
+      "value": "-5 to +70",
+      "unit": "°C",
+      "test_standard": "NOT STATED",
+      "source_file": "Aquathane E400_1.pdf",
+      "page": 1,
+      "doc_code": "08-0106-QA-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "cure_full": [
+     {
+      "value": "7 days @ 23oC",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Aquathane E400_1.pdf",
+      "page": 1,
+      "doc_code": "08-0106-QA-A-2025",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Full cure"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "12",
+      "unit": "months",
+      "test_standard": "NOT STATED",
+      "source_file": "Aquathane E400_1.pdf",
+      "page": 2,
+      "doc_code": "08-0106-QA-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "recoat": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Aquathane E400_1.pdf",
+      "page": null,
+      "doc_code": "08-0106-QA-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "voc": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Aquathane E400_1.pdf",
+      "page": null,
+      "doc_code": "08-0106-QA-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "B",
+     "quote": "Exposed roofs, balconies and decks.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "C",
+     "quote": "Wet areas, kitchens and bathrooms (under tiles).",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "A",
+     "quote": "Basements and retaining walls.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    }
+   ],
+   "notes": [
+    "VOC: TDS says 'Low VOC content' / 'VOC < 100 g/l' (LEED statement), no measured value with test standard -> VOC left as [DATA REQUIRED]."
+   ],
+   "extracted": true,
+   "standards_claimed": [
+    {
+     "printed": "LEED EQ Credit 4.2",
+     "source_file": "Aquathane E400_1.pdf",
+     "page": 1,
+     "doc_code": "08-0106-QA-A-2025",
+     "doc_date": "NOT STATED"
+    }
+   ],
+   "not_applicable_fields": [
+    "coverage",
+    "pot_life"
+   ],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
+  },
+  {
+   "id": "HYDROSTOP-HW",
+   "name": "Hydrostop HW",
+   "family": "Waterstop (accessory)",
+   "classification": "Accessory (joints)",
+   "source_file": "Hydrostop HW_TDS_11.pdf",
+   "doc_code": "08-0061-QA-B-2026",
+   "doc_date": "NOT STATED",
+   "values": {
+    "tensile": [
+     {
+      "value": "≥ 13.0",
+      "unit": "MPa",
+      "test_standard": "ASTM D638, Type I",
+      "source_file": "Hydrostop HW_TDS_11.pdf",
+      "page": 1,
+      "doc_code": "08-0061-QA-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "elongation": [
+     {
+      "value": "> 300",
+      "unit": "%",
+      "test_standard": "ASTM D638, Type I",
+      "source_file": "Hydrostop HW_TDS_11.pdf",
+      "page": 1,
+      "doc_code": "08-0061-QA-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "hardness": [
+     {
+      "value": "80 - 90 (Initial)",
+      "unit": "Shore A",
+      "test_standard": "ASTM D2240",
+      "source_file": "Hydrostop HW_TDS_11.pdf",
+      "page": 1,
+      "doc_code": "08-0061-QA-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "E",
+     "quote": "contraction and expansion concrete joints in the following",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "D",
+     "quote": "Water reservoirs.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "D",
+     "quote": "Swimming pools.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "A",
+     "quote": "Retaining walls, foundations,",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    }
+   ],
+   "notes": [],
+   "extracted": true,
+   "standards_claimed": [
+    {
+     "printed": "BS 2782",
+     "source_file": "Hydrostop HW_TDS_11.pdf",
+     "page": 1,
+     "doc_code": "08-0061-QA-B-2026",
+     "doc_date": "NOT STATED"
+    }
+   ],
+   "not_applicable_fields": [
+    "service_temp",
+    "shelf_life"
+   ],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
+  },
+  {
+   "id": "HYPERSEAL-DP2010H",
+   "name": "Hyperseal DP-2010H",
+   "family": "Hydrophilic waterstop (accessory)",
+   "classification": "Accessory (joints)",
+   "source_file": "Hyperseal DP-2010H_TDS_2.pdf",
+   "doc_code": "08-0018-QA-A-2025",
+   "doc_date": "NOT STATED",
+   "values": {
+    "service_temp": [
+     {
+      "value": "-30 to 70",
+      "unit": "°C",
+      "test_standard": "NOT STATED",
+      "source_file": "Hyperseal DP-2010H_TDS_2.pdf",
+      "page": 1,
+      "doc_code": "08-0018-QA-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "expansion": [
+     {
+      "value": "Fresh water 200%; Saline water 80 - 100%",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Hyperseal DP-2010H_TDS_2.pdf",
+      "page": 1,
+      "doc_code": "08-0018-QA-A-2025",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Expansion volume"
+     }
+    ],
+    "hydrostatic_pressure": [
+     {
+      "value": "> 50 m (5 bars)",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Hyperseal DP-2010H_TDS_2.pdf",
+      "page": 1,
+      "doc_code": "08-0018-QA-A-2025",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "E",
+     "quote": "Hydrophilic waterstop can be applied against existing",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    }
+   ],
+   "notes": [
+    "TDS: 'should not be used in expansion joints, or any concrete section of less than 150 mm width.'"
+   ],
+   "extracted": true,
+   "standards_claimed": [
+    {
+     "printed": "KS M 6518",
+     "source_file": "Hyperseal DP-2010H_TDS_2.pdf",
+     "page": 1,
+     "doc_code": "08-0018-QA-A-2025",
+     "doc_date": "NOT STATED"
+    }
+   ],
+   "not_applicable_fields": [
+    "shelf_life"
+   ],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
+  },
+  {
+   "id": "REPCOAT-S",
+   "name": "Repcoat S",
+   "family": "Repcoat anti-carbonation (solvent, aliphatic acrylate)",
+   "classification": "Protective",
+   "source_file": "regional/lb/Repcoat S_TDS.pdf",
+   "doc_code": "06-0002-A-2010",
+   "doc_date": "NOT STATED",
+   "values": {
+    "coverage": [
+     {
+      "value": "0.16 litre/m²/coat (Repcoat S Primer 0.2 litre/m²/coat)",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "regional/lb/Repcoat S_TDS.pdf",
+      "page": 2,
+      "doc_code": "06-0002-A-2010",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "recoat": [
+     {
+      "value": "5 hr @ 25°C (over Repcoat S Primer)",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "regional/lb/Repcoat S_TDS.pdf",
+      "page": 1,
+      "doc_code": "06-0002-A-2010",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Over coating time for Repcoat S Primer"
+     }
+    ],
+    "co2_permeability": [
+     {
+      "value": "> 250 m equivalent thickness of air",
+      "unit": "",
+      "test_standard": "Taywood method",
+      "source_file": "regional/lb/Repcoat S_TDS.pdf",
+      "page": 1,
+      "doc_code": "06-0002-A-2010",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "voc": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "regional/lb/Repcoat S_TDS.pdf",
+      "page": null,
+      "doc_code": "06-0002-A-2010",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "regional/lb/Repcoat S_TDS.pdf",
+      "page": null,
+      "doc_code": "06-0002-A-2010",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "F",
+     "quote": "Retaining walls.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "F",
+     "quote": "Bridge abutments.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "F",
+     "quote": "buildings and villas.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    }
+   ],
+   "notes": [],
+   "extracted": true,
+   "not_applicable_fields": [
+    "bond_concrete",
+    "crack_bridging",
+    "cure_full",
+    "elongation",
+    "pot_life",
+    "service_temp",
+    "tensile"
+   ],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
+  },
+  {
+   "id": "REPCOAT-P",
+   "name": "Repcoat P",
+   "family": "Repcoat PU protective",
+   "classification": "Protective",
+   "source_file": "Repcoat P_TDS_7.pdf",
+   "doc_code": "06-0005-B-2026",
+   "doc_date": "NOT STATED",
+   "values": {
+    "tensile": [
+     {
+      "value": "≥ 4",
+      "unit": "MPa @ 7 days",
+      "test_standard": "ASTM D412",
+      "source_file": "Repcoat P_TDS_7.pdf",
+      "page": 1,
+      "doc_code": "06-0005-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "bond_concrete": [
+     {
+      "value": "≥ 2.0",
+      "unit": "MPa @ 7 days (concrete failure)",
+      "test_standard": "ASTM D4541",
+      "source_file": "Repcoat P_TDS_7.pdf",
+      "page": 1,
+      "doc_code": "06-0005-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "pot_life": [
+     {
+      "value": "4 - 6",
+      "unit": "hr @ 25oC",
+      "test_standard": "NOT STATED",
+      "source_file": "Repcoat P_TDS_7.pdf",
+      "page": 1,
+      "doc_code": "06-0005-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "recoat": [
+     {
+      "value": "24",
+      "unit": "hr @ 25oC",
+      "test_standard": "NOT STATED",
+      "source_file": "Repcoat P_TDS_7.pdf",
+      "page": 1,
+      "doc_code": "06-0005-B-2026",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Overcoating time"
+     }
+    ],
+    "cure_full": [
+     {
+      "value": "7",
+      "unit": "days",
+      "test_standard": "NOT STATED",
+      "source_file": "Repcoat P_TDS_7.pdf",
+      "page": 1,
+      "doc_code": "06-0005-B-2026",
+      "doc_date": "NOT STATED",
+      "label_as_printed": "Full curing"
+     }
+    ],
+    "voc": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Repcoat P_TDS_7.pdf",
+      "page": null,
+      "doc_code": "06-0005-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ],
+    "shelf_life": [
+     {
+      "value": "[DATA REQUIRED — R&D]",
+      "unit": "",
+      "test_standard": "NOT STATED",
+      "source_file": "Repcoat P_TDS_7.pdf",
+      "page": null,
+      "doc_code": "06-0005-B-2026",
+      "doc_date": "NOT STATED"
+     }
+    ]
+   },
+   "uses": [
+    {
+     "zone": "G",
+     "quote": "Steel tanks.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "G",
+     "quote": "Chemical processing areas.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    },
+    {
+     "zone": "G",
+     "quote": "Concrete walls and floors.",
+     "page": 1,
+     "mapping": "TDS-LISTED"
+    }
+   ],
+   "notes": [],
+   "extracted": true,
+   "not_applicable_fields": [
+    "coverage",
+    "crack_bridging",
+    "elongation",
+    "service_temp"
+   ],
+   "scope_decision": "APPROVED by user (reply after Phase 1)"
   }
  ]
 }
