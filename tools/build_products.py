@@ -474,11 +474,12 @@ P.append(p)
 # ---------------------------------------------------------------- approved candidates (scope approved by user)
 p = Product("AQUATHANE-R100", "Aquathane R100", "Aquathane R100_TDS_17.pdf", "Aquathane liquid PU", "Waterproofing", LIQ,
             na=["coverage", "pot_life"])
+p.ms("user-supplied/Aquathane_R100_MS.pdf", "DCP00/08-0022-A-2026")
 p.v("tensile", "≥ 5", "MPa", "ASTM D412", printed="≥ 5 MPa")
 p.v("elongation", "≥ 500", "%", "ASTM D412", printed="≥ 500%")
 p.v("bond_concrete", "≥ 1", "MPa", "ASTM D4541", printed="≥ 1 MPa", label="Bond strength (substrate not stated)")
 p.v("service_temp", "-40 to 80", "°C", printed="-40 to 80")
-p.v("recoat", "6 - 24", "hr", printed="6 - 24 hr", label="Recoatable time")
+p.v("recoat", "6 - 24", "hr", printed="6 - 24 hr", label="Recoatable time", held="C-12")
 p.v("cure_full", "7", "days", printed="7 days", label="Final curing time")
 p.v("tack_free", "4 - 8", "hr", printed="4 - 8 hr")
 p.v("shelf_life", "12", "months", printed="12 months")
@@ -613,6 +614,37 @@ p.note("TDS reports no carbonation-resistance value or standard.")
 P.append(p)
 
 out = [x.done() for x in P]
+
+p = Product("DONPROOF-DPM", "DonProof DPM", "user-supplied/DonProof_DPM.pdf", "Damp-proof membranes / primers", "Accessory (primer)",
+            ["coverage", "pot_life", "recoat", "bond_concrete", "voc", "shelf_life"])
+p.v("coverage", "3.5 - 3.7 m²/kg to achieve approximately 200 micron DFT per coat", "", printed=["3.5 -", "3.7", "200 micron DFT per coat"], held="C-08")
+p.v("pot_life", "30 - 60", "min", printed="30 - 60 min")
+p.v("recoat", "12 - 24", "hr", printed="12 - 24 hr", label="Overcoating time")
+p.v("bond_concrete", "≥ 3", "MPa (concrete failure)", "ASTM D4541-85", printed="≥ 3 MPa")
+p.v("voc", "< 20", "g/ltr", printed="< 20 g/ltr")
+p.v("shelf_life", "12", "months", printed="12 months")
+p.v("rh_one_coat", "one coat where screed RH is between 75% and 85%; two coats for RH 86% to 98%", "", printed=["between 75% and 85%", "86% and 98%"])
+p.note("Damp-proof membrane/primer for polyurea over substrates with RH above 75%.")
+P.append(p)
+
+p = Product("STRONGCOAT-DPM", "Strongcoat DPM", "user-supplied/Strongcoat_DPM_TDS.pdf", "Damp-proof membranes / primers", "Accessory (primer)",
+            ["coverage", "pot_life", "recoat", "bond_concrete", "voc", "shelf_life"])
+p.v("coverage", "3.5 - 3.7 m²/kg to achieve approximately 200 micron DFT per coat", "", printed=["3.5 -", "3.7", "200 micron DFT per coat"], held="C-08")
+p.v("pot_life", "30 - 60", "min", printed="30 - 60 min")
+p.v("recoat", "12 - 24", "hr", printed="12 - 24 hr", label="Overcoating time")
+p.v("bond_concrete", "≥ 3", "MPa (concrete failure)", "ASTM D4541-85", printed="≥ 3 MPa")
+p.v("voc", "< 20", "g/ltr", printed="< 20 g/ltr")
+p.v("shelf_life", "12", "months", printed="12 months")
+p.v("rh_one_coat", "one coat where screed RH is between 75% and 85%; two coats for RH 86% to 98%", "", printed=["between 75% and 85%", "86% and 98%"])
+P.append(p)
+
+p = Product("REPCOAT-P-PRIMER", "Repcoat P Primer", "user-supplied/Repcoat_P_Primer.pdf", "Repcoat PU protective", "Accessory (primer)",
+            ["coverage", "pot_life", "recoat", "bond_concrete", "shelf_life"], na=["shelf_life"])
+p.v("coverage", "5.5 - 6.5 m²/kg to achieve 70 - 80 microns dry film thickness", "", printed=["5.5 - 6.5", "70 - 80 microns"])
+p.v("pot_life", "2.5 - 3.5", "hr", printed="2.5 - 3.5 hr")
+p.v("recoat", "min 6 hr; max 24 hr", "", printed="24 hr", label="Over-coating time")
+p.v("bond_concrete", "≥ 2.0", "MPa @ 7 days (concrete failure)", "ASTM D4541", printed="≥ 2.0 MPa @ 7 days")
+P.append(p)
 
 APPROVED_BY_USER = "APPROVED by user (reply after Phase 1)"
 DECISIONS = {

@@ -3246,7 +3246,9 @@
       "page": 1,
       "doc_code": "08-0022-QA-D-2026",
       "doc_date": "NOT STATED",
-      "label_as_printed": "Recoatable time"
+      "label_as_printed": "Recoatable time",
+      "held_conflict": "C-12",
+      "on_screen_allowed": false
      }
     ],
     "cure_full": [
@@ -3342,6 +3344,13 @@
     "TDS LIMITATION: 'Not recommended for waterproofing of swimming pools surfaces in contact with chemically treated water.' Crack bridging and VOC not reported."
    ],
    "extracted": true,
+   "method_statements": [
+    {
+     "file": "user-supplied/Aquathane_R100_MS.pdf",
+     "ref": "DCP00/08-0022-A-2026",
+     "doc_date": "NOT STATED"
+    }
+   ],
    "standards_claimed": [
     {
      "printed": "Aquathane R100 complies with ASTM C836.",

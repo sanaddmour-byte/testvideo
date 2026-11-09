@@ -33,3 +33,15 @@ Quotes are copied from the PDFs; pages were located by script (`tools/`).
 Checked and **consistent** (no conflict): FB/FB-S TDS vs MS (20 mm fillet, 50 mm overlap, 300 mm stagger, 300 g/m² geotextile); DonProof L (350 g/m², 80 mm overlap); DonProof R (1:40 slope); Aquathane E400 coat count and dilution; PU-P150 TDS vs MS (5–50 °C, RH 85%, 1.6 kg/m² at 1.5 mm); PU-C100 TDS vs MS (5–35 °C, RH 85%, 1.8–2.0 kg/m² at 1.5 mm); Strongcoat EPW TDS vs MS (0.375 kg/m² × 2 = 500 µm, 24 h @ 25 °C recoat, 5 °C / 90% RH limits).
 
 Method statements carry no date. The short MS for EN100, EPW, Repcoat FF and Hyperseal print no reference code at all (cited as “NOT STATED”).
+
+---
+## Added after the third batch (DPM, Repcoat P Primer, Aquathane R100 MS)
+
+| ID | Product | Item | Document A | Document B | On screen? |
+|---|---|---|---|---|---|
+| C-08 (extended) | DonProof DPM / Strongcoat DPM | Spread rate for ~200 µm | DonProof DPM TDS (08-0214-A-2026) and Strongcoat DPM TDS (05-0049-A-2024): “3.5 - 3.7 m²/kg to achieve approximately 200 micron DFT per coat” | PU-H50 MS and PU-C100 MS (DPM step): “(5 m²/kg per coat) to achieve a dry film thickness of 200 microns” | **Held back** (`DONPROOF-DPM.coverage`, `STRONGCOAT-DPM.coverage`) |
+| C-12 | Aquathane R100 | Recoat time | TDS p1: “Recoatable time: 6 - 24 hr” | `user-supplied/Aquathane_R100_MS.pdf` (DCP00/08-0022-A-2026) 4.4: “recoat time should be between 8 to 24 hours” | **Held back** (`AQUATHANE-R100.recoat`) |
+| C-13 | Aquathane R100 | Rate per coat | TDS p2: “First coat: 0.75 - 0.90 kg/m². Second coat: 0.75 - 0.90 kg/m².” | MS 4.2/4.4: “0.7 – 0.8 kg/m²” per coat; total “1.4 - 1.6 kg/m² to provide 1 mm dry film thickness” | Not stored; not shown |
+
+Supporting evidence for **C-06** (not a ruling): the DPM TDS say DPM is for substrates “where the relative humidity level is above 75%”, and PU-C100 TDS says “screed … higher than 75%” — in line with the PU-P60 **TDS** (75%), not the PU-P60 MS (80–85%). Still your call.
+Repcoat P TDS (uploaded) is byte-identical to the Qatar-site copy; no new information.
