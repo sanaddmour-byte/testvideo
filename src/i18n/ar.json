@@ -1,0 +1,103 @@
+{
+  "dataPending": "",
+  "footnote": {
+    "tds": "",
+    "ms": ""
+  },
+  "table": {
+    "differentMethods": "",
+    "notReported": "",
+    "property": "",
+    "chooseWhen": "",
+    "otherUses": ""
+  },
+  "family": {
+    "spray": "",
+    "sheet": "",
+    "liquid": "",
+    "epoxy": "",
+    "cement": "",
+    "coating": "",
+    "accessory": ""
+  },
+  "prop": {
+    "tensile": "",
+    "elongation": "",
+    "tear": "",
+    "bond_concrete": "",
+    "water_tightness": "",
+    "crack_bridging": "",
+    "thickness": "",
+    "thickness_min": "",
+    "coverage": "",
+    "recoat": "",
+    "voc": "",
+    "carbonation": "",
+    "colour": "",
+    "service_temp": "",
+    "shelf_life": "",
+    "pot_life": "",
+    "expansion": "",
+    "cure_full": "",
+    "chem_citric_acid_10_7d": "",
+    "chem_nitric_acid_25_spot": ""
+  },
+  "ch0": {
+    "water": "",
+    "carbonation": "",
+    "uv": "",
+    "crack": "",
+    "joint": "",
+    "rebar": "",
+    "cover": "",
+    "co2": ""
+  },
+  "ch1": {
+    "title": "",
+    "subtitle": ""
+  },
+  "zones": {
+    "A": "",
+    "B": "",
+    "C": "",
+    "D": "",
+    "E": "",
+    "F": "",
+    "G": ""
+  },
+  "zoneDetail": {
+    "A": "",
+    "B": "",
+    "C": "",
+    "D": "",
+    "E": "",
+    "F": "",
+    "G": ""
+  },
+  "chapters": {
+    "Ch0": "",
+    "Ch1": "",
+    "Ch2": "",
+    "Ch3": "",
+    "Ch4": "",
+    "Ch5": "",
+    "Ch6": "",
+    "Ch7": "",
+    "Ch8": "",
+    "Ch9": "",
+    "Ch10": ""
+  },
+  "layer": {
+    "substrate": "",
+    "primer": "",
+    "membrane": "",
+    "topcoat": ""
+  },
+  "lookdev": {
+    "layers": "",
+    "bars": "",
+    "table": "",
+    "matrix": "",
+    "callout": ""
+  }
+}

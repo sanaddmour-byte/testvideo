@@ -1,6 +1,6 @@
 # DCP Waterproofing & Protective Coatings — animated explainer film
 
-Status: **Phase 2 (storyboard & script) — awaiting approval.** No Remotion code yet.
+Status: **Phase 3 stopped after Ch1 — awaiting look approval** (see `qa/phase3_notes.md`).
 
 | Path | What |
 |---|---|
@@ -15,3 +15,14 @@ Status: **Phase 2 (storyboard & script) — awaiting approval.** No Remotion cod
 | `tools/` | `build_products.py` (fails if a printed value is not on the cited PDF page), `build_catalogue.py`, `build_qa.py` |
 
 Rebuild: `python3 tools/build_catalogue.py && python3 tools/build_qa.py` (needs `pdftotext`/`pdfinfo`).
+
+## Commands
+| | |
+|---|---|
+| `npm run studio` | Remotion Studio |
+| `npm run validate` | rebuild data (`tools/`) and run all source/claim checks |
+| `npm run stills` | key frames → `qa/stills` |
+| `npm run render:chapters` / `render:master` | MP4s → `out/` (chapter markers via ffmpeg; captions → `out/captions`) |
+| `npm run audio:scan` | detect `public/audio/music.mp3` / `vo_en.mp3` |
+
+Chromium is expected at `/opt/pw-browsers/chromium` (see `remotion.config.ts`).

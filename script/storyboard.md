@@ -88,7 +88,7 @@ Rules applied: ≤3 products and ≤4 properties per panel; bars only where all 
 - **Visuals:** LayerStack builds bottom-up: Blinding concrete or compacted sand → Geotextile cushion layer → DonProof FB membrane → Structural concrete cast against membrane
 - **On-screen text:** Blinding concrete or compacted sand | Geotextile cushion layer | DonProof FB membrane | Structural concrete cast against membrane
 - **Data keys:** `FB.cushion_layer`, `FB.thickness`
-- **Values shown (as printed):** FB.cushion_layer = no less than 300 g/m² (geotextile over blinding); FB.thickness = 1.9 mm [EN 1849-2]
+- **Values shown (as printed):** FB.cushion_layer = no less than 300 g/m²; FB.thickness = 1.9 mm [EN 1849-2]
 - **Footnote:** Source: DonProof FB TDS, 08-0199-A-2026, NOT STATED
 - **VO:** Membrane on blinding, over a geotextile cushion; concrete is cast against it.
 ### Scene 2.5 — 4.5 s (t = 0:54)

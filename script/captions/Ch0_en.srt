@@ -1,0 +1,16 @@
+1
+00:00:00,000 --> 00:00:04,000
+Water enters concrete through cracks and joints.
+
+2
+00:00:04,000 --> 00:00:06,400
+Carbon dioxide advances through the cover.
+
+3
+00:00:06,400 --> 00:00:10,000
+At the rebar, corrosion follows, and the surface spalls.
+
+4
+00:00:10,000 --> 00:00:13,500
+Sun and temperature cycles work on exposed surfaces.
+

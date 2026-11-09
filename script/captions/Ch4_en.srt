@@ -1,0 +1,48 @@
+1
+00:00:00,000 --> 00:00:00,833
+Zone C:
+
+2
+00:00:00,833 --> 00:00:02,500
+wet areas and balconies.
+
+3
+00:00:02,500 --> 00:00:06,500
+In wet areas, water sits on the surface.
+
+4
+00:00:06,500 --> 00:00:07,375
+Candidate products:
+
+5
+00:00:07,375 --> 00:00:10,000
+DonProof PU-C100, Aquathane R100, Aquathane E400.
+
+6
+00:00:10,000 --> 00:00:16,000
+Primer, membrane in one or two coats, then the tile finish.
+
+7
+00:00:16,000 --> 00:00:21,000
+Corner fillet, reinforcing strip at changes of plane, recoat within 24 hours.
+
+8
+00:00:21,000 --> 00:00:26,500
+Bond to concrete is reported to the same ASTM method.
+
+9
+00:00:26,500 --> 00:00:26,917
+C100:
+
+10
+00:00:26,917 --> 00:00:30,250
+cold applied by roller, brush, trowel or squeegee.
+
+11
+00:00:30,250 --> 00:00:30,667
+E400:
+
+12
+00:00:30,667 --> 00:00:31,500
+under tiles.
+

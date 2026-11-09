@@ -1,0 +1,103 @@
+{
+  "dataPending": "Data pending",
+  "footnote": {
+    "tds": "Source: {product} TDS, {code}, {date}",
+    "ms": "Source: {product} Method Statement, {code}, {date}"
+  },
+  "table": {
+    "differentMethods": "Different test methods",
+    "notReported": "Not reported in TDS",
+    "property": "Property",
+    "chooseWhen": "Choose {product} when",
+    "otherUses": "Other TDS-listed uses"
+  },
+  "family": {
+    "spray": "Spray polyurea",
+    "sheet": "Sheet membranes",
+    "liquid": "Liquid-applied",
+    "epoxy": "Epoxy",
+    "cement": "Cementitious",
+    "coating": "Protective coatings",
+    "accessory": "Primers & accessories"
+  },
+  "prop": {
+    "tensile": "Tensile strength",
+    "elongation": "Elongation",
+    "tear": "Tear strength",
+    "bond_concrete": "Bond to concrete",
+    "water_tightness": "Water tightness",
+    "crack_bridging": "Crack bridging",
+    "thickness": "Thickness",
+    "thickness_min": "Minimum thickness",
+    "coverage": "Coverage",
+    "recoat": "Recoat time",
+    "voc": "VOC",
+    "carbonation": "Carbonation resistance",
+    "colour": "Colour",
+    "service_temp": "Service temperature",
+    "shelf_life": "Shelf life",
+    "pot_life": "Pot life",
+    "expansion": "Expansion volume",
+    "cure_full": "Full cure",
+    "chem_citric_acid_10_7d": "Citric acid 10%, 7 days",
+    "chem_nitric_acid_25_spot": "Nitric acid 25%, spot test"
+  },
+  "ch0": {
+    "water": "Water ingress: cracks and joints",
+    "carbonation": "Carbonation front · corrosion · spalling",
+    "uv": "UV and thermal cycling",
+    "crack": "Crack",
+    "joint": "Joint",
+    "rebar": "Rebar",
+    "cover": "Cover",
+    "co2": "CO₂"
+  },
+  "ch1": {
+    "title": "Where to use",
+    "subtitle": "Seven zones, one index"
+  },
+  "zones": {
+    "A": "Below-grade",
+    "B": "Roofs & podium decks",
+    "C": "Wet areas & balconies",
+    "D": "Water tanks & water-retaining structures",
+    "E": "Joints & penetrations",
+    "F": "Façades & exposed concrete",
+    "G": "Steel & industrial exposure"
+  },
+  "zoneDetail": {
+    "A": "Raft, retaining walls, lift pits",
+    "B": "Roof slabs and podium decks",
+    "C": "Bathrooms and balconies",
+    "D": "Tanks and reservoirs",
+    "E": "Movement joints and pipe penetrations",
+    "F": "Exposed concrete faces",
+    "G": "Steel frames and industrial floors"
+  },
+  "chapters": {
+    "Ch0": "Cold open",
+    "Ch1": "Where to use",
+    "Ch2": "Below-grade",
+    "Ch3": "Roofs & podium decks",
+    "Ch4": "Wet areas & balconies",
+    "Ch5": "Water tanks",
+    "Ch6": "Joints & penetrations",
+    "Ch7": "Façades & exposed concrete",
+    "Ch8": "Steel & industrial",
+    "Ch9": "Selector matrix",
+    "Ch10": "Close"
+  },
+  "layer": {
+    "substrate": "Substrate",
+    "primer": "Primer",
+    "membrane": "Membrane",
+    "topcoat": "Topcoat"
+  },
+  "lookdev": {
+    "layers": "Cross-section build-up",
+    "bars": "Same test standard: bars allowed",
+    "table": "Different test standards: table",
+    "matrix": "Selector matrix",
+    "callout": "Detail callout"
+  }
+}

@@ -87,6 +87,7 @@ def panel_check(kind, products, props):
 
 
 beats = []  # (chapter, id, dur, visual, onscreen, keys, vo)
+CHAPS = []
 
 
 def B(ch, bid, dur, visual, onscreen, keys, vo):
@@ -135,6 +136,8 @@ def zone(ch, z, problem, problem_vo, cands, stack, callouts, panel, choose, vo_i
     beats[-1]["foot"] = "Source: " + " · ".join(dict.fromkeys(srcs))
     kind, prods, props = panel
     panel_check(kind, prods, props)
+    CHAPS.append(dict(ch=ch, zone=z, candidates=cands, panel=dict(kind=kind, products=prods, props=[pr[0] if isinstance(pr, tuple) else pr for pr in props]),
+                      choose=[dict(product=pid, quote=q) for pid, q in choose]))
     pk = keys_for(prods, props)
     for k in pk: val(k)
     vis = ("ComparisonBars" if kind == "bars" else "ComparisonTable (tag: different test methods)") + ": " + ", ".join(NAMES[p] for p in prods) + " × " + ", ".join(pr[0] if isinstance(pr, tuple) else pr for pr in props)
@@ -248,6 +251,7 @@ for p in D["products"]:
     sel.append(dict(id=p["id"], name=p["name"], zones=zs, other_listed_uses=other))
 json.dump(dict(rule="tick only where the TDS lists that use (data/products.json uses[])", rows=sel),
           open(f"{ROOT}/data/selector.json", "w"), ensure_ascii=False, indent=1)
+json.dump(CHAPS, open(f"{ROOT}/data/chapters.json", "w"), ensure_ascii=False, indent=1)
 B("Ch9", "9.1", 3, "SelectorMatrix grid draws: rows = products, columns = zones A–G + 'Other TDS-listed uses'.", "Selector matrix", [], "The matrix shows where each data sheet lists a use.")
 B("Ch9", "9.2", 9, "Rows tick in family groups (spray polyurea, sheets, liquid, epoxy, cementitious, protective, accessories). Ticks only where a TDS use line maps to the zone.",
   "Zone × product", [], "A tick appears only where the data sheet lists that use. Where the sheet lists other uses, they appear in the last column.")
@@ -316,4 +320,42 @@ t = 0
 for b in beats:
     V.append(f"**[{mm(t)} · {b['id']} · {b['dur']:g} s]** {b['vo']}\n\n"); t += b["dur"]
 open(f"{ROOT}/script/vo_en.md", "w").write("".join(V))
+# ---- timeline + captions
+def srt_time(t):
+    ms = int(round(t * 1000)); h, r = divmod(ms, 3600000); m, r = divmod(r, 60000); sec, ms = divmod(r, 1000)
+    return f"{h:02d}:{m:02d}:{sec:02d},{ms:03d}"
+
+
+def chunks(text, n=12):
+    words = text.split(); out = []
+    sentences = re.split(r"(?<=[.;:!?])\s+", text)
+    cur = []
+    for sent in sentences:
+        w = sent.split()
+        while len(w) > n:
+            out.append(" ".join(w[:n])); w = w[n:]
+        if w: out.append(" ".join(w))
+    return out
+
+t = 0; tl = []; cues = {}
+for b in beats:
+    tl.append(dict(ch=b["ch"], id=b["id"], start=round(t, 3), dur=b["dur"], on=b["on"], vo=b["vo"], keys=b["keys"]))
+    cs = chunks(b["vo"]); tot = sum(len(c.split()) for c in cs) or 1; u = t
+    for c in cs:
+        d = b["dur"] * len(c.split()) / tot
+        cues.setdefault(b["ch"], []).append((u, u + d, c)); u += d
+    t += b["dur"]
+chapters = []
+for c in chap:
+    st = min(x["start"] for x in tl if x["ch"] == c)
+    chapters.append(dict(id=c, start=round(st, 3), dur=round(chap[c], 3)))
+os.makedirs(f"{ROOT}/script/captions", exist_ok=True)
+json.dump(dict(fps=30, total=round(total, 3), chapters=chapters, beats=tl), open(f"{ROOT}/data/timeline.json", "w"), ensure_ascii=False, indent=1)
+def write_srt(path, items, offset=0.0):
+    with open(path, "w") as f:
+        for i, (a, z, c) in enumerate(items, 1):
+            f.write(f"{i}\n{srt_time(a - offset)} --> {srt_time(z - offset)}\n{c}\n\n")
+write_srt(f"{ROOT}/script/captions_en.srt", [x for c in cues for x in cues[c]])
+for c in cues:
+    write_srt(f"{ROOT}/script/captions/{c}_en.srt", cues[c], offset=min(x['start'] for x in tl if x['ch'] == c))
 print(f"runtime {mm(total)} ({total:.1f}s), scenes {len(beats)}")

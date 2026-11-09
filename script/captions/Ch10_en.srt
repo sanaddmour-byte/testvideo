@@ -1,0 +1,16 @@
+1
+00:00:00,000 --> 00:00:02,083
+HPD and VOC data available.
+
+2
+00:00:02,083 --> 00:00:03,333
+EPD on request.
+
+3
+00:00:03,333 --> 00:00:07,500
+Third-party testing when a project or CE mark requires it.
+
+4
+00:00:07,500 --> 00:00:12,500
+Don Construction Products.
+

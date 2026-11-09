@@ -1,0 +1,719 @@
+{
+ "fps": 30,
+ "total": 282.5,
+ "chapters": [
+  {
+   "id": "Ch0",
+   "start": 0,
+   "dur": 13.5
+  },
+  {
+   "id": "Ch1",
+   "start": 13.5,
+   "dur": 24.0
+  },
+  {
+   "id": "Ch2",
+   "start": 37.5,
+   "dur": 30.0
+  },
+  {
+   "id": "Ch3",
+   "start": 67.5,
+   "dur": 30.5
+  },
+  {
+   "id": "Ch4",
+   "start": 98.0,
+   "dur": 31.5
+  },
+  {
+   "id": "Ch5",
+   "start": 129.5,
+   "dur": 30.5
+  },
+  {
+   "id": "Ch6",
+   "start": 160.0,
+   "dur": 30.5
+  },
+  {
+   "id": "Ch7",
+   "start": 190.5,
+   "dur": 29.0
+  },
+  {
+   "id": "Ch8",
+   "start": 219.5,
+   "dur": 29.0
+  },
+  {
+   "id": "Ch9",
+   "start": 248.5,
+   "dur": 21.5
+  },
+  {
+   "id": "Ch10",
+   "start": 270.0,
+   "dur": 12.5
+  }
+ ],
+ "beats": [
+  {
+   "ch": "Ch0",
+   "id": "0.1",
+   "start": 0,
+   "dur": 4,
+   "on": "Water ingress: cracks and joints",
+   "vo": "Water enters concrete through cracks and joints.",
+   "keys": []
+  },
+  {
+   "ch": "Ch0",
+   "id": "0.2",
+   "start": 4,
+   "dur": 6.0,
+   "on": "Carbonation front · corrosion · spalling",
+   "vo": "Carbon dioxide advances through the cover. At the rebar, corrosion follows, and the surface spalls.",
+   "keys": []
+  },
+  {
+   "ch": "Ch0",
+   "id": "0.3",
+   "start": 10.0,
+   "dur": 3.5,
+   "on": "UV and thermal cycling",
+   "vo": "Sun and temperature cycles work on exposed surfaces.",
+   "keys": []
+  },
+  {
+   "ch": "Ch1",
+   "id": "1.1",
+   "start": 13.5,
+   "dur": 5.5,
+   "on": "Where to use",
+   "vo": "A building has seven places that need protection. Each has its own products.",
+   "keys": []
+  },
+  {
+   "ch": "Ch1",
+   "id": "1.2",
+   "start": 19.0,
+   "dur": 2.5,
+   "on": "A  Below-grade",
+   "vo": "Below ground: raft, walls, lift pits.",
+   "keys": []
+  },
+  {
+   "ch": "Ch1",
+   "id": "1.3",
+   "start": 21.5,
+   "dur": 2.5,
+   "on": "B  Roofs & podium decks",
+   "vo": "Roofs and podium decks.",
+   "keys": []
+  },
+  {
+   "ch": "Ch1",
+   "id": "1.4",
+   "start": 24.0,
+   "dur": 2.5,
+   "on": "C  Wet areas & balconies",
+   "vo": "Wet areas and balconies.",
+   "keys": []
+  },
+  {
+   "ch": "Ch1",
+   "id": "1.5",
+   "start": 26.5,
+   "dur": 2.5,
+   "on": "D  Water tanks & water-retaining structures",
+   "vo": "Water tanks and water-retaining structures.",
+   "keys": []
+  },
+  {
+   "ch": "Ch1",
+   "id": "1.6",
+   "start": 29.0,
+   "dur": 2.5,
+   "on": "E  Joints & penetrations",
+   "vo": "Joints and penetrations.",
+   "keys": []
+  },
+  {
+   "ch": "Ch1",
+   "id": "1.7",
+   "start": 31.5,
+   "dur": 2.5,
+   "on": "F  Façades & exposed concrete",
+   "vo": "Façades and exposed concrete.",
+   "keys": []
+  },
+  {
+   "ch": "Ch1",
+   "id": "1.8",
+   "start": 34.0,
+   "dur": 3.5,
+   "on": "G  Steel & industrial exposure",
+   "vo": "Steel and industrial exposure.",
+   "keys": []
+  },
+  {
+   "ch": "Ch2",
+   "id": "2.1",
+   "start": 37.5,
+   "dur": 2.5,
+   "on": "A  Below-grade",
+   "vo": "Zone A: below-grade.",
+   "keys": []
+  },
+  {
+   "ch": "Ch2",
+   "id": "2.2",
+   "start": 40.0,
+   "dur": 4,
+   "on": "groundwater and soil moisture pressing on a basement wall and raft; arrows at a construction joint.",
+   "vo": "Below ground, water presses on walls and slabs.",
+   "keys": []
+  },
+  {
+   "ch": "Ch2",
+   "id": "2.3",
+   "start": 44.0,
+   "dur": 3.5,
+   "on": "DonProof FB · DonProof FB-S · DonProof HS",
+   "vo": "Candidate products: DonProof FB, DonProof FB-S, DonProof HS.",
+   "keys": []
+  },
+  {
+   "ch": "Ch2",
+   "id": "2.4",
+   "start": 47.5,
+   "dur": 6,
+   "on": "Blinding concrete or compacted sand | Geotextile cushion layer | DonProof FB membrane | Structural concrete cast against membrane",
+   "vo": "Membrane on blinding, over a geotextile cushion; concrete is cast against it.",
+   "keys": [
+    "FB.cushion_layer",
+    "FB.thickness"
+   ]
+  },
+  {
+   "ch": "Ch2",
+   "id": "2.5",
+   "start": 53.5,
+   "dur": 4.5,
+   "on": "A 20 mm fillet should be formed at the base / should be a minimum of 50 mm / staggered by a minimum of 300 mm",
+   "vo": "Base fillet, minimum overlap, staggered roll ends.",
+   "keys": []
+  },
+  {
+   "ch": "Ch2",
+   "id": "2.6",
+   "start": 58.0,
+   "dur": 5.5,
+   "on": "Comparison",
+   "vo": "FB and FB-S report the same tests, so they compare directly.",
+   "keys": [
+    "FB.tensile",
+    "FB-S.tensile",
+    "FB.tear",
+    "FB-S.tear",
+    "FB.water_tightness",
+    "FB-S.water_tightness",
+    "FB.crack_bridging",
+    "FB-S.crack_bridging"
+   ]
+  },
+  {
+   "ch": "Ch2",
+   "id": "2.7",
+   "start": 63.5,
+   "dur": 4.0,
+   "on": "Choose DonProof FB-S when: Can be used both pre- and post-applied. / Choose DonProof HS when: Easy and quick application, no priming or fillets required.",
+   "vo": "FB-S: pre- or post-applied. HS: no priming or fillets.",
+   "keys": []
+  },
+  {
+   "ch": "Ch3",
+   "id": "3.1",
+   "start": 67.5,
+   "dur": 2.5,
+   "on": "B  Roofs & podium decks",
+   "vo": "Zone B: roofs and podium decks.",
+   "keys": []
+  },
+  {
+   "ch": "Ch3",
+   "id": "3.2",
+   "start": 70.0,
+   "dur": 4,
+   "on": "rain and sun on a flat roof; ponding at an upstand; a crack opening under a membrane.",
+   "vo": "On roofs, the surface sees rain, sun and foot traffic.",
+   "keys": []
+  },
+  {
+   "ch": "Ch3",
+   "id": "3.3",
+   "start": 74.0,
+   "dur": 3.5,
+   "on": "DonProof PU-P150 · DonProof PU-P100 · DonProof PU-P60",
+   "vo": "Candidate products: DonProof PU-P150, DonProof PU-P100, DonProof PU-P60.",
+   "keys": []
+  },
+  {
+   "ch": "Ch3",
+   "id": "3.4",
+   "start": 77.5,
+   "dur": 6,
+   "on": "Concrete deck | Primer — DonProof Primer EP (named for concrete in the PU-P150 TDS) | DonProof PU-P150 membrane | Minimum suggested thickness | DonProof AL aliphatic polyurethane topcoat",
+   "vo": "Primed deck, hot-sprayed polyurea, then an aliphatic polyurethane topcoat.",
+   "keys": [
+    "PU-P150.coverage",
+    "PU-P150.thickness_min",
+    "AL.coverage"
+   ]
+  },
+  {
+   "ch": "Ch3",
+   "id": "3.5",
+   "start": 83.5,
+   "dur": 4.5,
+   "on": "perpendicularly to the substrate / texture / All 90-degree internal corners shall be strip coated",
+   "vo": "Spray perpendicular to the substrate; strip-coat internal corners.",
+   "keys": []
+  },
+  {
+   "ch": "Ch3",
+   "id": "3.6",
+   "start": 88.0,
+   "dur": 5.5,
+   "on": "Comparison",
+   "vo": "All three report tensile, elongation and tear to the same ASTM methods.",
+   "keys": [
+    "PU-P150.tensile",
+    "PU-P100.tensile",
+    "PU-P60.tensile",
+    "PU-P150.elongation",
+    "PU-P100.elongation",
+    "PU-P60.elongation",
+    "PU-P150.tear",
+    "PU-P100.tear",
+    "PU-P60.tear"
+   ]
+  },
+  {
+   "ch": "Ch3",
+   "id": "3.7",
+   "start": 93.5,
+   "dur": 4.5,
+   "on": "Choose DonProof PU-P150 when: Under XPS insulation as part of an inverted or / Choose DonProof PU-P60 when: Cold Resistance: down to minus 40",
+   "vo": "P150: inverted roofs under XPS. P60: cold resistance to minus forty.",
+   "keys": []
+  },
+  {
+   "ch": "Ch4",
+   "id": "4.1",
+   "start": 98.0,
+   "dur": 2.5,
+   "on": "C  Wet areas & balconies",
+   "vo": "Zone C: wet areas and balconies.",
+   "keys": []
+  },
+  {
+   "ch": "Ch4",
+   "id": "4.2",
+   "start": 100.5,
+   "dur": 4,
+   "on": "water splashing a tiled bathroom floor and a balcony edge; moisture tracking under tiles.",
+   "vo": "In wet areas, water sits on the surface.",
+   "keys": []
+  },
+  {
+   "ch": "Ch4",
+   "id": "4.3",
+   "start": 104.5,
+   "dur": 3.5,
+   "on": "DonProof PU-C100 · Aquathane R100 · Aquathane E400",
+   "vo": "Candidate products: DonProof PU-C100, Aquathane R100, Aquathane E400.",
+   "keys": []
+  },
+  {
+   "ch": "Ch4",
+   "id": "4.4",
+   "start": 108.0,
+   "dur": 6,
+   "on": "Concrete or screed | Primer — DonProof Primer PU | DonProof PU-C100 membrane | Under-tile finish",
+   "vo": "Primer, membrane in one or two coats, then the tile finish.",
+   "keys": [
+    "PRIMER-PU.coverage",
+    "PU-C100.coverage"
+   ]
+  },
+  {
+   "ch": "Ch4",
+   "id": "4.5",
+   "start": 114.0,
+   "dur": 5.0,
+   "on": "minimum 1 cm x 1 cm fillet / 30 cm strip to be placed over the first coat while still wet / Do not leave more than 24 hours between two coats",
+   "vo": "Corner fillet, reinforcing strip at changes of plane, recoat within 24 hours.",
+   "keys": []
+  },
+  {
+   "ch": "Ch4",
+   "id": "4.6",
+   "start": 119.0,
+   "dur": 5.5,
+   "on": "Comparison",
+   "vo": "Bond to concrete is reported to the same ASTM method.",
+   "keys": [
+    "PU-C100.bond_concrete",
+    "AQUATHANE-R100.bond_concrete",
+    "AQUATHANE-E400.bond_concrete"
+   ]
+  },
+  {
+   "ch": "Ch4",
+   "id": "4.7",
+   "start": 124.5,
+   "dur": 5.0,
+   "on": "Choose DonProof PU-C100 when: Cold applied with a roller, brush, trowel, squeegee or / Choose Aquathane E400 when: Wet areas, kitchens and bathrooms (under tiles).",
+   "vo": "C100: cold applied by roller, brush, trowel or squeegee. E400: under tiles.",
+   "keys": []
+  },
+  {
+   "ch": "Ch5",
+   "id": "5.1",
+   "start": 129.5,
+   "dur": 2.5,
+   "on": "D  Water tanks & water-retaining structures",
+   "vo": "Zone D: tanks and water-retaining structures.",
+   "keys": []
+  },
+  {
+   "ch": "Ch5",
+   "id": "5.2",
+   "start": 132.0,
+   "dur": 4,
+   "on": "water pressing from inside a tank wall; seep at the wall-floor junction.",
+   "vo": "Tanks hold water against the lining.",
+   "keys": []
+  },
+  {
+   "ch": "Ch5",
+   "id": "5.3",
+   "start": 136.0,
+   "dur": 3.5,
+   "on": "Strongcoat EPW-P · Strongcoat EPW-S · Setseal 300C",
+   "vo": "Candidate products: Strongcoat EPW-P, Strongcoat EPW-S, Setseal 300C.",
+   "keys": []
+  },
+  {
+   "ch": "Ch5",
+   "id": "5.4",
+   "start": 139.5,
+   "dur": 6,
+   "on": "Concrete wall | Strongcoat EPW — two coats",
+   "vo": "Two coats of Strongcoat EPW on the concrete wall.",
+   "keys": [
+    "EPW.coverage"
+   ]
+  },
+  {
+   "ch": "Ch5",
+   "id": "5.5",
+   "start": 145.5,
+   "dur": 5.0,
+   "on": "Apply the second coat of Strongcoat EPW within 24 hours / relative humidity will exceed 90% / Application should not be carried out, when there is",
+   "vo": "Second coat within 24 hours at 25 degrees; never over standing water.",
+   "keys": []
+  },
+  {
+   "ch": "Ch5",
+   "id": "5.6",
+   "start": 150.5,
+   "dur": 5.5,
+   "on": "Comparison — different test methods",
+   "vo": "One TDS, two grades: colour and chemical resistance differ.",
+   "keys": [
+    "EPW-P.colour",
+    "EPW-S.colour",
+    "EPW-P.chem_citric_acid_10_7d",
+    "EPW-S.chem_citric_acid_10_7d",
+    "EPW-P.chem_nitric_acid_25_spot",
+    "EPW-S.chem_nitric_acid_25_spot"
+   ]
+  },
+  {
+   "ch": "Ch5",
+   "id": "5.7",
+   "start": 156.0,
+   "dur": 4.0,
+   "on": "Choose Strongcoat EPW-P when: Strongcoat EPW-P is suitable for use with potable water / Choose Strongcoat EPW-S when: Strongcoat EPW-S is suitable for use in reservoirs",
+   "vo": "EPW-P: potable water. EPW-S: sewage, chemicals, oils and fuel.",
+   "keys": []
+  },
+  {
+   "ch": "Ch6",
+   "id": "6.1",
+   "start": 160.0,
+   "dur": 2.5,
+   "on": "E  Joints & penetrations",
+   "vo": "Zone E: joints and penetrations.",
+   "keys": []
+  },
+  {
+   "ch": "Ch6",
+   "id": "6.2",
+   "start": 162.5,
+   "dur": 4,
+   "on": "a movement joint and a pipe passing through a wall; water tracks along both.",
+   "vo": "Joints and penetrations are where water finds a path.",
+   "keys": []
+  },
+  {
+   "ch": "Ch6",
+   "id": "6.3",
+   "start": 166.5,
+   "dur": 3.5,
+   "on": "Hydrostop HW · Hyperseal DP-2010H",
+   "vo": "Candidate products: Hydrostop HW, Hyperseal DP-2010H.",
+   "keys": []
+  },
+  {
+   "ch": "Ch6",
+   "id": "6.4",
+   "start": 170.0,
+   "dur": 6,
+   "on": "Concrete on both sides of the joint | Hydrostop HW cast across the joint",
+   "vo": "A PVC waterstop is cast across the joint.",
+   "keys": [
+    "HYDROSTOP-HW.tensile"
+   ]
+  },
+  {
+   "ch": "Ch6",
+   "id": "6.5",
+   "start": 176.0,
+   "dur": 4.5,
+   "on": "tied by wire to the reinforcement through the eyelets / Full range of factory made junction pieces / Allow 24 hours for curing before pouring concrete",
+   "vo": "Tie waterstops to reinforcement; allow 24 hours after bonding before pouring.",
+   "keys": []
+  },
+  {
+   "ch": "Ch6",
+   "id": "6.6",
+   "start": 180.5,
+   "dur": 5.5,
+   "on": "Comparison — different test methods",
+   "vo": "Different tests, so each product is shown as reported.",
+   "keys": [
+    "HYDROSTOP-HW.tensile",
+    "HYDROSTOP-HW.elongation",
+    "HYPERSEAL-DP2010H.expansion",
+    "HYPERSEAL-DP2010H.service_temp"
+   ]
+  },
+  {
+   "ch": "Ch6",
+   "id": "6.7",
+   "start": 186.0,
+   "dur": 4.5,
+   "on": "Choose Hydrostop HW when: Hollow center bulb for expansion joints to accommodate / Choose Hyperseal DP-2010H when: Slow expansion rate to prevent damage to freshly",
+   "vo": "HW: hollow bulb for expansion joints. DP-2010H: not for expansion joints.",
+   "keys": []
+  },
+  {
+   "ch": "Ch7",
+   "id": "7.1",
+   "start": 190.5,
+   "dur": 2.5,
+   "on": "F  Façades & exposed concrete",
+   "vo": "Zone F: façades and exposed concrete.",
+   "keys": []
+  },
+  {
+   "ch": "Ch7",
+   "id": "7.2",
+   "start": 193.0,
+   "dur": 4,
+   "on": "CO₂ and rain on a façade; carbonation front inside the cover.",
+   "vo": "Exposed concrete faces carbon dioxide, rain and sun.",
+   "keys": []
+  },
+  {
+   "ch": "Ch7",
+   "id": "7.3",
+   "start": 197.0,
+   "dur": 4.0,
+   "on": "Repcoat · Repcoat FF · Repcoat FF Plus · Repcoat S",
+   "vo": "Candidate products: Repcoat, Repcoat FF, Repcoat FF Plus, Repcoat S.",
+   "keys": []
+  },
+  {
+   "ch": "Ch7",
+   "id": "7.4",
+   "start": 201.0,
+   "dur": 6,
+   "on": "Concrete surface | Repcoat Primer | Repcoat — per coat",
+   "vo": "Primer first, then Repcoat at the stated rate per coat.",
+   "keys": [
+    "REPCOAT.primer_coverage",
+    "REPCOAT.coverage"
+   ]
+  },
+  {
+   "ch": "Ch7",
+   "id": "7.5",
+   "start": 207.0,
+   "dur": 4.5,
+   "on": "Two coats should always be used on dark, absorbent / wait for a minimum of 12 / The first coat can be diluted by up to 15% with clean water",
+   "vo": "Wait for the primer; two coats on dark, absorbent surfaces.",
+   "keys": []
+  },
+  {
+   "ch": "Ch7",
+   "id": "7.6",
+   "start": 211.5,
+   "dur": 5.5,
+   "on": "Comparison — different test methods",
+   "vo": "Carbonation is tested differently, so no bars. Missing data is tagged.",
+   "keys": [
+    "REPCOAT.coverage",
+    "REPCOAT-FF.coverage",
+    "REPCOAT-FF-PLUS.coverage",
+    "REPCOAT.recoat",
+    "REPCOAT-FF.recoat",
+    "REPCOAT-FF-PLUS.recoat",
+    "REPCOAT.carbonation_depth",
+    "REPCOAT-FF.carbonation_resistance",
+    "REPCOAT-FF-PLUS.carbonation_resistance",
+    "REPCOAT.voc",
+    "REPCOAT-FF.voc",
+    "REPCOAT-FF-PLUS.voc"
+   ]
+  },
+  {
+   "ch": "Ch7",
+   "id": "7.7",
+   "start": 217.0,
+   "dur": 2.5,
+   "on": "Choose Repcoat when: High build elastomeric, microporous coating. / Choose Repcoat FF when: Matt finish helping to hide irregularities.",
+   "vo": "Repcoat: high-build elastomeric. FF: matt finish.",
+   "keys": []
+  },
+  {
+   "ch": "Ch8",
+   "id": "8.1",
+   "start": 219.5,
+   "dur": 2.5,
+   "on": "G  Steel & industrial exposure",
+   "vo": "Zone G: steel and industrial exposure.",
+   "keys": []
+  },
+  {
+   "ch": "Ch8",
+   "id": "8.2",
+   "start": 222.0,
+   "dur": 4,
+   "on": "chemical splash on a steel tank and a concrete bund; corrosion at the steel edge.",
+   "vo": "Industrial exposure adds chemicals.",
+   "keys": []
+  },
+  {
+   "ch": "Ch8",
+   "id": "8.3",
+   "start": 226.0,
+   "dur": 3.5,
+   "on": "Strongcoat EN100 · Strongcoat EPW-S · Repcoat P",
+   "vo": "Candidate products: Strongcoat EN100, Strongcoat EPW-S, Repcoat P.",
+   "keys": []
+  },
+  {
+   "ch": "Ch8",
+   "id": "8.4",
+   "start": 229.5,
+   "dur": 6,
+   "on": "Concrete or steel (grit-blasted) | Strongcoat EN100 base coat + topcoat",
+   "vo": "EN100: base coat and topcoat on prepared concrete or steel.",
+   "keys": [
+    "EN100.coverage"
+   ]
+  },
+  {
+   "ch": "Ch8",
+   "id": "8.5",
+   "start": 235.5,
+   "dur": 4.5,
+   "on": "Apply first coat of Strongcoat EN100 at a rate of 0.33 kg/m2 / Strongcoat EN100 is designed to be used without a primer. / Precaution is recommended if the application is taking",
+   "vo": "Base coat at the stated rate; no primer unless porous.",
+   "keys": []
+  },
+  {
+   "ch": "Ch8",
+   "id": "8.6",
+   "start": 240.0,
+   "dur": 5.5,
+   "on": "Comparison",
+   "vo": "Bond strength uses the same method for all three.",
+   "keys": [
+    "EN100.bond_concrete",
+    "EPW-S.bond_concrete",
+    "REPCOAT-P.bond_concrete"
+   ]
+  },
+  {
+   "ch": "Ch8",
+   "id": "8.7",
+   "start": 245.5,
+   "dur": 3.0,
+   "on": "Choose Strongcoat EN100 when: Excellent chemical resistance. / Choose Repcoat P when: Excellent UV resistance.",
+   "vo": "EN100: chemical resistance. Repcoat P: UV resistance.",
+   "keys": []
+  },
+  {
+   "ch": "Ch9",
+   "id": "9.1",
+   "start": 248.5,
+   "dur": 4.0,
+   "on": "Selector matrix",
+   "vo": "The matrix shows where each data sheet lists a use.",
+   "keys": []
+  },
+  {
+   "ch": "Ch9",
+   "id": "9.2",
+   "start": 252.5,
+   "dur": 9.5,
+   "on": "Zone × product",
+   "vo": "A tick appears only where the data sheet lists that use. Where the sheet lists other uses, they appear in the last column.",
+   "keys": []
+  },
+  {
+   "ch": "Ch9",
+   "id": "9.3",
+   "start": 262.0,
+   "dur": 8,
+   "on": "Check each TDS for conditions",
+   "vo": "Always check the data sheet and your project conditions before you specify.",
+   "keys": []
+  },
+  {
+   "ch": "Ch10",
+   "id": "10.1",
+   "start": 270.0,
+   "dur": 7.5,
+   "on": "HPD and VOC data available. EPD on request. Third-party testing commissioned when a project or CE mark requires it.",
+   "vo": "HPD and VOC data available. EPD on request. Third-party testing when a project or CE mark requires it.",
+   "keys": []
+  },
+  {
+   "ch": "Ch10",
+   "id": "10.2",
+   "start": 277.5,
+   "dur": 5,
+   "on": "[Logo placeholder] · [Contact placeholder]",
+   "vo": "Don Construction Products.",
+   "keys": []
+  }
+ ]
+}

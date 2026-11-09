@@ -1,0 +1,222 @@
+[
+ {
+  "ch": "Ch2",
+  "zone": "A",
+  "candidates": [
+   "FB",
+   "FB-S",
+   "HS"
+  ],
+  "panel": {
+   "kind": "bars",
+   "products": [
+    "FB",
+    "FB-S"
+   ],
+   "props": [
+    "tensile",
+    "tear",
+    "water_tightness",
+    "crack_bridging"
+   ]
+  },
+  "choose": [
+   {
+    "product": "FB-S",
+    "quote": "Can be used both pre- and post-applied."
+   },
+   {
+    "product": "HS",
+    "quote": "Easy and quick application, no priming or fillets required."
+   }
+  ]
+ },
+ {
+  "ch": "Ch3",
+  "zone": "B",
+  "candidates": [
+   "PU-P150",
+   "PU-P100",
+   "PU-P60"
+  ],
+  "panel": {
+   "kind": "bars",
+   "products": [
+    "PU-P150",
+    "PU-P100",
+    "PU-P60"
+   ],
+   "props": [
+    "tensile",
+    "elongation",
+    "tear"
+   ]
+  },
+  "choose": [
+   {
+    "product": "PU-P150",
+    "quote": "Under XPS insulation as part of an inverted or"
+   },
+   {
+    "product": "PU-P60",
+    "quote": "Cold Resistance: down to minus 40"
+   }
+  ]
+ },
+ {
+  "ch": "Ch4",
+  "zone": "C",
+  "candidates": [
+   "PU-C100",
+   "AQUATHANE-R100",
+   "AQUATHANE-E400"
+  ],
+  "panel": {
+   "kind": "bars",
+   "products": [
+    "PU-C100",
+    "AQUATHANE-R100",
+    "AQUATHANE-E400"
+   ],
+   "props": [
+    "bond_concrete"
+   ]
+  },
+  "choose": [
+   {
+    "product": "PU-C100",
+    "quote": "Cold applied with a roller, brush, trowel, squeegee or"
+   },
+   {
+    "product": "AQUATHANE-E400",
+    "quote": "Wet areas, kitchens and bathrooms (under tiles)."
+   }
+  ]
+ },
+ {
+  "ch": "Ch5",
+  "zone": "D",
+  "candidates": [
+   "EPW-P",
+   "EPW-S",
+   "SETSEAL-300C"
+  ],
+  "panel": {
+   "kind": "table",
+   "products": [
+    "EPW-P",
+    "EPW-S"
+   ],
+   "props": [
+    "colour",
+    "chem_citric_acid_10_7d",
+    "chem_nitric_acid_25_spot"
+   ]
+  },
+  "choose": [
+   {
+    "product": "EPW-P",
+    "quote": "Strongcoat EPW-P is suitable for use with potable water"
+   },
+   {
+    "product": "EPW-S",
+    "quote": "Strongcoat EPW-S is suitable for use in reservoirs"
+   }
+  ]
+ },
+ {
+  "ch": "Ch6",
+  "zone": "E",
+  "candidates": [
+   "HYDROSTOP-HW",
+   "HYPERSEAL-DP2010H"
+  ],
+  "panel": {
+   "kind": "table",
+   "products": [
+    "HYDROSTOP-HW",
+    "HYPERSEAL-DP2010H"
+   ],
+   "props": [
+    "tensile",
+    "elongation",
+    "expansion",
+    "service_temp"
+   ]
+  },
+  "choose": [
+   {
+    "product": "HYDROSTOP-HW",
+    "quote": "Hollow center bulb for expansion joints to accommodate"
+   },
+   {
+    "product": "HYPERSEAL-DP2010H",
+    "quote": "Slow expansion rate to prevent damage to freshly"
+   }
+  ]
+ },
+ {
+  "ch": "Ch7",
+  "zone": "F",
+  "candidates": [
+   "REPCOAT",
+   "REPCOAT-FF",
+   "REPCOAT-FF-PLUS",
+   "REPCOAT-S"
+  ],
+  "panel": {
+   "kind": "table",
+   "products": [
+    "REPCOAT",
+    "REPCOAT-FF",
+    "REPCOAT-FF-PLUS"
+   ],
+   "props": [
+    "coverage",
+    "recoat",
+    "carbonation",
+    "voc"
+   ]
+  },
+  "choose": [
+   {
+    "product": "REPCOAT",
+    "quote": "High build elastomeric, microporous coating."
+   },
+   {
+    "product": "REPCOAT-FF",
+    "quote": "Matt finish helping to hide irregularities."
+   }
+  ]
+ },
+ {
+  "ch": "Ch8",
+  "zone": "G",
+  "candidates": [
+   "EN100",
+   "EPW-S",
+   "REPCOAT-P"
+  ],
+  "panel": {
+   "kind": "bars",
+   "products": [
+    "EN100",
+    "EPW-S",
+    "REPCOAT-P"
+   ],
+   "props": [
+    "bond_concrete"
+   ]
+  },
+  "choose": [
+   {
+    "product": "EN100",
+    "quote": "Excellent chemical resistance."
+   },
+   {
+    "product": "REPCOAT-P",
+    "quote": "Excellent UV resistance."
+   }
+  ]
+ }
+]

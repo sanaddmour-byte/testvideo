@@ -1454,12 +1454,13 @@
     "cushion_layer": [
      {
       "value": "no less than 300",
-      "unit": "g/m² (geotextile over blinding)",
+      "unit": "g/m²",
       "test_standard": "NOT STATED",
       "source_file": "DonProof FB.pdf",
       "page": 2,
       "doc_code": "08-0199-A-2026",
-      "doc_date": "NOT STATED"
+      "doc_date": "NOT STATED",
+      "condition": "geotextile cushion layer directly over the blinding concrete"
      }
     ],
     "fillet": [

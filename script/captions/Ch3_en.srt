@@ -1,0 +1,52 @@
+1
+00:00:00,000 --> 00:00:00,833
+Zone B:
+
+2
+00:00:00,833 --> 00:00:02,500
+roofs and podium decks.
+
+3
+00:00:02,500 --> 00:00:06,500
+On roofs, the surface sees rain, sun and foot traffic.
+
+4
+00:00:06,500 --> 00:00:07,375
+Candidate products:
+
+5
+00:00:07,375 --> 00:00:10,000
+DonProof PU-P150, DonProof PU-P100, DonProof PU-P60.
+
+6
+00:00:10,000 --> 00:00:16,000
+Primed deck, hot-sprayed polyurea, then an aliphatic polyurethane topcoat.
+
+7
+00:00:16,000 --> 00:00:18,812
+Spray perpendicular to the substrate;
+
+8
+00:00:18,812 --> 00:00:20,500
+strip-coat internal corners.
+
+9
+00:00:20,500 --> 00:00:26,000
+All three report tensile, elongation and tear to the same ASTM methods.
+
+10
+00:00:26,000 --> 00:00:26,409
+P150:
+
+11
+00:00:26,409 --> 00:00:28,045
+inverted roofs under XPS.
+
+12
+00:00:28,045 --> 00:00:28,455
+P60:
+
+13
+00:00:28,455 --> 00:00:30,500
+cold resistance to minus forty.
+

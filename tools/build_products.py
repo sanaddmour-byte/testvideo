@@ -290,7 +290,7 @@ p.v("service_temp", "-5 to 50", "°C", printed="-5 to 50", label="Working temper
 p.v("tear", "≥ 350", "N (Nail shank)", "EN 12310-1", printed="≥ 350 N (Nail shank)")
 p.v("impact_resistance", "≥ 350", "mm", "EN 12691 (A)", printed="≥ 350 mm")
 p.v("shelf_life", "18", "months", printed="18 months")
-p.v("cushion_layer", "no less than 300", "g/m² (geotextile over blinding)", printed="300g/m²")
+p.v("cushion_layer", "no less than 300", "g/m²", printed="300g/m²", cond="geotextile cushion layer directly over the blinding concrete")
 p.v("fillet", "20", "mm (base of retaining walls, stop ends, upstands)", printed="A 20 mm fillet")
 p.v("overlap_min", "50", "mm", printed="overlapped by a minimum of 50 mm")
 p.std("DIN EN 13967 Type A and")
