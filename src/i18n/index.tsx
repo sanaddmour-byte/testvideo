@@ -2,7 +2,7 @@ import React, { createContext, useContext } from "react";
 import en from "./en.json";
 import ar from "./ar.json";
 import { DEFAULT_LANG, Lang } from "../config";
-import { font } from "../theme/brand";
+import { brand, font } from "../theme/brand";
 
 const dicts = { en, ar } as const;
 
@@ -26,7 +26,7 @@ export const translate = (lang: Lang, key: string, vars?: Record<string, string>
 const Ctx = createContext<Lang>(DEFAULT_LANG);
 export const LangProvider: React.FC<{ lang: Lang; children: React.ReactNode }> = ({ lang, children }) => (
   <Ctx.Provider value={lang}>
-    <div style={{ direction: lang === "ar" ? "rtl" : "ltr", fontFamily: lang === "ar" ? font.arabic : font.latin }}>{children}</div>
+    <div style={{ position: "absolute", inset: 0, background: brand.paper, direction: lang === "ar" ? "rtl" : "ltr", fontFamily: lang === "ar" ? font.arabic : font.latin }}>{children}</div>
   </Ctx.Provider>
 );
 export const useLang = () => useContext(Ctx);

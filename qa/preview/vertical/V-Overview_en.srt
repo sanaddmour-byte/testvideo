@@ -1,0 +1,56 @@
+1
+00:00:00,000 --> 00:00:04,000
+Water enters concrete through cracks and joints.
+
+2
+00:00:04,000 --> 00:00:06,400
+Carbon dioxide advances through the cover.
+
+3
+00:00:06,400 --> 00:00:10,000
+At the rebar, corrosion follows, and the surface spalls.
+
+4
+00:00:10,000 --> 00:00:13,500
+Sun and temperature cycles work on exposed surfaces.
+
+5
+00:00:13,500 --> 00:00:16,885
+A building has seven places that need protection.
+
+6
+00:00:16,885 --> 00:00:19,000
+Each has its own products.
+
+7
+00:00:19,000 --> 00:00:19,833
+Below ground:
+
+8
+00:00:19,833 --> 00:00:21,500
+raft, walls, lift pits.
+
+9
+00:00:21,500 --> 00:00:24,000
+Roofs and podium decks.
+
+10
+00:00:24,000 --> 00:00:26,500
+Wet areas and balconies.
+
+11
+00:00:26,500 --> 00:00:29,000
+Water tanks and water-retaining structures.
+
+12
+00:00:29,000 --> 00:00:31,500
+Joints and penetrations.
+
+13
+00:00:31,500 --> 00:00:34,000
+Façades and exposed concrete.
+
+14
+00:00:34,000 --> 00:00:37,500
+Steel and industrial exposure.
+

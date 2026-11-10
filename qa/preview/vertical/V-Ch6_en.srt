@@ -1,0 +1,52 @@
+1
+00:00:00,000 --> 00:00:01,000
+Zone E:
+
+2
+00:00:01,000 --> 00:00:02,500
+joints and penetrations.
+
+3
+00:00:02,500 --> 00:00:06,500
+Joints and penetrations are where water finds a path.
+
+4
+00:00:06,500 --> 00:00:07,667
+Candidate products:
+
+5
+00:00:07,667 --> 00:00:10,000
+Hydrostop HW, Hyperseal DP-2010H.
+
+6
+00:00:10,000 --> 00:00:16,000
+A PVC waterstop is cast across the joint.
+
+7
+00:00:16,000 --> 00:00:17,636
+Tie waterstops to reinforcement;
+
+8
+00:00:17,636 --> 00:00:20,500
+allow 24 hours after bonding before pouring.
+
+9
+00:00:20,500 --> 00:00:26,000
+Different tests, so each product is shown as reported.
+
+10
+00:00:26,000 --> 00:00:26,409
+HW:
+
+11
+00:00:26,409 --> 00:00:28,455
+hollow bulb for expansion joints.
+
+12
+00:00:28,455 --> 00:00:28,864
+DP-2010H:
+
+13
+00:00:28,864 --> 00:00:30,500
+not for expansion joints.
+

@@ -1,0 +1,56 @@
+1
+00:00:00,000 --> 00:00:00,833
+Zone F:
+
+2
+00:00:00,833 --> 00:00:02,500
+façades and exposed concrete.
+
+3
+00:00:02,500 --> 00:00:06,500
+Exposed concrete faces carbon dioxide, rain and sun.
+
+4
+00:00:06,500 --> 00:00:07,300
+Candidate products:
+
+5
+00:00:07,300 --> 00:00:10,500
+Repcoat, Repcoat FF, Repcoat FF Plus, Repcoat S.
+
+6
+00:00:10,500 --> 00:00:16,500
+Primer first, then Repcoat at the stated rate per coat.
+
+7
+00:00:16,500 --> 00:00:18,300
+Wait for the primer;
+
+8
+00:00:18,300 --> 00:00:21,000
+two coats on dark, absorbent surfaces.
+
+9
+00:00:21,000 --> 00:00:24,500
+Carbonation is tested differently, so no bars.
+
+10
+00:00:24,500 --> 00:00:26,500
+Missing data is tagged.
+
+11
+00:00:26,500 --> 00:00:26,917
+Repcoat:
+
+12
+00:00:26,917 --> 00:00:27,750
+high-build elastomeric.
+
+13
+00:00:27,750 --> 00:00:28,167
+FF:
+
+14
+00:00:28,167 --> 00:00:29,000
+matt finish.
+

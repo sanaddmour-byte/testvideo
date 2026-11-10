@@ -35,7 +35,11 @@ for ch in T["chapters"]:
         j, c = pr; v = [s for s in j["streams"] if s.get("width")][0]
         L.append(f"| `out/chapters/{ch['id']}.mp4` | {v['width']}×{v['height']} @ {v['r_frame_rate']}, {float(j['format']['duration']):.1f} s (planned {ch['dur']:.1f} s), {int(j['format']['size'])/1e6:.1f} MB |\n")
 L.append("| `out/captions/*.srt` | master + per-chapter captions (≤12 words per cue); **no captions burned in** |\n")
-L.append("| Vertical 1080×1920 cutdowns | **not made** — only after you approve the master (brief §1) |\n")
+for vid in ["V-Ch2", "V-Ch3", "V-Ch4", "V-Ch5", "V-Ch6", "V-Ch7", "V-Ch8", "V-Overview", "V-Selector"]:
+    pr = probe(f"{ROOT}/out/vertical/{vid}.mp4")
+    if pr:
+        j, _c = pr; v = [x for x in j["streams"] if x.get("width")][0]
+        L.append(f"| `out/vertical/{vid}.mp4` | {v['width']}×{v['height']} @ {v['r_frame_rate']}, {float(j['format']['duration']):.1f} s, {int(j['format']['size'])/1e6:.1f} MB (+ `{vid}_en.srt`) |\n")
 L.append("| Audio | none supplied: music slot `public/audio/music.mp3`, VO slot `public/audio/vo_en.mp3`; film renders cleanly without them |\n\n")
 L.append("`out/` is git-ignored (large binaries). Re-create with `npm run render:chapters && npm run render:master`.\n\n")
 
@@ -102,6 +106,7 @@ A = [
  "ASSUMED: voice-over timing — scene lengths are set from the script at ≤ 2.7 words/s; a recorded VO may need small edits.",
  "ASSUMED: matrix pages (10 rows each) are the way to keep text ≥ 36 px; the “Other TDS-listed uses” column is truncated with an ellipsis where long.",
  "ASSUMED: Ch0 and Ch1 show no data values, so they carry no source footnote.",
+ "ASSUMED: vertical cutdowns reuse each chapter's data, wording and timing in portrait layouts; zone cutdowns are held to 30 s (a longer last scene) and the selector shows 9 rows per page without the “other uses” column. Their captions are the chapter captions.",
  "ASSUMED: chapter markers are written as MP4 chapters (QuickTime text track) and named from `src/i18n/en.json → chapters`.",
  "ASSUMED: the end card shows placeholders for contact details; the logo is the website SVG.",
 ]
@@ -124,7 +129,7 @@ C = [
  ("§2 npm scripts validate, render:master, render:chapters, stills", "Done"),
  ("§2 RTL-ready; text via i18n keys", "Done; Arabic strings not written"),
  ("§1 master 4–5 min, 1080p30 H.264 + chapter markers, per-chapter MP4s, separate SRT, no burned-in captions", "Done (see section 1)"),
- ("§1 vertical cutdowns", "Pending your approval of the master"),
+ ("§1 vertical 1080×1920 cutdowns, 30–45 s, after master approval", "Done after your approval: V-Ch2…V-Ch8 (one per zone), V-Overview (cold open + map), V-Selector (matrix + close); same data, validate rules and footnotes as the master"),
 ]
 for a, b in C: L.append(f"| {a} | {b} |\n")
 open(f"{ROOT}/qa/qa_report.md", "w").write("".join(L))

@@ -1,6 +1,6 @@
 # DCP Waterproofing & Protective Coatings — animated explainer film
 
-Status: **Phase 4 complete — master (4:42) and 11 chapter MP4s rendered; awaiting master approval before vertical cutdowns.** See `qa/qa_report.md`.
+Status: **Complete — master (4:42), 11 chapter MP4s and 9 vertical cutdowns rendered.** See `qa/qa_report.md`.
 
 | Path | What |
 |---|---|
@@ -23,6 +23,7 @@ Rebuild: `python3 tools/build_catalogue.py && python3 tools/build_qa.py` (needs 
 | `npm run validate` | rebuild data (`tools/`) and run all source/claim checks |
 | `npm run stills` | key frames → `qa/stills` |
 | `npm run render:chapters` / `render:master` | MP4s → `out/` (chapter markers via ffmpeg; captions → `out/captions`) |
+| `npm run render:vertical` | 1080×1920 cutdowns → `out/vertical/` |
 | `npm run audio:scan` | detect `public/audio/music.mp3` / `vo_en.mp3` |
 
 Chromium is expected at `/opt/pw-browsers/chromium` (see `remotion.config.ts`).
