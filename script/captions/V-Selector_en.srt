@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:04,000
+The matrix shows where each data sheet lists a use.
+
+2
+00:00:04,000 --> 00:00:08,543
+A tick appears only where the data sheet lists that use.
+
+3
+00:00:08,543 --> 00:00:13,500
+Where the sheet lists other uses, they appear in the last column.
+
+4
+00:00:13,500 --> 00:00:21,500
+Always check the data sheet and your project conditions before you specify.
+
+5
+00:00:21,500 --> 00:00:23,583
+HPD and VOC data available.
+
+6
+00:00:23,583 --> 00:00:24,833
+EPD on request.
+
+7
+00:00:24,833 --> 00:00:29,000
+Third-party testing when a project or CE mark requires it.
+
+8
+00:00:29,000 --> 00:00:34,000
+Don Construction Products.
+

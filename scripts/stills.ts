@@ -15,6 +15,9 @@ for (const c of timeline.chapters) {
 }
 
 const BROWSER = "/opt/pw-browsers/chromium";
+for (const c of timeline.chapters) if (/^Ch[2-8]$/.test(c.id)) plan[`V-${c.id}`] = plan[c.id];
+plan["V-Overview"] = [60, 190, 330, 480, 580, 700, 820, 960, 1060];
+plan["V-Selector"] = [60, 200, 380, 560, 700, 880, 1000];
 const want = process.argv.slice(2);
 const main = async () => {
   mkdirSync("qa/stills", { recursive: true });

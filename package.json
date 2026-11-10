@@ -11,6 +11,7 @@
     "stills": "tsx scripts/stills.ts",
     "render:chapters": "npm run audio:scan --silent && tsx scripts/render.ts chapters",
     "render:master": "npm run audio:scan --silent && tsx scripts/render.ts master",
+    "render:vertical": "npm run audio:scan --silent && tsx scripts/render.ts vertical",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

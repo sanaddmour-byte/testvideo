@@ -9,6 +9,9 @@ import { ZoneChapter } from "./chapters/ZoneChapter";
 import { Ch9Matrix } from "./chapters/Ch9Matrix";
 import { Ch10Close } from "./chapters/Ch10Close";
 import { LookBars, LookLayers, LookMatrix, LookTable } from "./LookDev";
+import { VZone, vFrames } from "./vertical/VZone";
+import { VOverview, vOverviewFrames } from "./vertical/VOverview";
+import { VSelector, vSelectorFrames } from "./vertical/VSelector";
 import audio from "./generated/audioManifest.json";
 
 type Props = { lang: Lang };
@@ -39,6 +42,13 @@ const ChapterComp = (id: string, C: React.FC) => ({ lang }: Props) => (
   </LangProvider>
 );
 
+const wrapV = (C: React.FC, startCh: string) => ({ lang }: Props) => (
+  <LangProvider lang={lang}>
+    <C />
+    <Slots offsetFrames={Math.round(chapter(startCh).start * FPS)} />
+  </LangProvider>
+);
+
 const Master: React.FC<Props> = ({ lang }) => (
   <LangProvider lang={lang}>
     {CHAPTERS.map(({ id, C }) => (
@@ -61,6 +71,12 @@ export const Root: React.FC = () => {
         <Composition key={id} id={id} component={ChapterComp(id, C)} durationInFrames={chapterFrames(id)} {...common} />
       ))}
       <Composition id="Master" component={Master} durationInFrames={masterFrames()} {...common} />
+      {/* Vertical 1080×1920 cutdowns (30–45 s), approved master only */}
+      {["Ch2", "Ch3", "Ch4", "Ch5", "Ch6", "Ch7", "Ch8"].map((id) => (
+        <Composition key={`V-${id}`} id={`V-${id}`} component={wrapV(() => <VZone ch={id} />, id)} durationInFrames={vFrames(id)} fps={FPS} width={1080} height={1920} defaultProps={{ lang: DEFAULT_LANG } as Props} />
+      ))}
+      <Composition id="V-Overview" component={wrapV(VOverview, "Ch0")} durationInFrames={vOverviewFrames()} fps={FPS} width={1080} height={1920} defaultProps={{ lang: DEFAULT_LANG } as Props} />
+      <Composition id="V-Selector" component={wrapV(VSelector, "Ch9")} durationInFrames={vSelectorFrames()} fps={FPS} width={1080} height={1920} defaultProps={{ lang: DEFAULT_LANG } as Props} />
       <Composition id="Look-Layers" component={wrap(LookLayers)} durationInFrames={240} {...common} />
       <Composition id="Look-Bars" component={wrap(LookBars)} durationInFrames={120} {...common} />
       <Composition id="Look-Table" component={wrap(LookTable)} durationInFrames={120} {...common} />

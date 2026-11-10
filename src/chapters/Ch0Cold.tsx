@@ -18,7 +18,7 @@ const Label: React.FC<{ x: number; y: number; to: [number, number]; text: string
 );
 
 // ------------------------------------------------------------------ 0.1 water ingress
-const Water: React.FC<{ f: number }> = ({ f }) => {
+export const Water: React.FC<{ f: number }> = ({ f }) => {
   const t = useT();
   const crack = "M0 -10 L18 40 L-6 90 L20 140 L2 190 L24 240";
   const crackPath = `M${X0 + 60} ${Y0 + 60} l18 50 l-24 50 l26 50 l-18 50 l22 50`;
@@ -60,7 +60,7 @@ const Water: React.FC<{ f: number }> = ({ f }) => {
 };
 
 // ------------------------------------------------------------------ 0.2 carbonation → corrosion → spalling
-const Carbonation: React.FC<{ f: number }> = ({ f }) => {
+export const Carbonation: React.FC<{ f: number }> = ({ f }) => {
   const t = useT();
   const W = 420, H = 440, x0 = X0 - 100, y0 = Y0 + 20, barX = x0 + 150, barY = y0 + H / 2;
   const front = prog(f, 10, 80, ease.inOut);       // carbonation front 0..1 across the cover
@@ -104,7 +104,7 @@ const Carbonation: React.FC<{ f: number }> = ({ f }) => {
 };
 
 // ------------------------------------------------------------------ 0.3 UV and thermal cycling
-const Thermal: React.FC<{ f: number }> = ({ f }) => {
+export const Thermal: React.FC<{ f: number }> = ({ f }) => {
   const swing = Math.sin(f / 9);
   const open = prog(f, 20, 70);
   const sx = X0 - 200, sy = Y0 + 330, sw = 560, sh = 90;

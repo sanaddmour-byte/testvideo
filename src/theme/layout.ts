@@ -14,3 +14,7 @@ export const content = {
   width: WIDTH - 2 * safe.x,
   height: lowerThirdTop - 24 - safe.y,
 } as const;
+
+/** Portrait (1080×1920) cutdowns: 5% margins, lower 20% kept free for captions. */
+export const vsafe = { x: 54, y: 96 } as const;
+export const vcontent = { left: 54, right: 1026, width: 972, top: 96, bottom: 1536 - 24 } as const;

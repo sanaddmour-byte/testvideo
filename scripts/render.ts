@@ -37,10 +37,17 @@ const main = async () => {
       addChapters(`out/chapters/${id}.raw.mp4`, `out/chapters/${id}.mp4`, [{ id, start: 0, dur: c.dur }]);
       copyFileSync(`script/captions/${id}_en.srt`, `out/captions/${id}_en.srt`);
     }
+  } else if (mode === "vertical") {
+    mkdirSync("out/vertical", { recursive: true });
+    const ids = comps.map((c) => c.id).filter((id) => id.startsWith("V-"));
+    for (const id of ids) {
+      await render(id, `out/vertical/${id}.mp4`);
+      copyFileSync(`script/captions/${id}_en.srt`, `out/vertical/${id}_en.srt`);
+    }
   } else if (mode === "master") {
     await render("Master", "out/master.raw.mp4");
     addChapters("out/master.raw.mp4", "out/master.mp4", timeline.chapters.filter((c) => built.includes(c.id)));
     copyFileSync("script/captions_en.srt", "out/captions/master_en.srt");
-  } else throw new Error("usage: tsx scripts/render.ts master|chapters");
+  } else throw new Error("usage: tsx scripts/render.ts master|chapters|vertical");
 };
 main().catch((e) => { console.error(e); process.exit(1); });

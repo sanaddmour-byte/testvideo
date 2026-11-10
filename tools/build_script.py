@@ -380,4 +380,11 @@ def blank_merge(src, dst):
         else:
             dst.setdefault(k, "")
 ar = json.load(open(AR)); blank_merge(en, ar); json.dump(ar, open(AR, "w"), ensure_ascii=False, indent=2)
+# vertical cutdown captions (Ch2-Ch8 reuse the chapter cues; Overview = Ch0+Ch1; Selector = Ch9+Ch10)
+import shutil
+for c in ["Ch2", "Ch3", "Ch4", "Ch5", "Ch6", "Ch7", "Ch8"]:
+    shutil.copy(f"{ROOT}/script/captions/{c}_en.srt", f"{ROOT}/script/captions/V-{c}_en.srt")
+for name, parts in (("V-Overview", ["Ch0", "Ch1"]), ("V-Selector", ["Ch9", "Ch10"])):
+    st = min(x["start"] for x in tl if x["ch"] == parts[0])
+    write_srt(f"{ROOT}/script/captions/{name}_en.srt", [x for p in parts for x in cues[p]], offset=st)
 print(f"runtime {mm(total)} ({total:.1f}s), scenes {len(beats)}")

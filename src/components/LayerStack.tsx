@@ -17,17 +17,18 @@ export type Layer = {
 };
 
 const keysOf = (l: Layer) => (l.dataKey ? (Array.isArray(l.dataKey) ? l.dataKey : [l.dataKey]) : []);
-const LINE = 42, CPL = 32; // line height and rough characters per label line at 36 px / 700 px
-const labelLines = (l: Layer) => Math.ceil(l.label.length / CPL) + keysOf(l).reduce((a, k) => { const s = shown(k); return a + (s.pending ? 1 : Math.ceil(s.text.length / CPL)); }, 0);
+const LINE = 42; // line height; characters per label line ≈ labelW / 21.9 at 36 px
+const labelLines = (l: Layer, CPL: number) => Math.ceil(l.label.length / CPL) + keysOf(l).reduce((a, k) => { const s = shown(k); return a + (s.pending ? 1 : Math.ceil(s.text.length / CPL)); }, 0);
 
 /** Animated cross-section: layers build from the bottom (substrate) upward; each label holds >= 2.5 s. */
 export const LayerStack: React.FC<{
-  layers: Layer[]; frame: number; start?: number; x: number; y: number; width?: number; every?: number; noteNotToScale?: string; labels?: boolean; bounds?: [number, number];
-}> = ({ layers, frame, start = 0, x, y, width = 620, every = frames.slow, noteNotToScale, labels = true, bounds = [200, 850] }) => {
+  layers: Layer[]; frame: number; start?: number; x: number; y: number; width?: number; every?: number; noteNotToScale?: string; labels?: boolean; bounds?: [number, number]; labelW?: number;
+}> = ({ layers, frame, start = 0, x, y, width = 620, every = frames.slow, noteNotToScale, labels = true, bounds = [200, 850], labelW = 700 }) => {
+  const CPL = Math.floor(labelW / 21.9);
   const rtl = useDir() === "rtl";
   const total = layers.reduce((a, l) => a + l.h, 0);
   const n = layers.length;
-  const hs = layers.map((l) => labelLines(l) * LINE + 22); // label block heights, indexed bottom→top
+  const hs = layers.map((l) => labelLines(l, CPL) * LINE + 22); // label block heights, indexed bottom→top
   const sumH = hs.reduce((a, b) => a + b, 0);
   let cur = Math.min(Math.max(y + total / 2 - sumH / 2, bounds[0]), bounds[1] - sumH);
   const labelTop: number[] = new Array(n);
@@ -57,7 +58,7 @@ export const LayerStack: React.FC<{
               <>
                 <polyline points={`${edgeX},${midY} ${edgeX + (rtl ? -50 : 50)},${midY} ${labelX - (rtl ? -14 : 14)},${labY}`} fill="none" stroke={brand.ink} strokeWidth={2} strokeDasharray="6 6" opacity={lab} />
                 <circle cx={edgeX} cy={midY} r={5} fill={brand.ink} opacity={lab} />
-                <foreignObject x={rtl ? labelX - 700 : labelX} y={labelTop[i]} width={700} height={hs[i]}>
+                <foreignObject x={rtl ? labelX - labelW : labelX} y={labelTop[i]} width={labelW} height={hs[i]}>
                   <div style={{ opacity: lab, fontSize: type.body, lineHeight: `${LINE}px`, textAlign: rtl ? "right" : "left", transform: `translateY(${(1 - lab) * 10}px)` }}>
                     <div style={{ fontWeight: 700 }}>{l.label}</div>
                     {keysOf(l).map((k) => <div key={k}><DataValue k={k} size={type.body} bold={false} /></div>)}

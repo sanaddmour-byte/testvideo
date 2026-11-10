@@ -13,8 +13,8 @@ export type BarProp = { key: string; /** explicit axis maximum, set by hand per 
  * Throws if the products do not all report a property to the SAME stated test standard (brief §3.6).
  */
 export const ComparisonBars: React.FC<{
-  products: string[]; props: BarProp[]; frame: number; start?: number; x: number; y: number; width?: number;
-}> = ({ products, props, frame, start = 0, x, y, width = 1100 }) => {
+  products: string[]; props: BarProp[]; frame: number; start?: number; x: number; y: number; width?: number; stacked?: boolean;
+}> = ({ products, props, frame, start = 0, x, y, width = 1100, stacked = false }) => {
   const t = useT();
   const rowH = 58, labelW = 400, barMax = width - labelW - 420;
   let yy = y;
@@ -34,6 +34,19 @@ export const ComparisonBars: React.FC<{
               const num = s.pending ? null : firstNumber(s.entry.value);
               const grow = prog(frame, start + pi * 14 + i * frames.stagger, frames.slow);
               const w = num === null ? 0 : Math.max(8, (num / p.axisMax) * barMax) * grow;
+              if (stacked) {
+                return (
+                  <div key={id} style={{ marginBottom: 10 }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", fontSize: type.body, lineHeight: 1.15 }}>
+                      <span style={{ fontWeight: 600 }}>{productName(id)}</span>
+                      <span style={{ opacity: grow, fontWeight: 700 }}>{s.pending ? <DataPending /> : s.text}</span>
+                    </div>
+                    <div style={{ borderLeft: `3px solid ${brand.ink}`, height: 22 }}>
+                      <div style={{ height: 22, width: num === null ? 0 : Math.max(8, (num / p.axisMax) * (width - 6)) * grow, background: colorOf(id), borderRadius: "0 6px 6px 0" }} />
+                    </div>
+                  </div>
+                );
+              }
               return (
                 <div key={id} style={{ display: "flex", alignItems: "center", height: rowH }}>
                   <div style={{ width: labelW, fontSize: type.body, fontWeight: 600, whiteSpace: "nowrap" }}>{productName(id)}</div>

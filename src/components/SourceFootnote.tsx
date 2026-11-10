@@ -2,11 +2,14 @@ import React from "react";
 import { footnotes } from "../data/products";
 import { useLang } from "../i18n";
 import { brand, type } from "../theme/brand";
-import { safe } from "../theme/layout";
+import { safe as lsafe, vsafe } from "../theme/layout";
+import { useVideoConfig } from "remotion";
 
 /** "Source: <product> TDS, <doc code>, <date>" — on every frame that shows data (brief §3.8). */
 export const SourceFootnote: React.FC<{ keys: string[]; extra?: string[] }> = ({ keys, extra = [] }) => {
   const lang = useLang();
+  const { width, height } = useVideoConfig();
+  const safe = height > width ? vsafe : lsafe;
   const lines = [...footnotes(keys, lang), ...extra];
   if (!lines.length) return null;
   return (

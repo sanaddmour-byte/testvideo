@@ -10,10 +10,35 @@ export type TableRow = { prop: string; cells: (string | null)[] };
 
 /** Side-by-side text table for values measured to different test methods. Carries the "different test methods" tag. */
 export const ComparisonTable: React.FC<{
-  products: string[]; rows: TableRow[]; frame: number; start?: number; x: number; y: number; width?: number; tag?: boolean;
-}> = ({ products, rows, frame, start = 0, x, y, width = 1500, tag = true }) => {
+  products: string[]; rows: TableRow[]; frame: number; start?: number; x: number; y: number; width?: number; tag?: boolean; stacked?: boolean;
+}> = ({ products, rows, frame, start = 0, x, y, width = 1500, tag = true, stacked = false }) => {
   const t = useT();
   const first = 360, col = (width - first) / products.length;
+  if (stacked) {
+    return (
+      <div style={{ position: "absolute", left: x, top: y, width }}>
+        {tag && <div style={{ display: "inline-block", background: brand.ink, color: "#fff", borderRadius: 8, padding: "2px 16px", fontSize: type.body * 0.8, fontWeight: 700, marginBottom: 14 }}>{t("table.differentMethods")}</div>}
+        {rows.map((r, ri) => {
+          const a = prog(frame, start + ri * 12, frames.base);
+          return (
+            <div key={r.prop} style={{ opacity: a, transform: `translateY(${(1 - a) * 12}px)`, borderTop: `2px solid ${brand.ink}`, padding: "8px 0 10px" }}>
+              <div style={{ fontSize: type.body, fontWeight: 800 }}>{t(`prop.${r.prop}`)}</div>
+              {r.cells.map((k, ci) => {
+                if (k === null) return null;
+                const s = shown(k);
+                return (
+                  <div key={ci} style={{ fontSize: type.body, lineHeight: 1.15, display: "flex", gap: 12, alignItems: "baseline" }}>
+                    <span style={{ width: 16, height: 16, background: colorOf(products[ci]), borderRadius: 4, flex: "none", display: "inline-block" }} />
+                    <span><b>{productName(products[ci])}</b>{": "}{s.pending ? <DataPending /> : s.text}</span>
+                  </div>
+                );
+              })}
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
   return (
     <div style={{ position: "absolute", left: x, top: y, width }}>
       {tag && (
